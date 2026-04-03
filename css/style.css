@@ -403,6 +403,13 @@ p { max-width: 68ch; }
   .piece-layout {
     grid-template-columns: 1fr 380px;
   }
+
+  /* Fotomoto injects its toolbar as a 3rd sibling inside .piece-layout,
+     which breaks the 2-column grid. Explicit placement fixes this:
+     image = col1/row1, toolbar = col1/row2, info = col2/rows1-2 */
+  .piece-image-wrap    { grid-column: 1; grid-row: 1; }
+  .FotomotoToolbarClass { grid-column: 1; grid-row: 2; }
+  .piece-info          { grid-column: 2; grid-row: 1 / 3; }
 }
 
 .piece-image-wrap {
@@ -415,6 +422,57 @@ p { max-width: 68ch; }
   height: auto;
   border-radius: var(--radius);
   background: var(--surface-hi);
+  display: block;
+}
+
+/* ── Fotomoto toolbar ──────────────────────────────────────── */
+.FotomotoToolbarClass {
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.FotomotoBar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  overflow: hidden;
+}
+
+.FotomotoBar li {
+  flex: 1;
+}
+
+.FotomotoBar .FotomotoSeparator {
+  display: none;
+}
+
+.FotomotoBarLink {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  color: var(--text) !important;
+  font-family: var(--font-head) !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  text-align: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.FotomotoBarLink:hover {
+  background: var(--surface-hi);
+  color: var(--gold) !important;
+}
+
+.FotomotoClear {
+  display: none;
 }
 
 .piece-info h1 {
@@ -642,6 +700,42 @@ p { max-width: 68ch; }
 
 
 /* ── Patreon page ──────────────────────────────────────────── */
+.patreon-header {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.patreon-header-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.patreon-header-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  opacity: 0.85;
+}
+
+@media (max-width: 680px) {
+  .patreon-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .patreon-header-image {
+    justify-content: flex-start;
+  }
+
+  .patreon-header-image img {
+    max-width: 200px;
+  }
+}
+
 .patreon-intro p {
   font-size: 1.05rem;
   line-height: 1.8;
