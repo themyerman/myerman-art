@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 /tmp/build_myerman_site.py)"
+      "Bash(python3 /tmp/build_myerman_site.py)",
+      "WebFetch(domain:thunderwolfnative.com)",
+      "Bash(curl -sL \"https://i0.wp.com/thunderwolfnative.com/wp-content/uploads/2025/05/cropped-IMG_1106.png?fit=512%2C512&ssl=1\" -o \"/Users/myerman/Desktop/code/myerman-art/images/thunder-wolf-native-logo.png\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/myerman/Desktop/code/myerman-art/images/thunder-wolf-native-logo.png\")",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(sed -i '' 's|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n        </ul>|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n          <li><a href=\"\"https://linktr.ee/myerman\"\" target=\"\"_blank\"\" rel=\"\"noopener noreferrer\"\">Contact</a></li>\\\\n        </ul>|' \"$f\")",
+      "Bash(done)",
+      "Bash(python3 -c \":*)"
     ]
   }
 }
