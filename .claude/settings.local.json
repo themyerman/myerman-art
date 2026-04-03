@@ -10,7 +10,11 @@
       "Bash(sed -i '' 's|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n        </ul>|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n          <li><a href=\"\"https://linktr.ee/myerman\"\" target=\"\"_blank\"\" rel=\"\"noopener noreferrer\"\">Contact</a></li>\\\\n        </ul>|' \"$f\")",
       "Bash(done)",
       "Bash(python3 -c \":*)",
-      "Bash(python3 -:*)"
+      "Bash(python3 -:*)",
+      "Bash(for slug:*)",
+      "Bash(echo \"══ $slug ══\")",
+      "Read(//Users/myerman/Desktop/code/myerman-art/prints/$slug/**)",
+      "Bash(do echo:*)"
     ]
   }
 }
