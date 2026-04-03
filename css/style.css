@@ -190,36 +190,18 @@ p { max-width: 68ch; }
 
 /* ── Hero ──────────────────────────────────────────────────── */
 .hero {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: calc(92vh - var(--nav-h));
-  display: flex;
-  align-items: flex-end;
   overflow: hidden;
   background: var(--surface);
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  /*
-    HERO IMAGE: Set background-image to a large piece of your work.
-    Recommended: at least 1800px wide, high quality.
-    Example: background-image: url('/images/hero.jpg');
-  */
-  background-image: url('/images/hero.jpg');
-  background-size: cover;
-  background-position: center 30%;
-  filter: brightness(0.3) saturate(0.85);
-}
-
 .hero-content {
-  position: relative;
-  z-index: 1;
-  padding: var(--gutter);
-  padding-bottom: clamp(3rem, 8vw, 5rem);
-  max-width: calc(var(--max-w) + 2 * var(--gutter));
-  width: 100%;
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 6vw, 5rem);
 }
 
 .hero h1 {
@@ -228,11 +210,22 @@ p { max-width: 68ch; }
 }
 
 .hero p {
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
   color: var(--text-muted);
-  margin-bottom: 2rem;
-  max-width: 52ch;
+  margin-bottom: 1.25rem;
+  max-width: 48ch;
   line-height: 1.75;
+}
+
+.hero-featuring {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  max-width: none;
 }
 
 .hero-buttons {
@@ -240,6 +233,32 @@ p { max-width: 68ch; }
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  margin-top: 0.5rem;
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-hi);
+}
+
+.hero-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80vw;
+  }
+  .hero-content {
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+  }
 }
 
 

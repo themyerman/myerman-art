@@ -32,22 +32,41 @@
 
   <main>
 
-    <!-- ══════════════════════════
-         HERO
-         Replace /images/hero.jpg with a large piece of your work (1800px+ wide).
-         CSS applies a dark overlay automatically.
-    ══════════════════════════════ -->
     <section class="hero" aria-label="Introduction">
-      <div class="hero-bg" role="presentation" aria-hidden="true"></div>
       <div class="hero-content">
         <h1>Nerd + Native<br>Digital Art</h1>
         <p>I&#8217;m Tom Myer &#8212; a Hodinǫ̱hsǫ́:nih and Ngäbe-Buglé artist making digital work rooted in Indigenous identity, political resistance, and a childhood spent watching Star Wars and rolling dice. Raised on hair metal and Dungeons &amp; Dragons. Still here.</p>
+        <p class="hero-featuring" id="hero-featuring" aria-live="polite"></p>
         <div class="hero-buttons">
           <a href="/prints/" class="btn btn-primary">Browse prints</a>
-          <a href="https://patreon.com/myerman" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Join Patreon &#8594;</a>
+          <a href="#" class="btn btn-ghost" id="hero-buy-btn">Buy this print &#8594;</a>
+          <a href="https://patreon.com/myerman" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Join Patreon</a>
         </div>
       </div>
+      <div class="hero-image">
+        <img src="" alt="" id="hero-img" width="1600" height="1600" loading="eager">
+      </div>
     </section>
+
+    <script>
+      (function () {
+        var pieces = [
+          { slug: "make-america-native-again", title: "Make America Native Again", w: 1200, h: 1200 },
+          { slug: "soaring-thunderbird",      title: "Soaring Thunderbird",       w: 1200, h: 1200 },
+          { slug: "year-of-the-horse",        title: "Year of the Horse",         w: 1200, h: 1200 }
+        ];
+        var p = pieces[Math.floor(Math.random() * pieces.length)];
+        var img = document.getElementById("hero-img");
+        img.src    = "/prints/" + p.slug + "/" + p.slug + "-hero.jpg";
+        img.alt    = p.title + " — digital artwork by Tom Myer";
+        img.width  = p.w;
+        img.height = p.h;
+        document.getElementById("hero-featuring").textContent = "Featuring: " + p.title;
+        var btn = document.getElementById("hero-buy-btn");
+        btn.href = "/prints/" + p.slug + "/";
+        btn.setAttribute("aria-label", "Buy a print of " + p.title);
+      })();
+    </script>
 
 
     <!-- ══════════════════════════
