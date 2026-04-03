@@ -486,6 +486,57 @@ p { max-width: 68ch; }
 
 
 /* ── About page ────────────────────────────────────────────── */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* ── Mosaic wall ── 3 cols × 3 rows, fixed height
+   Layout:
+   [ 1: big  ] [ 2: sm ] [ 3: tall ]
+   [ 1: big  ] [ 4: sm ] [ 3: tall ]
+   [ 5: wide        ] [ 6: sm     ]
+*/
+.about-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.about-collage img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  filter: saturate(0.88);
+  transition: filter 0.25s, transform 0.25s;
+}
+
+.about-collage img:hover {
+  filter: saturate(1.15);
+  transform: scale(1.02);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 860px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+  .about-collage {
+    height: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-collage {
+    height: 240px;
+  }
+}
+
 .about-bio p {
   font-size: 1.05rem;
   line-height: 1.8;
@@ -566,25 +617,27 @@ p { max-width: 68ch; }
 }
 .social-links li:first-child { border-top: 1px solid var(--border); }
 
-.social-links a {
+.social-links a,
+.social-links li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.85rem 0;
-  font-size: 0.95rem;
-  color: var(--text-muted);
+  font-size: 1.1rem;
+  color: var(--text) !important;
   transition: color 0.15s;
 }
-.social-links a:hover { color: var(--text); }
+.social-links a:hover,
+.social-links li > a:hover { color: var(--gold) !important; }
 
 .social-platform {
   font-family: var(--font-head);
-  font-size: 0.72rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  opacity: 0.6;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--gold);
+  opacity: 1;
 }
 
 
