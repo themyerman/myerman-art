@@ -70,75 +70,68 @@
     </script>
 
 
-    <!-- ══════════════════════════
-         FEATURED WORK
-         Edit the 4 cards below to show your best work.
-         Swap slugs/titles to feature different pieces.
-    ══════════════════════════════ -->
     <section class="section" aria-labelledby="featured-heading">
       <div class="container">
         <span class="label">Selected work</span>
         <h2 id="featured-heading" class="section-heading">Recent work</h2>
-        <div class="works-grid">
-
-          <a href="/prints/soaring-thunderbird/" class="work-card">
-            <div class="work-card-image">
-              <img
-                src="/prints/soaring-thunderbird/soaring-thunderbird-thumb.jpg"
-                alt="Soaring Thunderbird — digital artwork by Tom Myer"
-                width="480" height="480" loading="lazy">
-            </div>
-            <div class="work-card-body">
-              <h3 class="work-card-title">Soaring Thunderbird</h3>
-              <span class="work-card-link">Buy print &#8594;</span>
-            </div>
-          </a>
-
-          <a href="/prints/make-america-native-again/" class="work-card">
-            <div class="work-card-image">
-              <img
-                src="/prints/make-america-native-again/make-america-native-again-thumb.jpg"
-                alt="Make America Native Again — digital artwork by Tom Myer"
-                width="480" height="480" loading="lazy">
-            </div>
-            <div class="work-card-body">
-              <h3 class="work-card-title">Make America Native Again</h3>
-              <span class="work-card-link">Buy print &#8594;</span>
-            </div>
-          </a>
-
-          <a href="/prints/red-hand/" class="work-card">
-            <div class="work-card-image">
-              <img
-                src="/prints/red-hand/red-hand-thumb.jpg"
-                alt="Red Hand — digital artwork by Tom Myer"
-                width="480" height="480" loading="lazy">
-            </div>
-            <div class="work-card-body">
-              <h3 class="work-card-title">Red Hand</h3>
-              <span class="work-card-link">Buy print &#8594;</span>
-            </div>
-          </a>
-
-          <a href="/prints/guardian-eagle/" class="work-card">
-            <div class="work-card-image">
-              <img
-                src="/prints/guardian-eagle/guardian-eagle-thumb.jpg"
-                alt="Guardian Eagle — digital artwork by Tom Myer"
-                width="480" height="480" loading="lazy">
-            </div>
-            <div class="work-card-body">
-              <h3 class="work-card-title">Guardian Eagle</h3>
-              <span class="work-card-link">Buy print &#8594;</span>
-            </div>
-          </a>
-
-        </div>
+        <div class="works-grid" id="featured-grid"></div>
         <div style="margin-top: 2.5rem; text-align: center;">
           <a href="/prints/" class="btn btn-ghost">View all prints</a>
         </div>
       </div>
     </section>
+
+    <script>
+      (function () {
+        var all = [
+          { slug: "blood-crow",                            title: "Blood Crow" },
+          { slug: "coyote-and-raven",                      title: "Coyote and Raven" },
+          { slug: "determined",                            title: "Determined" },
+          { slug: "encroachment",                          title: "Encroachment" },
+          { slug: "flatirons-and-buffalo-road",            title: "Flatirons and Buffalo Road" },
+          { slug: "flowing-water-soaring-birds",           title: "Flowing Water Soaring Birds" },
+          { slug: "grief",                                 title: "Grief" },
+          { slug: "guardian-eagle",                        title: "Guardian Eagle" },
+          { slug: "haudenosaunee-turtle-with-wampum-belt", title: "Haudenosaunee Turtle with Wampum Belt" },
+          { slug: "make-america-native-again",             title: "Make America Native Again" },
+          { slug: "night-hawk",                            title: "Night Hawk" },
+          { slug: "petroglyph-raven",                      title: "Petroglyph Raven" },
+          { slug: "red-hand",                              title: "Red Hand" },
+          { slug: "ride-hard",                             title: "Ride Hard" },
+          { slug: "soaring-thunderbird",                   title: "Soaring Thunderbird" },
+          { slug: "superb-owl",                            title: "Superb Owl" },
+          { slug: "thunderbird",                           title: "Thunderbird" },
+          { slug: "tomahawk-crow",                         title: "Tomahawk Crow" },
+          { slug: "uncle",                                 title: "Uncle" },
+          { slug: "we-gonna-tread",                        title: "We Gonna Tread" },
+          { slug: "wise-old-owl",                          title: "Wise Old Owl" },
+          { slug: "year-of-the-horse",                     title: "Year of the Horse" }
+        ];
+
+        // Shuffle and pick 4
+        for (var i = all.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
+        }
+        var picks = all.slice(0, 4);
+
+        var grid = document.getElementById("featured-grid");
+        picks.forEach(function (p) {
+          grid.innerHTML +=
+            '<a href="/prints/' + p.slug + '/" class="work-card">' +
+              '<div class="work-card-image">' +
+                '<img src="/prints/' + p.slug + '/' + p.slug + '-thumb.jpg"' +
+                ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
+                ' width="480" height="480" loading="lazy">' +
+              '</div>' +
+              '<div class="work-card-body">' +
+                '<h3 class="work-card-title">' + p.title + '</h3>' +
+                '<span class="work-card-link">Buy print &#8594;</span>' +
+              '</div>' +
+            '</a>';
+        });
+      })();
+    </script>
 
 
     <!-- ══════════════════════════
