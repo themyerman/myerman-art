@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tom Myer — Hodinǫ̱hsǫ́:nih and Ngäbe-Buglé digital artist making work rooted in Indigenous identity, political resistance, and pop culture nostalgia. Browse prints and support on Patreon.">
+  <meta property="og:title" content="myerman.art — Nerd + Native Digital Art">
+  <meta property="og:description" content="Tom Myer — Indigenous digital artist. Browse fine art prints or support the work on Patreon.">
+  <meta property="og:image" content="https://myerman.art/images/og-home.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://myerman.art/">
+  <!-- ✏️ Replace /images/og-home.jpg with a representative piece of your work (1200×630px ideal) -->
+  <title>myerman.art — Nerd + Native Digital Art</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo">myerman.art</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/prints/">Prints</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/patreon/">Patreon</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════
+         HERO
+         ══════════════════════════
+         Replace /images/hero.jpg with a large, high-quality piece.
+         Aim for 1800px+ wide. The CSS applies a dark overlay automatically.
+         To use a solid dark background instead, remove the .hero-bg div.
+    ══════════════════════════════ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg" role="presentation" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1>Nerd + Native<br>Digital Art</h1>
+        <p>I'm Tom Myer — a Hodinǫ̱hsǫ́:nih and Ngäbe-Buglé artist making digital work rooted in Indigenous identity, political resistance, and a childhood spent watching Star Wars and rolling dice. Raised on hair metal and Dungeons &amp; Dragons. Still here.</p>
+        <div class="hero-buttons">
+          <a href="/prints/" class="btn btn-primary">Browse prints</a>
+          <a href="https://patreon.com/myerman" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Join Patreon →</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         FEATURED WORK
+         ══════════════════════════
+         Show 4–6 of your best pieces here.
+         For each card, update:
+           • href  → /prints/your-piece-name/
+           • img src → /prints/your-piece-name/your-piece-name-thumb.jpg
+           • alt text → describe the piece
+           • h3 title → piece name
+         Add or remove cards to taste — the grid adjusts automatically.
+    ══════════════════════════════ -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <span class="label">Selected work</span>
+        <h2 id="featured-heading" class="section-heading">Recent work</h2>
+        <div class="works-grid">
+
+          <!-- Card 1: Soaring Thunderbird — filled-in example -->
+          <a href="/prints/soaring-thunderbird/" class="work-card">
+            <div class="work-card-image">
+              <img
+                src="/prints/soaring-thunderbird/soaring-thunderbird-thumb.jpg"
+                alt="Soaring Thunderbird — Haudenosaunee Thunderbird with wings spread wide in digital art by Tom Myer"
+                width="480" height="480" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Soaring Thunderbird</h3>
+              <span class="work-card-link">Buy print →</span>
+            </div>
+          </a>
+
+          <!-- Card 2 ✏️ Replace with your piece -->
+          <a href="/prints/your-piece-name/" class="work-card">
+            <div class="work-card-image">
+              <img
+                src="/prints/your-piece-name/your-piece-name-thumb.jpg"
+                alt="Descriptive alt text for this piece"
+                width="480" height="480" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Piece Title</h3>
+              <span class="work-card-link">Buy print →</span>
+            </div>
+          </a>
+
+          <!-- Card 3 ✏️ Replace with your piece -->
+          <a href="/prints/your-piece-name-2/" class="work-card">
+            <div class="work-card-image">
+              <img
+                src="/prints/your-piece-name-2/your-piece-name-2-thumb.jpg"
+                alt="Descriptive alt text for this piece"
+                width="480" height="480" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Piece Title</h3>
+              <span class="work-card-link">Buy print →</span>
+            </div>
+          </a>
+
+          <!-- Card 4 ✏️ Replace with your piece -->
+          <a href="/prints/your-piece-name-3/" class="work-card">
+            <div class="work-card-image">
+              <img
+                src="/prints/your-piece-name-3/your-piece-name-3-thumb.jpg"
+                alt="Descriptive alt text for this piece"
+                width="480" height="480" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Piece Title</h3>
+              <span class="work-card-link">Buy print →</span>
+            </div>
+          </a>
+
+        </div>
+        <div style="margin-top: 2.5rem; text-align: center;">
+          <a href="/prints/" class="btn btn-ghost">View all prints</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         PATREON STRIP
+    ══════════════════════════════ -->
+    <section class="patreon-strip section" aria-labelledby="patreon-strip-heading">
+      <div class="container">
+        <span class="label">Patreon</span>
+        <h2 id="patreon-strip-heading">Want to see it before anyone else?</h2>
+        <p>I share new work, process timelapses, and behind-the-scenes posts on Patreon before they go anywhere else. Join the community that makes this work possible.</p>
+        <a href="https://patreon.com/myerman" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Join Patreon →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Tom Myer. All rights reserved.</p>
+        <ul class="footer-nav" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/prints/">Prints</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/patreon/">Patreon</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
