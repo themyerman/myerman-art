@@ -35,12 +35,12 @@
 
     <section class="hero" aria-label="Introduction">
       <div class="hero-content">
+        <span class="label">Hodinǫ̱hsǫ́:nih &amp; Ngäbe-Buglé artist</span>
         <h1>Nerd + Native<br>Digital Art</h1>
         <p>I&#8217;m Tom Myer &#8212; a Hodinǫ̱hsǫ́:nih and Ngäbe-Buglé artist making digital work rooted in Indigenous identity, political resistance, and a childhood spent watching Star Wars and rolling dice. Raised on hair metal and Dungeons &amp; Dragons. Still here.</p>
-        <p class="hero-featuring" id="hero-featuring" aria-live="polite"></p>
+        <p class="hero-featuring" id="hero-featuring" aria-live="polite"><a href="#" id="hero-buy-btn" style="color:inherit;">&#8594; Buy a print</a></p>
         <div class="hero-buttons">
           <a href="/prints/" class="btn btn-primary">Browse prints</a>
-          <a href="#" class="btn btn-ghost" id="hero-buy-btn">Buy this print &#8594;</a>
           <a href="https://patreon.com/myerman" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Join Patreon</a>
         </div>
       </div>
@@ -62,18 +62,17 @@
         img.alt    = p.title + " — digital artwork by Tom Myer";
         img.width  = p.w;
         img.height = p.h;
-        document.getElementById("hero-featuring").textContent = "Featuring: " + p.title;
-        var btn = document.getElementById("hero-buy-btn");
-        btn.href = "/prints/" + p.slug + "/";
-        btn.setAttribute("aria-label", "Buy a print of " + p.title);
+        var buyBtn = document.getElementById("hero-buy-btn");
+        buyBtn.href = "/prints/" + p.slug + "/";
+        buyBtn.setAttribute("aria-label", "Buy a print of " + p.title);
+        buyBtn.innerHTML = p.title + " &#8594; Buy a print";
       })();
     </script>
 
 
     <section class="section" aria-labelledby="featured-heading">
       <div class="container">
-        <span class="label">Selected work</span>
-        <h2 id="featured-heading" class="section-heading">Recent work</h2>
+        <h2 id="featured-heading" class="section-heading">From the shop</h2>
         <div class="works-grid" id="featured-grid"></div>
         <div style="margin-top: 2.5rem; text-align: center;">
           <a href="/prints/" class="btn btn-ghost">View all prints</a>
@@ -140,8 +139,8 @@
     <section class="patreon-strip section" aria-labelledby="patreon-strip-heading">
       <div class="container">
         <span class="label">Patreon</span>
-        <h2 id="patreon-strip-heading">Want to see it before anyone else?</h2>
-        <p>I share new work, process timelapses, and behind-the-scenes posts on Patreon before they go anywhere else. Join the community that makes this work possible.</p>
+        <h2 id="patreon-strip-heading">The work starts on Patreon. So does the community.</h2>
+        <p>New pieces, process timelapses, and behind-the-scenes posts go to patrons first — before they go anywhere else. It's also where the conversation happens. Join the people who make this work possible.</p>
         <a href="https://patreon.com/myerman" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Join Patreon &#8594;</a>
       </div>
     </section>
