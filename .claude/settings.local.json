@@ -9,7 +9,8 @@
       "Bash(do)",
       "Bash(sed -i '' 's|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n        </ul>|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n          <li><a href=\"\"https://linktr.ee/myerman\"\" target=\"\"_blank\"\" rel=\"\"noopener noreferrer\"\">Contact</a></li>\\\\n        </ul>|' \"$f\")",
       "Bash(done)",
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "Bash(python3 -:*)"
     ]
   }
 }
