@@ -172,29 +172,6 @@ p { max-width: 68ch; }
   color: var(--gold);
 }
 
-/* ── Snipcart dark theme ───────────────────────────────────── */
-#snipcart {
-  --color-default:       #ede9e1;
-  --color-alt:           #7a7570;
-  --color-badge:         #c9a96e;
-  --color-badgeFg:       #0c0c0c;
-  --color-buttonDefault: #c9a96e;
-  --color-buttonDefaultFg: #0c0c0c;
-  --color-buttonAlt:     #1f1f1f;
-  --color-buttonAltFg:   #ede9e1;
-  --color-link:          #c9a96e;
-  --color-input:         #ede9e1;
-  --color-inputLabel:    #ede9e1;
-  --color-inputError:    #e05c5c;
-  --bgColor-modal:       #161616;
-  --bgColor-default:     #0c0c0c;
-  --bgColor-alt:         #1f1f1f;
-  --bgColor-modalCloseButton: #1f1f1f;
-  --borderColor-default: #2a2a2a;
-  --borderColor-input:   #2a2a2a;
-  --shadow-modal:        0 16px 48px rgba(0, 0, 0, 0.8);
-  --font-family:         'Inter', system-ui, sans-serif;
-}
 
 
 /* ── Buttons ───────────────────────────────────────────────── */
