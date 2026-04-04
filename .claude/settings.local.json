@@ -9,7 +9,8 @@
       "WebFetch(domain:docs.google.com)",
       "Bash(grep -rl \"2&ndash;3 business days\" /Users/myerman/Desktop/code/myerman-art/public_html/prints/*/index.html)",
       "Bash(xargs sed:*)",
-      "Bash(grep -rl \"Order this print — $25\" /Users/myerman/Desktop/code/myerman-art/public_html/prints/*/index.html)"
+      "Bash(grep -rl \"Order this print — $25\" /Users/myerman/Desktop/code/myerman-art/public_html/prints/*/index.html)",
+      "WebFetch(domain:www.patreon.com)"
     ]
   }
 }
