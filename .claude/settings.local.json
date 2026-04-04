@@ -1,25 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 /tmp/build_myerman_site.py)",
-      "WebFetch(domain:thunderwolfnative.com)",
-      "Bash(curl -sL \"https://i0.wp.com/thunderwolfnative.com/wp-content/uploads/2025/05/cropped-IMG_1106.png?fit=512%2C512&ssl=1\" -o \"/Users/myerman/Desktop/code/myerman-art/images/thunder-wolf-native-logo.png\")",
-      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/myerman/Desktop/code/myerman-art/images/thunder-wolf-native-logo.png\")",
-      "Bash(for f:*)",
-      "Bash(do)",
-      "Bash(sed -i '' 's|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n        </ul>|<li><a href=\"\"/patreon/\"\">Patreon</a></li>\\\\n          <li><a href=\"\"https://linktr.ee/myerman\"\" target=\"\"_blank\"\" rel=\"\"noopener noreferrer\"\">Contact</a></li>\\\\n        </ul>|' \"$f\")",
-      "Bash(done)",
-      "Bash(python3 -c \":*)",
-      "Bash(python3 -:*)",
-      "Bash(for slug:*)",
-      "Bash(echo \"══ $slug ══\")",
-      "Read(//Users/myerman/Desktop/code/myerman-art/prints/$slug/**)",
-      "Bash(do echo:*)",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/dawn-eagle.png)",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/prints/red-hand/red-hand.png /Users/myerman/Desktop/code/myerman-art/prints/encroachment/encroachment.png)",
-      "Bash(grep -c \"widget.fotomoto.com\" /Users/myerman/Desktop/code/myerman-art/prints/*/index.html)",
-      "Bash(grep -l \"price-list\" /Users/myerman/Desktop/code/myerman-art/prints/*/index.html)",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/patreon/patreon.png)"
+      "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.git /Users/myerman/Desktop/code/myerman-art/.git)",
+      "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.claude /Users/myerman/Desktop/code/myerman-art/.claude)"
     ]
   }
 }
