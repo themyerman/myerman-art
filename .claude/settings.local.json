@@ -4,7 +4,11 @@
       "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.git /Users/myerman/Desktop/code/myerman-art/.git)",
       "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.claude /Users/myerman/Desktop/code/myerman-art/.claude)",
       "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/public_html/sunrise.png /Users/myerman/Desktop/code/myerman-art/public_html/friends.png /Users/myerman/Desktop/code/myerman-art/public_html/palomino.png)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebFetch(domain:forms.gle)",
+      "WebFetch(domain:docs.google.com)",
+      "Bash(grep -rl \"2&ndash;3 business days\" /Users/myerman/Desktop/code/myerman-art/public_html/prints/*/index.html)",
+      "Bash(xargs sed:*)"
     ]
   }
 }
