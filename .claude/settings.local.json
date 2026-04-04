@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.git /Users/myerman/Desktop/code/myerman-art/.git)",
-      "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.claude /Users/myerman/Desktop/code/myerman-art/.claude)"
+      "Bash(mv /Users/myerman/Desktop/code/myerman-art/public_html/.claude /Users/myerman/Desktop/code/myerman-art/.claude)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/public_html/sunrise.png /Users/myerman/Desktop/code/myerman-art/public_html/friends.png /Users/myerman/Desktop/code/myerman-art/public_html/palomino.png)"
     ]
   }
 }
