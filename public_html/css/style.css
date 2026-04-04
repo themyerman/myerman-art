@@ -345,8 +345,20 @@ p { max-width: 68ch; }
 
 .prints-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .prints-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .prints-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .prints-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 
