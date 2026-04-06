@@ -32,8 +32,8 @@
   }
 
   function buildCheckoutUrl() {
-    var items = getCart().map(function (i) { return i.sku + ' (' + i.title + ')'; }).join(', ');
-    return FORM_BASE + encodeURIComponent(items);
+    var items = getCart().map(function (i) { return i.title; }).join(', ');
+    return FORM_BASE + items.split(' ').join('+');
   }
 
   // ── Print page: wire up Add to Cart button ──────────────────
