@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your cart — myerman.art fine art prints.">
+  <title>Cart — myerman.art</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E26FGHKTSF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E26FGHKTSF');
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo">myerman.art</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/prints/">Prints</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/patreon/">Patreon</a></li>
+        <li><a href="/cart/" class="nav-cart" aria-current="page">Cart <span class="cart-count" id="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container section">
+
+      <header class="page-header">
+        <h1>Your Cart</h1>
+        <p>Review your prints below, then place your order. Each print is $30 &mdash; 12&times;9, ships within 3&ndash;5 business days.</p>
+      </header>
+
+      <p id="cart-empty" style="color:var(--text-muted);">Your cart is empty. <a href="/prints/" style="color:var(--gold);">Browse prints &rarr;</a></p>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-footer" id="cart-total" style="display:none;"></div>
+
+      <div class="cart-checkout-wrap">
+        <a href="#" id="checkout-btn" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="display:none;">Place Order &rarr;</a>
+        <p class="order-note" id="checkout-note" style="margin-top:0.6rem;font-size:0.82rem;color:var(--text-muted);">Clicking Place Order opens the order form with your items pre-filled.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Tom Myer. All rights reserved.</p>
+        <ul class="footer-nav" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/prints/">Prints</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/patreon/">Patreon</a></li>
+          <li><a href="https://linktr.ee/myerman" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/cart.js"></script>
+</body>
+</html>
