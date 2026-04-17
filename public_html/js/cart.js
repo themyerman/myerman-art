@@ -42,13 +42,23 @@
   function addItem(sku, title, slug) {
     var cart = getCart();
     if (!cart.find(function (i) { return i.sku === sku; })) {
-      cart.push({ sku: sku, title: title, slug: slug || sku.toLowerCase() });
+      cart.push({ sku: sku, title: title, slug: slug || sku.toLowerCase(), qty: 1 });
       saveCart(cart);
     }
   }
 
   function removeItem(sku) {
     saveCart(getCart().filter(function (i) { return i.sku !== sku; }));
+  }
+
+  function updateQty(sku, qty) {
+    var cart = getCart();
+    cart.forEach(function (i) { if (i.sku === sku) i.qty = qty; });
+    saveCart(cart);
+  }
+
+  function cartTotal() {
+    return getCart().reduce(function (sum, i) { return sum + (i.qty || 1) * 30; }, 0);
   }
 
   function updateBadge() {
@@ -104,23 +114,37 @@
     if (orderForm) orderForm.style.display = '';
     if (totalEl) {
       totalEl.style.display = '';
-      totalEl.textContent = 'Total: $' + (cart.length * 30) + ' USD';
+      totalEl.textContent = 'Total: $' + cartTotal() + ' USD';
     }
 
     wrap.innerHTML = cart.map(function (item) {
       var slug  = SKU_TO_SLUG[item.sku] || item.slug || item.sku.toLowerCase();
       var thumb = '/prints/' + slug + '/' + slug + '-thumb.jpg';
+      var qty   = item.qty || 1;
       return '<div class="cart-item" data-sku="' + item.sku + '">'
         + '<a href="/prints/' + slug + '/" class="cart-item-thumb">'
         + '<img src="' + thumb + '" alt="' + item.title + '" width="80" height="80" loading="lazy">'
         + '</a>'
         + '<div class="cart-item-info">'
         + '<span class="cart-item-title">' + item.title + '</span>'
-        + '<span class="cart-item-price">$30</span>'
+        + '<span class="cart-item-price">$30 each</span>'
+        + '</div>'
+        + '<div class="cart-item-qty">'
+        + '<label>Qty</label>'
+        + '<input type="number" class="qty-input" data-sku="' + item.sku + '" value="' + qty + '" min="1" max="99">'
         + '</div>'
         + '<button class="cart-remove-btn" data-sku="' + item.sku + '">Remove</button>'
         + '</div>';
     }).join('');
+
+    wrap.querySelectorAll('.qty-input').forEach(function (input) {
+      input.addEventListener('change', function () {
+        var qty = Math.max(1, parseInt(this.value, 10) || 1);
+        this.value = qty;
+        updateQty(this.dataset.sku, qty);
+        if (totalEl) totalEl.textContent = 'Total: $' + cartTotal() + ' USD';
+      });
+    });
 
     wrap.querySelectorAll('.cart-remove-btn').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -149,8 +173,8 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { return i.title + ' [' + i.sku + ']'; }).join('\n'),
-        total:     '$' + (cart.length * 30) + ' USD',
+        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + ']'; }).join('\n'),
+        total:     '$' + cartTotal() + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),
         email:     document.getElementById('order-email').value.trim(),
@@ -204,6 +228,31 @@
       });
     });
   }
+
+  // ── Mark in-cart cards on grid pages ───────────────────────
+  function markCartedCards() {
+    var cart = getCart();
+    var cartSlugs = new Set(cart.map(function (i) {
+      return SKU_TO_SLUG[i.sku] || i.slug || i.sku.toLowerCase();
+    }));
+
+    document.querySelectorAll('.work-card').forEach(function (card) {
+      // Extract slug from href: "/prints/blood-crow/" → "blood-crow"
+      var match = card.getAttribute('href').match(/\/prints\/([^/]+)\//);
+      if (!match) return;
+      var slug = match[1];
+      var linkEl = card.querySelector('.work-card-link');
+      if (cartSlugs.has(slug)) {
+        card.classList.add('in-cart');
+        if (linkEl) linkEl.textContent = 'In your cart \u2713';
+      } else {
+        card.classList.remove('in-cart');
+        if (linkEl) linkEl.innerHTML = 'Buy print &#8594;';
+      }
+    });
+  }
+
+  markCartedCards();
 
   updateBadge();
 })();
