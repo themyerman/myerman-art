@@ -408,6 +408,22 @@ p { max-width: 68ch; }
   .prints-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ── Prints sections ───────────────────────────────────────── */
+.prints-section {
+  margin-bottom: 4rem;
+}
+
+.prints-section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
 
 /* ── Patreon strip ─────────────────────────────────────────── */
 .patreon-strip {
