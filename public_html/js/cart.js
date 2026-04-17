@@ -1,6 +1,35 @@
 (function () {
   var STORAGE_KEY = 'myerman-cart';
 
+  // Fallback map for cart items saved before slug was stored
+  var SKU_TO_SLUG = {
+    'BLOOD-CROW':    'blood-crow',
+    'COYOTE-RAVEN':  'coyote-and-raven',
+    'DAWN-EAGLE':    'dawn-eagle',
+    'DETERMINED':    'determined',
+    'ENCROACHMENT':  'encroachment',
+    'FLAT-BUFFALO':  'flatirons-and-buffalo-road',
+    'FLOWSOARBIRD':  'flowing-water-soaring-birds',
+    'FRIENDS':       'friends',
+    'GRIEF':         'grief',
+    'GUARDIAN-EGL':  'guardian-eagle',
+    'HAUDE-TURTLE':  'haudenosaunee-turtle-with-wampum-belt',
+    'MANA':          'make-america-native-again',
+    'NIGHTHAWK':     'night-hawk',
+    'PALOMINO':      'palomino',
+    'PETRO-RAVEN':   'petroglyph-raven',
+    'RED-HAND':      'red-hand',
+    'RIDE-HARD':     'ride-hard',
+    'SOAR-TBIRD':    'soaring-thunderbird',
+    'SUNRISE':       'sunrise',
+    'SUPERB-OWL':    'superb-owl',
+    'THUNDERBIRD':   'thunderbird',
+    'TOMAHAWKCROW':  'tomahawk-crow',
+    'WEGONNATREAD':  'we-gonna-tread',
+    'WISE-OLD-OWL':  'wise-old-owl',
+    'YEAROFHORSE':   'year-of-the-horse',
+  };
+
   function getCart() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
     catch (e) { return []; }
@@ -10,10 +39,10 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
   }
 
-  function addItem(sku, title) {
+  function addItem(sku, title, slug) {
     var cart = getCart();
     if (!cart.find(function (i) { return i.sku === sku; })) {
-      cart.push({ sku: sku, title: title });
+      cart.push({ sku: sku, title: title, slug: slug || sku.toLowerCase() });
       saveCart(cart);
     }
   }
@@ -33,6 +62,7 @@
   // ── Print page: wire up Add to Cart button ──────────────────
   var sku   = document.body.dataset.sku;
   var title = document.body.dataset.title;
+  var slug  = document.body.dataset.slug;
 
   if (sku && title) {
     var btn = document.querySelector('.btn-add-to-cart');
@@ -43,7 +73,7 @@
         btn.classList.add('in-cart');
       }
       btn.addEventListener('click', function () {
-        addItem(sku, title);
+        addItem(sku, title, slug);
         btn.textContent = 'In your cart \u2713';
         btn.classList.add('in-cart');
         updateBadge();
@@ -78,9 +108,10 @@
     }
 
     wrap.innerHTML = cart.map(function (item) {
-      var thumb = '/prints/' + item.sku + '/' + item.sku + '-thumb.jpg';
+      var slug  = SKU_TO_SLUG[item.sku] || item.slug || item.sku.toLowerCase();
+      var thumb = '/prints/' + slug + '/' + slug + '-thumb.jpg';
       return '<div class="cart-item" data-sku="' + item.sku + '">'
-        + '<a href="/prints/' + item.sku + '/" class="cart-item-thumb">'
+        + '<a href="/prints/' + slug + '/" class="cart-item-thumb">'
         + '<img src="' + thumb + '" alt="' + item.title + '" width="80" height="80" loading="lazy">'
         + '</a>'
         + '<div class="cart-item-info">'
