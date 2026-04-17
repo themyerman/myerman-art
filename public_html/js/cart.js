@@ -223,19 +223,39 @@
       submitBtn.textContent = 'Sending\u2026';
       submitBtn.disabled = true;
 
+      var body = [
+        'New print order from ' + orderData.firstName + ' ' + orderData.lastName,
+        '',
+        '',
+        'ITEMS',
+        '------',
+        orderData.items,
+        '',
+        '',
+        'TOTAL: ' + orderData.total,
+        '',
+        '',
+        '--- CUSTOMER ---',
+        orderData.firstName + ' ' + orderData.lastName,
+        orderData.email,
+        orderData.phone || '(no phone)',
+        '',
+        '',
+        '--- SHIP TO ---',
+        orderData.address,
+        orderData.city + ', ' + orderData.province + '  ' + orderData.postal,
+        orderData.country,
+        '',
+        '',
+        '--- NOTES ---',
+        orderData.notes || 'None',
+      ].join('\n');
+
       emailjs.send('service_z8x6ali', 'template_5jmckrk', {
         first_name: orderData.firstName,
         last_name:  orderData.lastName,
         reply_to:   orderData.email,
-        phone:      orderData.phone,
-        items:      orderData.items,
-        total:      orderData.total,
-        address:    orderData.address,
-        city:       orderData.city,
-        province:   orderData.province,
-        postal:     orderData.postal,
-        country:    orderData.country,
-        notes:      orderData.notes || 'None',
+        body:       body,
       }).then(function () {
         // Clear cart and show confirmation
         saveCart([]);
