@@ -269,7 +269,7 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (SKU_TO_SIZE[i.sku] || '?'); }).join('\n'),
+        items:     cart.map(function (i) { var s = SKU_TO_SLUG[i.sku] || i.slug || ''; return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (SKU_TO_SIZE[i.sku] || '?') + ' — prints/' + s; }).join('\n'),
         total:     '$' + cartTotal() + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),
