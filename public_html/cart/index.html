@@ -40,7 +40,7 @@
 
       <header class="page-header">
         <h1>Your Cart</h1>
-        <p>Review your prints below, then place your order. Each print is $30 &mdash; 12&times;9, ships within 3&ndash;5 business days.</p>
+        <p>Review your prints, fill in your details, and place your order. Each print is $30 &mdash; 12&times;9&Prime;, ships within 3&ndash;5 business days.</p>
       </header>
 
       <p id="cart-empty" style="color:var(--text-muted);">Your cart is empty. <a href="/prints/" style="color:var(--gold);">Browse prints &rarr;</a></p>
@@ -49,10 +49,69 @@
 
       <div class="cart-footer" id="cart-total" style="display:none;"></div>
 
-      <div class="cart-checkout-wrap">
-        <a href="#" id="checkout-btn" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="display:none;">Place Order &rarr;</a>
-        <p class="order-note" id="checkout-note" style="margin-top:0.6rem;font-size:0.82rem;color:var(--text-muted);">Clicking Place Order opens the order form with your items pre-filled.</p>
-      </div>
+      <!-- Order form — shown only when cart has items -->
+      <form id="order-form" class="order-form" style="display:none;" novalidate>
+        <h2 class="order-form-heading">Your details</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="order-first-name">First name <span class="req">*</span></label>
+            <input type="text" id="order-first-name" name="first_name" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label for="order-last-name">Last name <span class="req">*</span></label>
+            <input type="text" id="order-last-name" name="last_name" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="order-email">Email <span class="req">*</span></label>
+            <input type="email" id="order-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="order-phone">Phone</label>
+            <input type="tel" id="order-phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="order-address">Street address <span class="req">*</span></label>
+          <input type="text" id="order-address" name="address" autocomplete="street-address" required>
+        </div>
+
+        <div class="form-row form-row--3">
+          <div class="form-group">
+            <label for="order-city">City <span class="req">*</span></label>
+            <input type="text" id="order-city" name="city" autocomplete="address-level2" required>
+          </div>
+          <div class="form-group">
+            <label for="order-province">Province / State <span class="req">*</span></label>
+            <input type="text" id="order-province" name="province" autocomplete="address-level1" required>
+          </div>
+          <div class="form-group">
+            <label for="order-postal">Postal / ZIP <span class="req">*</span></label>
+            <input type="text" id="order-postal" name="postal" autocomplete="postal-code" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="order-country">Country <span class="req">*</span></label>
+          <input type="text" id="order-country" name="country" autocomplete="country-name" required value="Canada">
+        </div>
+
+        <div class="form-group">
+          <label for="order-notes">Notes (optional)</label>
+          <textarea id="order-notes" name="notes" rows="3" placeholder="Gift message, special instructions, etc."></textarea>
+        </div>
+
+        <p id="form-error" class="form-error" style="display:none;">Please fill in all required fields.</p>
+
+        <div class="cart-checkout-wrap">
+          <button type="submit" class="btn btn-primary">Place Order &rarr;</button>
+          <p class="order-note">We'll email you a confirmation and invoice within 24 hours.</p>
+        </div>
+      </form>
 
     </div>
   </main>
@@ -72,6 +131,8 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('j3n5FGxg7ee6PsMeE');</script>
   <script src="/js/cart.js"></script>
 </body>
 </html>

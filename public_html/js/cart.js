@@ -1,6 +1,5 @@
 (function () {
   var STORAGE_KEY = 'myerman-cart';
-  var FORM_BASE = 'https://docs.google.com/forms/d/e/1FAIpQLSfM1UfM_2DGi_2ykP5bpgjuA6R6sOw1WY3PSLtfY1LwCPLy6A/viewform?usp=pp_url&entry.424622008=';
 
   function getCart() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
@@ -31,11 +30,6 @@
     badge.setAttribute('data-empty', count === 0 ? 'true' : 'false');
   }
 
-  function buildCheckoutUrl() {
-    var items = getCart().map(function (i) { return i.title; }).join(', ');
-    return FORM_BASE + items.split(' ').join('+');
-  }
-
   // ── Print page: wire up Add to Cart button ──────────────────
   var sku   = document.body.dataset.sku;
   var title = document.body.dataset.title;
@@ -62,28 +56,25 @@
   if (cartWrap) { renderCart(); }
 
   function renderCart() {
-    var cart       = getCart();
-    var wrap       = document.getElementById('cart-items');
-    var emptyMsg   = document.getElementById('cart-empty');
-    var checkoutBtn = document.getElementById('checkout-btn');
-    var totalEl    = document.getElementById('cart-total');
+    var cart        = getCart();
+    var wrap        = document.getElementById('cart-items');
+    var emptyMsg    = document.getElementById('cart-empty');
+    var orderForm   = document.getElementById('order-form');
+    var totalEl     = document.getElementById('cart-total');
 
     if (cart.length === 0) {
       wrap.innerHTML = '';
-      if (emptyMsg)    emptyMsg.style.display    = '';
-      if (checkoutBtn) checkoutBtn.style.display  = 'none';
-      if (totalEl)     totalEl.style.display      = 'none';
+      if (emptyMsg)  emptyMsg.style.display  = '';
+      if (orderForm) orderForm.style.display = 'none';
+      if (totalEl)   totalEl.style.display   = 'none';
       return;
     }
 
-    if (emptyMsg)    emptyMsg.style.display    = 'none';
-    if (checkoutBtn) {
-      checkoutBtn.style.display = '';
-      checkoutBtn.href = buildCheckoutUrl();
-    }
+    if (emptyMsg)  emptyMsg.style.display  = 'none';
+    if (orderForm) orderForm.style.display = '';
     if (totalEl) {
       totalEl.style.display = '';
-      totalEl.textContent = 'Total: $' + (cart.length * 30);
+      totalEl.textContent = 'Total: $' + (cart.length * 30) + ' USD';
     }
 
     wrap.innerHTML = cart.map(function (item) {
@@ -101,6 +92,80 @@
         removeItem(this.dataset.sku);
         renderCart();
         updateBadge();
+      });
+    });
+  }
+
+  // ── Order form submission ───────────────────────────────────
+  var form = document.getElementById('order-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var errorEl = document.getElementById('form-error');
+      if (!form.checkValidity()) {
+        form.querySelectorAll('[required]').forEach(function (el) {
+          el.classList.toggle('field-error', !el.value.trim());
+        });
+        if (errorEl) errorEl.style.display = '';
+        return;
+      }
+      if (errorEl) errorEl.style.display = 'none';
+
+      var cart = getCart();
+      var orderData = {
+        items:     cart.map(function (i) { return i.title; }).join(', '),
+        total:     '$' + (cart.length * 30) + ' USD',
+        firstName: document.getElementById('order-first-name').value.trim(),
+        lastName:  document.getElementById('order-last-name').value.trim(),
+        email:     document.getElementById('order-email').value.trim(),
+        phone:     document.getElementById('order-phone').value.trim(),
+        address:   document.getElementById('order-address').value.trim(),
+        city:      document.getElementById('order-city').value.trim(),
+        province:  document.getElementById('order-province').value.trim(),
+        postal:    document.getElementById('order-postal').value.trim(),
+        country:   document.getElementById('order-country').value.trim(),
+        notes:     document.getElementById('order-notes').value.trim(),
+      };
+
+      var submitBtn = form.querySelector('[type="submit"]');
+      submitBtn.textContent = 'Sending\u2026';
+      submitBtn.disabled = true;
+
+      emailjs.send('service_z8x6ali', 'template_5jmckrk', {
+        first_name: orderData.firstName,
+        last_name:  orderData.lastName,
+        reply_to:   orderData.email,
+        phone:      orderData.phone,
+        items:      orderData.items,
+        total:      orderData.total,
+        address:    orderData.address,
+        city:       orderData.city,
+        province:   orderData.province,
+        postal:     orderData.postal,
+        country:    orderData.country,
+        notes:      orderData.notes || 'None',
+      }).then(function () {
+        // Clear cart and show confirmation
+        saveCart([]);
+        updateBadge();
+        form.style.display = 'none';
+        document.getElementById('cart-items').innerHTML = '';
+        document.getElementById('cart-total').style.display = 'none';
+        var confirm = document.createElement('div');
+        confirm.className = 'order-confirm';
+        confirm.innerHTML = '<h2>Order received!</h2>'
+          + '<p>Thanks, ' + orderData.firstName + '. We\'ll email you at <strong>' + orderData.email + '</strong> within 24 hours to confirm and arrange payment.</p>'
+          + '<p style="margin-top:1rem;"><a href="/prints/" class="btn btn-ghost">Keep browsing &rarr;</a></p>';
+        form.parentNode.insertBefore(confirm, form);
+      }, function (err) {
+        submitBtn.textContent = 'Place Order \u2192';
+        submitBtn.disabled = false;
+        if (errorEl) {
+          errorEl.textContent = 'Something went wrong — please try again or email us directly.';
+          errorEl.style.display = '';
+        }
+        console.error('EmailJS error:', err);
       });
     });
   }
