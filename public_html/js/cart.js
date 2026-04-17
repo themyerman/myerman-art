@@ -78,10 +78,14 @@
     }
 
     wrap.innerHTML = cart.map(function (item) {
+      var thumb = '/prints/' + item.sku + '/' + item.sku + '-thumb.jpg';
       return '<div class="cart-item" data-sku="' + item.sku + '">'
+        + '<a href="/prints/' + item.sku + '/" class="cart-item-thumb">'
+        + '<img src="' + thumb + '" alt="' + item.title + '" width="80" height="80" loading="lazy">'
+        + '</a>'
         + '<div class="cart-item-info">'
         + '<span class="cart-item-title">' + item.title + '</span>'
-        + '<span class="cart-item-sku">' + item.sku + '</span>'
+        + '<span class="cart-item-price">$30</span>'
         + '</div>'
         + '<button class="cart-remove-btn" data-sku="' + item.sku + '">Remove</button>'
         + '</div>';
@@ -114,7 +118,7 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { return i.title; }).join(', '),
+        items:     cart.map(function (i) { return i.title + ' [' + i.sku + ']'; }).join('\n'),
         total:     '$' + (cart.length * 30) + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),
