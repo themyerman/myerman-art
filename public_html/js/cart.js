@@ -1,6 +1,34 @@
 (function () {
   var STORAGE_KEY = 'myerman-cart';
 
+  var SKU_TO_SIZE = {
+    'BLOOD-CROW':    '12×9',
+    'COYOTE-RAVEN':  '9×12',
+    'DAWN-EAGLE':    '12×12',
+    'DETERMINED':    '9×12',
+    'ENCROACHMENT':  '12×12',
+    'FLAT-BUFFALO':  '12×12',
+    'FLOWSOARBIRD':  '12×12',
+    'FRIENDS':       '12×9',
+    'GRIEF':         '9×12',
+    'GUARDIAN-EGL':  '9×12',
+    'HAUDE-TURTLE':  '12×12',
+    'MANA':          '9×12',
+    'NIGHTHAWK':     '12×12',
+    'PALOMINO':      '12×9',
+    'PETRO-RAVEN':   '9×12',
+    'RED-HAND':      '9×12',
+    'RIDE-HARD':     '12×12',
+    'SOAR-TBIRD':    '12×12',
+    'SUNRISE':       '9×12',
+    'SUPERB-OWL':    '9×12',
+    'THUNDERBIRD':   '12×12',
+    'TOMAHAWKCROW':  '9×12',
+    'WEGONNATREAD':  '9×12',
+    'WISE-OLD-OWL':  '12×12',
+    'YEAROFHORSE':   '12×9',
+  };
+
   // Fallback map for cart items saved before slug was stored
   var SKU_TO_SLUG = {
     'BLOOD-CROW':    'blood-crow',
@@ -54,12 +82,6 @@
   function updateQty(sku, qty) {
     var cart = getCart();
     cart.forEach(function (i) { if (i.sku === sku) i.qty = qty; });
-    saveCart(cart);
-  }
-
-  function updateSize(sku, size) {
-    var cart = getCart();
-    cart.forEach(function (i) { if (i.sku === sku) i.size = size; });
     saveCart(cart);
   }
 
@@ -136,11 +158,8 @@
         + '<span class="cart-item-price">$30 each</span>'
         + '</div>'
         + '<div class="cart-item-size">'
-        + '<label>Size</label>'
-        + '<select class="size-select" data-sku="' + item.sku + '">'
-        + '<option value="12x9"'  + (item.size === '12x9'  || !item.size ? ' selected' : '') + '>12&Prime;&times;9&Prime;</option>'
-        + '<option value="12x12"' + (item.size === '12x12' ? ' selected' : '') + '>12&Prime;&times;12&Prime;</option>'
-        + '</select>'
+        + '<span class="cart-item-size-label">Size</span>'
+        + '<span class="cart-item-size-value">' + (SKU_TO_SIZE[item.sku] || item.size || '—') + '&Prime;</span>'
         + '</div>'
         + '<div class="cart-item-qty">'
         + '<label>Qty</label>'
@@ -149,12 +168,6 @@
         + '<button class="cart-remove-btn" data-sku="' + item.sku + '">Remove</button>'
         + '</div>';
     }).join('');
-
-    wrap.querySelectorAll('.size-select').forEach(function (select) {
-      select.addEventListener('change', function () {
-        updateSize(this.dataset.sku, this.value);
-      });
-    });
 
     wrap.querySelectorAll('.qty-input').forEach(function (input) {
       input.addEventListener('change', function () {
@@ -192,7 +205,7 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (i.size || '12x9'); }).join('\n'),
+        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (SKU_TO_SIZE[i.sku] || '?'); }).join('\n'),
         total:     '$' + cartTotal() + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),

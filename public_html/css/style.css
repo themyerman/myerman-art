@@ -1006,21 +1006,20 @@ p { max-width: 68ch; }
   color: var(--text-muted);
 }
 
-.size-select {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  color: var(--text);
+.cart-item-size-label {
   font-family: var(--font-head);
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.35rem 0.5rem;
-  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
-.size-select:focus {
-  border-color: var(--gold);
-  outline: none;
+.cart-item-size-value {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .cart-item-qty {
