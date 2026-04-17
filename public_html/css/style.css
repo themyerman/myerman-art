@@ -989,6 +989,40 @@ p { max-width: 68ch; }
   font-family: var(--font-head);
 }
 
+.cart-item-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.cart-item-size label {
+  font-family: var(--font-head);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.size-select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+}
+
+.size-select:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+
 .cart-item-qty {
   display: flex;
   flex-direction: column;

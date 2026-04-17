@@ -57,6 +57,12 @@
     saveCart(cart);
   }
 
+  function updateSize(sku, size) {
+    var cart = getCart();
+    cart.forEach(function (i) { if (i.sku === sku) i.size = size; });
+    saveCart(cart);
+  }
+
   function cartTotal() {
     return getCart().reduce(function (sum, i) { return sum + (i.qty || 1) * 30; }, 0);
   }
@@ -129,6 +135,13 @@
         + '<span class="cart-item-title">' + item.title + '</span>'
         + '<span class="cart-item-price">$30 each</span>'
         + '</div>'
+        + '<div class="cart-item-size">'
+        + '<label>Size</label>'
+        + '<select class="size-select" data-sku="' + item.sku + '">'
+        + '<option value="12x9"'  + (item.size === '12x9'  || !item.size ? ' selected' : '') + '>12&Prime;&times;9&Prime;</option>'
+        + '<option value="12x12"' + (item.size === '12x12' ? ' selected' : '') + '>12&Prime;&times;12&Prime;</option>'
+        + '</select>'
+        + '</div>'
         + '<div class="cart-item-qty">'
         + '<label>Qty</label>'
         + '<input type="number" class="qty-input" data-sku="' + item.sku + '" value="' + qty + '" min="1" max="99">'
@@ -136,6 +149,12 @@
         + '<button class="cart-remove-btn" data-sku="' + item.sku + '">Remove</button>'
         + '</div>';
     }).join('');
+
+    wrap.querySelectorAll('.size-select').forEach(function (select) {
+      select.addEventListener('change', function () {
+        updateSize(this.dataset.sku, this.value);
+      });
+    });
 
     wrap.querySelectorAll('.qty-input').forEach(function (input) {
       input.addEventListener('change', function () {
@@ -173,7 +192,7 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + ']'; }).join('\n'),
+        items:     cart.map(function (i) { return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (i.size || '12x9'); }).join('\n'),
         total:     '$' + cartTotal() + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),
