@@ -216,8 +216,11 @@
         }
         var picks = all.slice(0, 4);
 
+        var sold = { "ancestral-faces": true, "three-sachems": true, "uncle": true };
+
         var grid = document.getElementById("featured-grid");
         picks.forEach(function (p) {
+          var label = sold[p.slug] ? 'Sold' : 'Buy print &#8594;';
           grid.innerHTML +=
             '<a href="/prints/' + p.slug + '/" class="work-card">' +
               '<div class="work-card-image">' +
@@ -227,7 +230,7 @@
               '</div>' +
               '<div class="work-card-body">' +
                 '<h3 class="work-card-title">' + p.title + '</h3>' +
-                '<span class="work-card-link">Buy print &#8594;</span>' +
+                '<span class="work-card-link">' + label + '</span>' +
               '</div>' +
             '</a>';
         });
