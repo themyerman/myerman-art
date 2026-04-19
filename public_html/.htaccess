@@ -2,23 +2,35 @@
 # myerman.art — Apache config
 # ════════════════════════════════════════════════════════════
 
-# ── Caching ─────────────────────────────────────────────────
-# During active development keep these short.
-# When the site is stable, bump images to "1 month" or "1 year".
+# ── Custom error pages ───────────────────────────────────────
+ErrorDocument 404 /404.html
 
+# ── Redirects for renamed slugs ──────────────────────────────
+Redirect 301 /prints/13-moon-turtle/   /prints/thirteen-moon-turtle/
+Redirect 301 /prints/3-crows-in-winter/ /prints/three-crows-in-winter/
+
+# ── Block AI scrapers ────────────────────────────────────────
+# Catches bots that ignore robots.txt
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_USER_AGENT} (GPTBot|ChatGPT-User|OAI-SearchBot|CCBot|anthropic-ai|Claude-Web|Google-Extended|Bytespider|Amazonbot|Diffbot|PetalBot|Applebot-Extended|cohere-ai|PerplexityBot|YouBot|FacebookBot|ImagesiftBot|Omgili|Omgilibot|facebookexternalhit/1.1) [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+# ── Caching ─────────────────────────────────────────────────
 <IfModule mod_expires.c>
   ExpiresActive On
 
-  # Images — 24 hours
-  ExpiresByType image/jpeg  "access plus 1 day"
-  ExpiresByType image/png   "access plus 1 day"
-  ExpiresByType image/webp  "access plus 1 day"
-  ExpiresByType image/gif   "access plus 1 day"
-  ExpiresByType image/svg+xml "access plus 1 day"
-  ExpiresByType image/x-icon  "access plus 1 day"
-  ExpiresByType image/vnd.microsoft.icon "access plus 1 day"
+  # Images — 1 week
+  ExpiresByType image/jpeg  "access plus 1 week"
+  ExpiresByType image/png   "access plus 1 week"
+  ExpiresByType image/webp  "access plus 1 week"
+  ExpiresByType image/gif   "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 week"
+  ExpiresByType image/x-icon  "access plus 1 week"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 week"
 
-  # CSS & JS — 1 hour (actively changing during dev)
+  # CSS & JS — 1 hour
   ExpiresByType text/css        "access plus 1 hour"
   ExpiresByType text/javascript "access plus 1 hour"
   ExpiresByType application/javascript "access plus 1 hour"
@@ -32,12 +44,22 @@
 </IfModule>
 
 # ── Compression ──────────────────────────────────────────────
-# Gzip text assets before sending — reduces transfer size ~70%.
-
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/css
   AddOutputFilterByType DEFLATE text/javascript
   AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ── Security headers ─────────────────────────────────────────
+<IfModule mod_headers.c>
+  # Don't let browsers guess content types
+  Header set X-Content-Type-Options "nosniff"
+  # Don't allow this site to be embedded in an iframe
+  Header set X-Frame-Options "SAMEORIGIN"
+  # Basic XSS protection for older browsers
+  Header set X-XSS-Protection "1; mode=block"
+  # Don't send referrer info to external sites
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

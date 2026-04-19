@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found — myerman.art">
+  <title>404 — myerman.art</title>
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .error-hero {
+      text-align: center;
+      padding: 3rem 1.5rem 0;
+    }
+    .error-hero h1 {
+      font-size: clamp(3rem, 10vw, 5rem);
+      line-height: 1;
+      margin: 0 0 0.25rem;
+      color: var(--color-accent, #c8a96e);
+      font-weight: 700;
+    }
+    .error-hero h2 {
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      margin: 0 0 0.75rem;
+      font-weight: 500;
+    }
+    .error-hero p {
+      max-width: 38ch;
+      margin: 0 auto 0;
+      color: var(--color-muted, #888);
+      line-height: 1.6;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo">myerman.art</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/prints/">Prints</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/patreon/">Patreon</a></li>
+        <li><a href="/cart/" class="nav-cart">Cart <span class="cart-count" id="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="container">
+      <div class="error-hero">
+        <h1>404</h1>
+        <h2>Lost in the wilderness</h2>
+        <p>That page doesn't exist — or it moved. The art is still here though.</p>
+      </div>
+    </div>
+
+    <section style="padding-block: 1.5rem 3rem;" aria-label="Random prints">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Do you like any of these?</h2>
+        <div class="works-grid" id="random-grid" style="grid-template-columns: repeat(3, minmax(220px, 320px)); justify-content: center;"></div>
+        <div class="error-actions">
+          <a href="/" class="btn btn-primary">Go home &#8594;</a>
+          <a href="/prints/" class="btn btn-ghost">See all prints</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var all = [
+          { slug: "abstract-1",                             title: "Abstract 1" },
+          { slug: "abstract-2",                             title: "Abstract 2" },
+          { slug: "abstract-3",                             title: "Abstract 3" },
+          { slug: "abstract-4",                             title: "Abstract 4" },
+          { slug: "abstract-5",                             title: "Abstract 5" },
+          { slug: "afternoon-stroll",                       title: "Afternoon Stroll" },
+          { slug: "ancestral-woman",                        title: "Ancestral Woman" },
+          { slug: "beauty",                                 title: "Beauty" },
+          { slug: "bless-this-lodge",                       title: "Bless This Lodge" },
+          { slug: "blood-crow",                             title: "Blood Crow" },
+          { slug: "bride",                                  title: "Bride" },
+          { slug: "brother-bear-fights-too-much",           title: "Brother Bear Fights Too Much" },
+          { slug: "bullseye",                               title: "Bullseye" },
+          { slug: "coyote-and-raven",                       title: "Coyote and Raven" },
+          { slug: "dawn-eagle",                             title: "Dawn Eagle" },
+          { slug: "dawn-river-valley",                      title: "Dawn River Valley" },
+          { slug: "deer-woman",                             title: "Deer Woman" },
+          { slug: "defender",                               title: "Defender" },
+          { slug: "defending-a-way-of-life",                title: "Defending a Way of Life" },
+          { slug: "destroy-ice",                            title: "Destroy ICE" },
+          { slug: "determined",                             title: "Determined" },
+          { slug: "embera-woman",                           title: "Embera Woman" },
+          { slug: "encroachment",                           title: "Encroachment" },
+          { slug: "fight-back",                             title: "Fight Back" },
+          { slug: "flatirons-and-buffalo-road",             title: "Flatirons and Buffalo Road" },
+          { slug: "flowing-water-soaring-birds",            title: "Flowing Water Soaring Birds" },
+          { slug: "fractured-native",                       title: "Fractured Native" },
+          { slug: "friends",                                title: "Friends" },
+          { slug: "fuck-ice",                               title: "Fuck ICE" },
+          { slug: "fury",                                   title: "Fury" },
+          { slug: "futurism-always-carry-a-tomahawk",       title: "Futurism: Always Carry a Tomahawk" },
+          { slug: "futurism-crash-landing",                 title: "Futurism: Crash Landing" },
+          { slug: "futurism-day-of-reckoning",              title: "Futurism: Day of Reckoning" },
+          { slug: "futurism-defiant",                       title: "Futurism: Defiant" },
+          { slug: "futurism-defiant-forever",               title: "Futurism: Defiant Forever" },
+          { slug: "futurism-flyby",                         title: "Futurism: Flyby" },
+          { slug: "futurism-future-so-bright",              title: "Futurism: Future So Bright" },
+          { slug: "futurism-in-command",                    title: "Futurism: In Command" },
+          { slug: "futurism-indiginaut",                    title: "Futurism: Indiginaut" },
+          { slug: "futurism-insight",                       title: "Futurism: Insight" },
+          { slug: "futurism-join-the-fleet",                title: "Futurism: Join the Fleet" },
+          { slug: "futurism-keep-them-flying",              title: "Futurism: Keep Them Flying" },
+          { slug: "futurism-liftoff",                       title: "Futurism: Liftoff" },
+          { slug: "futurism-mesoamerican",                  title: "Futurism: Mesoamerican" },
+          { slug: "futurism-our-land",                      title: "Futurism: Our Land" },
+          { slug: "futurism-sentinel",                      title: "Futurism: Sentinel" },
+          { slug: "futurism-silicon-tattoos",               title: "Futurism: Silicon Tattoos" },
+          { slug: "futurism-spacewalk",                     title: "Futurism: Spacewalk" },
+          { slug: "futurism-the-negotiator",                title: "Futurism: The Negotiator" },
+          { slug: "futurism-warrior-society",               title: "Futurism: Warrior Society" },
+          { slug: "glorious-morning",                       title: "Glorious Morning" },
+          { slug: "grief",                                  title: "Grief" },
+          { slug: "guardian-eagle",                         title: "Guardian Eagle" },
+          { slug: "haudenosaunee-turtle-with-wampum-belt",  title: "Haudenosaunee Turtle with Wampum Belt" },
+          { slug: "hunter",                                 title: "Hunter" },
+          { slug: "make-america-native-again",              title: "Make America Native Again" },
+          { slug: "march-of-the-buffalo",                   title: "March of the Buffalo" },
+          { slug: "mmiw",                                   title: "MMIW" },
+          { slug: "moonlight-fishing",                      title: "Moonlight Fishing" },
+          { slug: "morning-prayers",                        title: "Morning Prayers" },
+          { slug: "mother-and-child",                       title: "Mother and Child" },
+          { slug: "native-festival",                        title: "Native Festival" },
+          { slug: "night-hawk",                             title: "Night Hawk" },
+          { slug: "palomino",                               title: "Palomino" },
+          { slug: "peaceful-not-harmless",                  title: "Peaceful, Not Harmless" },
+          { slug: "petroglyph-raven",                       title: "Petroglyph Raven" },
+          { slug: "raven-with-petroglyphs-and-weapons",     title: "Raven with Petroglyphs and Weapons" },
+          { slug: "red-hand",                               title: "Red Hand" },
+          { slug: "resist",                                 title: "Resist" },
+          { slug: "ride-hard",                              title: "Ride Hard" },
+          { slug: "sacred-lodge",                           title: "Sacred Lodge" },
+          { slug: "soaring-thunderbird",                    title: "Soaring Thunderbird" },
+          { slug: "sun-kissed-warrior",                     title: "Sun-Kissed Warrior" },
+          { slug: "sun-lodge",                              title: "Sun Lodge" },
+          { slug: "sun-over-tipis",                         title: "Sun Over Tipis" },
+          { slug: "sunrise",                                title: "Sunrise" },
+          { slug: "superb-owl",                             title: "Superb Owl" },
+          { slug: "there-are-two-wolves-inside-you",        title: "There Are Two Wolves Inside You" },
+          { slug: "thirteen-moon-turtle",                   title: "Thirteen Moon Turtle" },
+          { slug: "three-buffalo",                          title: "Three Buffalo" },
+          { slug: "three-crows-in-winter",                  title: "Three Crows in Winter" },
+          { slug: "thunderbird",                            title: "Thunderbird" },
+          { slug: "thunderbird-lodge",                      title: "Thunderbird Lodge" },
+          { slug: "thunderbird-petroglyph",                 title: "Thunderbird Petroglyph" },
+          { slug: "tomahawk-crow",                          title: "Tomahawk Crow" },
+          { slug: "undefeated",                             title: "Undefeated" },
+          { slug: "walk-in-the-woods",                      title: "Walk in the Woods" },
+          { slug: "warclub-tomahawk",                       title: "War Club and Tomahawk" },
+          { slug: "we-are-all-connected",                   title: "We Are All Connected" },
+          { slug: "we-gonna-tread",                         title: "We Gonna Tread" },
+          { slug: "white-buffalo",                          title: "White Buffalo" },
+          { slug: "wise-old-owl",                           title: "Wise Old Owl" },
+          { slug: "wolf-singing",                           title: "Wolf Singing" },
+          { slug: "year-of-the-horse",                      title: "Year of the Horse" },
+        ];
+
+        // Fisher-Yates shuffle, pick 3
+        for (var i = all.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
+        }
+        var picks = all.slice(0, 3);
+
+        var grid = document.getElementById("random-grid");
+        picks.forEach(function (p) {
+          grid.innerHTML +=
+            '<a href="/prints/' + p.slug + '/" class="work-card">' +
+              '<div class="work-card-image">' +
+                '<img src="/prints/' + p.slug + '/' + p.slug + '-thumb.jpg"' +
+                ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
+                ' width="480" height="480" loading="lazy">' +
+              '</div>' +
+              '<div class="work-card-body">' +
+                '<h3 class="work-card-title">' + p.title + '</h3>' +
+                '<span class="work-card-link">Buy print &#8594;</span>' +
+              '</div>' +
+            '</a>';
+        });
+      })();
+    </script>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Tom Myer. All rights reserved.</p>
+        <ul class="footer-nav" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/prints/">Prints</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/patreon/">Patreon</a></li>
+          <li><a href="https://linktr.ee/myerman" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/cart.js"></script>
+</body>
+</html>
