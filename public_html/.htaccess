@@ -2,6 +2,10 @@
 # myerman.art — Apache config
 # ════════════════════════════════════════════════════════════
 
+# ── Sitemap ──────────────────────────────────────────────────
+# Referenced in robots.txt; declared here for clarity
+# Sitemap: https://myerman.art/sitemap.xml
+
 # ── Custom error pages ───────────────────────────────────────
 ErrorDocument 404 /404.html
 

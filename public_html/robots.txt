@@ -1,6 +1,8 @@
 # myerman.art — robots.txt
 # Human visitors welcome. Art scrapers are not.
 
+Sitemap: https://myerman.art/sitemap.xml
+
 User-agent: *
 Allow: /
 
