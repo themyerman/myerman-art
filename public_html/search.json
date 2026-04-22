@@ -580,5 +580,113 @@
     "title": "Year of the Horse",
     "tags": ["horse", "year", "animal", "wildlife", "equestrian", "Plains"],
     "story": ""
+  },
+  {
+    "slug": "abstract-6",
+    "title": "Abstract 6",
+    "tags": ["abstract","geometric","glyph","dream","series"],
+    "story": "The sixth in the series. The shapes keep evolving — this time pulling from memory, not intention. Something between a glyph and a dream."
+  },
+  {
+    "slug": "ancestors-point-the-way",
+    "title": "Ancestors Point the Way",
+    "tags": ["ancestors","spiritual","direction","heritage","ceremony","wisdom"],
+    "story": "They came before us and they're still here — in the land, in the blood, in the way we move through the world. This is that sense of direction that comes from deep time."
+  },
+  {
+    "slug": "buffalo-dream",
+    "title": "Buffalo Dream",
+    "tags": ["buffalo","dream","vision","ceremony","landscape","spiritual"],
+    "story": "A vision. The buffalo that ran across this continent in their millions are not entirely gone — they persist in dreams and ceremony and art and the slow memory of the land."
+  },
+  {
+    "slug": "canyon-sunrise",
+    "title": "Canyon Sunrise",
+    "tags": ["canyon","sunrise","landscape","southwest","red rock","dawn","land"],
+    "story": "First light hitting red rock. Canyon country has been home to people for thousands of years. This is dawn from the rim — that moment when the world remembers it's alive."
+  },
+  {
+    "slug": "curious-cubs",
+    "title": "Curious Cubs",
+    "tags": ["bear","cubs","wildlife","wonder","nature","animals"],
+    "story": "Two young bears discovering the world. Everything is still new to them. I wanted to catch that moment of pure curiosity — no fear yet, just wonder."
+  },
+  {
+    "slug": "floating",
+    "title": "Floating",
+    "tags": ["floating","spiritual","sky","ceremony","landscape","freedom"],
+    "story": "Between earth and sky. The feeling when you're up high enough that the weight of everything releases. Inspired by ceremony — the way the right moment can make you feel untethered from gravity."
+  },
+  {
+    "slug": "futurism-on-patrol",
+    "title": "Futurism: On Patrol",
+    "tags": ["futurism","patrol","guardian","warrior","indigenous futurism","protection"],
+    "story": "Indigenous futurism means we're not just survivors — we're guardians. On patrol is about vigilance, about the knowledge that protection of land and people is sacred work that never ends."
+  },
+  {
+    "slug": "futurism-ready-to-go",
+    "title": "Futurism: Ready to Go",
+    "tags": ["futurism","warrior","ready","indigenous futurism","tradition","tomorrow"],
+    "story": "The moment before departure. In the future I imagine, readiness looks like this — equipped with tradition, carrying the old knowledge, aimed at tomorrow."
+  },
+  {
+    "slug": "futurism-trigger-discipline",
+    "title": "Futurism: Trigger Discipline",
+    "tags": ["futurism","warrior","discipline","restraint","indigenous futurism","strength"],
+    "story": "Power without recklessness. In my futurism, the warriors have discipline — they know the difference between strength and cruelty. Trigger discipline is more than technique; it's a philosophy of restraint."
+  },
+  {
+    "slug": "futurism-we-are-star-stuff",
+    "title": "Futurism: We Are Star Stuff",
+    "tags": ["futurism","stars","cosmos","identity","indigenous futurism","universe"],
+    "story": "Indigenous peoples have always known what Carl Sagan later named — we come from the stars and we will return to them. This is the cosmic dimension of native identity, rendered in light."
+  },
+  {
+    "slug": "gathering-of-clans",
+    "title": "Gathering of Clans",
+    "tags": ["gathering","ceremony","nations","sovereignty","clan","community"],
+    "story": "Nations coming together. This is what sovereignty looks like from the inside — not isolation but connection, ceremony, the deliberate act of gathering to remember who we are and what we carry."
+  },
+  {
+    "slug": "joy",
+    "title": "Joy",
+    "tags": ["joy","face","emotion","resistance","survival","portrait"],
+    "story": "We are still here. And sometimes, we are joyful. This is not about forgetting — it's about refusing to let grief be the whole story. Joy is resistance. Joy is survival made visible."
+  },
+  {
+    "slug": "medicine-wheel-crow",
+    "title": "Medicine Wheel Crow",
+    "tags": ["medicine wheel","crow","ceremony","four directions","sacred","spiritual","raven"],
+    "story": "The medicine wheel maps the cosmos — four directions, four seasons, four stages of life. The crow carries that knowledge, watches the wheel turn, knows exactly what it means."
+  },
+  {
+    "slug": "petroglyph-hunter",
+    "title": "Petroglyph Hunter",
+    "tags": ["petroglyph","hunter","ancient","rock art","communication","ancestors"],
+    "story": "Cut into rock thousands of years ago, the hunter persists. These figures are not primitive — they are precise communications across deep time. Every stroke was intentional. Every mark is still speaking."
+  },
+  {
+    "slug": "stand-your-ground",
+    "title": "Stand Your Ground",
+    "tags": ["resistance","reckoning","warrior","protection","land","sovereignty","political"],
+    "story": "The phrase gets weaponized by the wrong people. This is what it looks like when it means something true — when standing your ground means protecting your people, your land, your way of life."
+  },
+  {
+    "slug": "the-nesting-place",
+    "title": "The Nesting Place",
+    "tags": ["birds","nest","wildlife","nature","home","protection","animals"],
+    "story": "Home is wherever the young are kept safe. This is a study in nesting — the precision and care that animals bring to making a place where new life can begin and be protected."
+  },
+  {
+    "slug": "three-sister-wolves",
+    "title": "Three Sister Wolves",
+    "tags": ["wolf","wolves","sisters","pack","family","wildlife","animals"],
+    "story": "Three wolves, three sisters. The wolf pack is organized around relationship — the particular intimacy of sisters, which in wolf society is the foundation of everything. Pack is family. Family is survival."
+  },
+  {
+    "slug": "timeless-vigil",
+    "title": "Timeless Vigil",
+    "tags": ["vigil","spiritual","ancestors","ceremony","time","watching","wisdom"],
+    "story": "Watching without end. The old ones kept vigil — over the young, over the sacred places, over the knowledge that keeps us whole. This is that practice, rendered in light and color across time."
   }
 ]
