@@ -114,6 +114,7 @@
     'NESTING-PLCE':  '12×12',
     '3-SIS-WOLVES':  '12×12',
     'TIMLS-VIGIL':   '12×12',
+    'RESIST-YTT':    '8×12',
   };
 
   // Fallback map for cart items saved before slug was stored
@@ -230,6 +231,7 @@
     'NESTING-PLCE':  'the-nesting-place',
     '3-SIS-WOLVES':  'three-sister-wolves',
     'TIMLS-VIGIL':   'timeless-vigil',
+    'RESIST-YTT':    'resist-yesterday-today-tomorrow',
   };
 
   function getCart() {
