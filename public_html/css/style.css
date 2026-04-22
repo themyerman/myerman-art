@@ -447,7 +447,7 @@ p { max-width: 68ch; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 1.25rem 0 2rem;
+  padding: 0.5rem 0 2rem;
 }
 
 .section-jump-nav a {
