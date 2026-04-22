@@ -430,9 +430,44 @@ p { max-width: 68ch; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.prints-section-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  max-width: 56ch;
+}
+
+/* ── Section jump nav ──────────────────────────────────────── */
+.section-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.25rem 0 2rem;
+}
+
+.section-jump-nav a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+
+.section-jump-nav a:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+  background: var(--surface);
 }
 
 
