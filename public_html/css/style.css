@@ -439,7 +439,6 @@ p { max-width: 68ch; }
   font-size: 0.95rem;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
-  max-width: 56ch;
 }
 
 /* ── Section jump nav ──────────────────────────────────────── */
