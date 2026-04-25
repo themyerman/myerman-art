@@ -441,6 +441,21 @@ p { max-width: 68ch; }
   margin-bottom: 1.5rem;
 }
 
+.section-see-all {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.section-see-all a {
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section-see-all a:hover {
+  text-decoration: underline;
+}
+
 /* ── Section jump nav ──────────────────────────────────────── */
 .section-jump-nav {
   display: flex;
