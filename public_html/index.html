@@ -93,7 +93,14 @@
           { slug: "abstract-7",     title: "Abstract 7",      w: 1200, h: 1200 },
           { slug: "abstract-8",     title: "Abstract 8",      w: 1200, h: 1200 },
         ];
-        var p = pieces[Math.floor(Math.random() * pieces.length)];
+        var COOLDOWN = 60 * 1000;
+        var now = Date.now();
+        var seen = JSON.parse(localStorage.getItem('hero-seen') || '{}');
+        var pool = pieces.filter(function(x) { return !seen[x.slug] || (now - seen[x.slug]) > COOLDOWN; });
+        if (!pool.length) pool = pieces;
+        var p = pool[Math.floor(Math.random() * pool.length)];
+        seen[p.slug] = now;
+        localStorage.setItem('hero-seen', JSON.stringify(seen));
         var img = document.getElementById("hero-img");
         img.src    = "/prints/" + p.slug + "/" + p.slug + "-hero.jpg";
         img.alt    = p.title + " — digital artwork by Tom Myer";
