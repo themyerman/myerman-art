@@ -588,6 +588,24 @@
     "story": "The sixth in the series. The shapes keep evolving — this time pulling from memory, not intention. Something between a glyph and a dream."
   },
   {
+    "slug": "abstract-7",
+    "title": "Abstract 7",
+    "tags": ["abstract","fall","seasons","cycle","leaf","sun","earth","sleep","boulder"],
+    "story": "Painted during Boulder's fall — the season when everything prepares to sleep. The leaf form at the center holds the sun like a seed holds warmth through winter. The earth doesn't die; it rests."
+  },
+  {
+    "slug": "abstract-8",
+    "title": "Abstract 8",
+    "tags": ["abstract","ceremony","prayer","sun","tipi","petroglyph","figure","ritual"],
+    "story": "Ceremony and prayer. A figure stands with arms raised toward a sun that fills the sky — the old gesture, unchanged across thousands of years."
+  },
+  {
+    "slug": "ancestors",
+    "title": "Ancestors",
+    "tags": ["ancestors","memory","loss","lake","reflection","mountains","native","boy","regalia","heritage"],
+    "story": "A modern Native boy stands at the edge of a lake, looking down. In the water, looking back up at him: many ancestors. Loss and memory are not separate things; they are the same water."
+  },
+  {
     "slug": "ancestors-point-the-way",
     "title": "Ancestors Point the Way",
     "tags": ["ancestors","spiritual","direction","heritage","ceremony","wisdom"],
