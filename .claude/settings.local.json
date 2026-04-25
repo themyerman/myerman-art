@@ -50,7 +50,9 @@
       "Bash(sips -s format jpeg -s formatOptions 85 --resampleWidth 1200 /Users/myerman/Desktop/new-art-for-site/abstract-8.png --out /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-8/abstract-8-display.jpg)",
       "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 480 /Users/myerman/Desktop/new-art-for-site/abstract-8.png --out /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-8/abstract-8-thumb.jpg)",
       "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-7/abstract-7-display.jpg /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-8/abstract-8-display.jpg /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/ancestors/ancestors-display.jpg)",
-      "Bash(grep -E \"abstract-7|abstract-8|ancestors$\")"
+      "Bash(grep -E \"abstract-7|abstract-8|ancestors$\")",
+      "Bash(sips --cropToHeightWidth 1200 1200 /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-7/abstract-7-hero.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-7/abstract-7-hero.jpg /Users/myerman/Desktop/code/myerman-art/.claude/worktrees/dreamy-raman-40888a/public_html/prints/abstract-8/abstract-8-hero.jpg)"
     ]
   }
 }
