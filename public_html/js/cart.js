@@ -119,13 +119,13 @@
     'TIMLS-VIGIL':   '12×12',
     'RESIST-YTT':    '9×12',
     'CARD-BEST-SELLERS': '4×6 postcard pack',
-    'CARD-FUTURISM':     '4×6 postcard pack',
+    'CARD-FUTURISM':     '4×4 postcard pack',
     'CARD-WILDLIFE':     '4×6 postcard pack',
     'CARD-MEDICINE':     '4×6 postcard pack',
     'CARD-RECKONING':    '4×6 postcard pack',
     'CARD-PEOPLE':       '4×6 postcard pack',
     'CARD-LAND-SKY':     '4×6 postcard pack',
-    'CARD-ABSTRACTS':    '4×6 postcard pack',
+    'CARD-ABSTRACTS':    '4×4 postcard pack',
   };
 
   // Fallback map for cart items saved before slug was stored
