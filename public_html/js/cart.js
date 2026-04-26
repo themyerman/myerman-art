@@ -118,6 +118,14 @@
     '3-SIS-WOLVES':  '12×12',
     'TIMLS-VIGIL':   '12×12',
     'RESIST-YTT':    '9×12',
+    'CARD-BEST-SELLERS': '4×6 postcard pack',
+    'CARD-FUTURISM':     '4×6 postcard pack',
+    'CARD-WILDLIFE':     '4×6 postcard pack',
+    'CARD-MEDICINE':     '4×6 postcard pack',
+    'CARD-RECKONING':    '4×6 postcard pack',
+    'CARD-PEOPLE':       '4×6 postcard pack',
+    'CARD-LAND-SKY':     '4×6 postcard pack',
+    'CARD-ABSTRACTS':    '4×6 postcard pack',
   };
 
   // Fallback map for cart items saved before slug was stored
@@ -246,10 +254,15 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
   }
 
-  function addItem(sku, title, slug) {
+  function addItem(sku, title, slug, opts) {
+    opts = opts || {};
     var cart = getCart();
     if (!cart.find(function (i) { return i.sku === sku; })) {
-      cart.push({ sku: sku, title: title, slug: slug || sku.toLowerCase(), qty: 1 });
+      var item = { sku: sku, title: title, slug: slug || sku.toLowerCase(), qty: 1 };
+      if (opts.image) item.image = opts.image;
+      if (opts.price) item.price = opts.price;
+      if (opts.href)  item.href  = opts.href;
+      cart.push(item);
       saveCart(cart);
     }
   }
@@ -265,7 +278,7 @@
   }
 
   function cartTotal() {
-    return getCart().reduce(function (sum, i) { return sum + (i.qty || 1) * 30; }, 0);
+    return getCart().reduce(function (sum, i) { return sum + (i.qty || 1) * (i.price || 30); }, 0);
   }
 
   function updateBadge() {
@@ -298,6 +311,24 @@
     }
   }
 
+  // ── Pack page: wire up Add to Cart buttons ──────────────────
+  document.querySelectorAll('.btn-add-pack').forEach(function (btn) {
+    var pSku   = btn.dataset.sku;
+    var pTitle = btn.dataset.title;
+    var pImage = btn.dataset.image;
+    if (!pSku || !pTitle) return;
+    if (getCart().find(function (i) { return i.sku === pSku; })) {
+      btn.textContent = 'In your cart \u2713';
+      btn.classList.add('in-cart');
+    }
+    btn.addEventListener('click', function () {
+      addItem(pSku, pTitle, 'cards', { image: pImage, price: 20, href: '/cards/' });
+      btn.textContent = 'In your cart \u2713';
+      btn.classList.add('in-cart');
+      updateBadge();
+    });
+  });
+
   // ── Cart page ───────────────────────────────────────────────
   var cartWrap = document.getElementById('cart-items');
   if (cartWrap) { renderCart(); }
@@ -326,19 +357,23 @@
 
     wrap.innerHTML = cart.map(function (item) {
       var slug  = SKU_TO_SLUG[item.sku] || item.slug || item.sku.toLowerCase();
-      var thumb = '/prints/' + slug + '/' + slug + '-thumb.jpg';
+      var href  = item.href || '/prints/' + slug + '/';
+      var thumb = item.image || '/prints/' + slug + '/' + slug + '-thumb.jpg';
+      var price = item.price || 30;
       var qty   = item.qty || 1;
+      var sizeRaw = SKU_TO_SIZE[item.sku] || item.size || '—';
+      var sizeHtml = sizeRaw === '—' ? '—' : (sizeRaw.indexOf('postcard') !== -1 ? sizeRaw : sizeRaw + '&Prime;');
       return '<div class="cart-item" data-sku="' + item.sku + '">'
-        + '<a href="/prints/' + slug + '/" class="cart-item-thumb">'
+        + '<a href="' + href + '" class="cart-item-thumb">'
         + '<img src="' + thumb + '" alt="' + item.title + '" width="80" height="80" loading="lazy">'
         + '</a>'
         + '<div class="cart-item-info">'
         + '<span class="cart-item-title">' + item.title + '</span>'
-        + '<span class="cart-item-price">$30 each</span>'
+        + '<span class="cart-item-price">$' + price + ' each</span>'
         + '</div>'
         + '<div class="cart-item-size">'
         + '<span class="cart-item-size-label">Size</span>'
-        + '<span class="cart-item-size-value">' + (SKU_TO_SIZE[item.sku] || item.size || '—') + '&Prime;</span>'
+        + '<span class="cart-item-size-value">' + sizeHtml + '</span>'
         + '</div>'
         + '<div class="cart-item-qty">'
         + '<label>Qty</label>'
@@ -384,7 +419,7 @@
 
       var cart = getCart();
       var orderData = {
-        items:     cart.map(function (i) { var s = SKU_TO_SLUG[i.sku] || i.slug || ''; return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (SKU_TO_SIZE[i.sku] || '?') + ' — prints/' + s; }).join('\n'),
+        items:     cart.map(function (i) { var s = i.href || ('prints/' + (SKU_TO_SLUG[i.sku] || i.slug || '')); return 'x' + (i.qty || 1) + ' ' + i.title + ' [' + i.sku + '] — ' + (SKU_TO_SIZE[i.sku] || '?') + ' — $' + (i.price || 30) + ' — ' + s; }).join('\n'),
         total:     '$' + cartTotal() + ' USD',
         firstName: document.getElementById('order-first-name').value.trim(),
         lastName:  document.getElementById('order-last-name').value.trim(),
