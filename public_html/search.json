@@ -1,5 +1,29 @@
 [
   {
+    "slug": "grudge-crow",
+    "title": "Grudge Crow",
+    "tags": ["crow","wildlife","eye","portrait","hyperrealistic","colorado","birds","grudge","feathers"],
+    "story": "Close. That is the word for this painting. You can see every feather, every glint in that eye. Crows show up everywhere along Colorado's Front Range — in parking lots, on fences, watching you from telephone wires. This one is watching. Crows remember faces. They hold grudges, pass them to their young, and use tools. Whatever you think a bird knows, a crow knows more."
+  },
+  {
+    "slug": "merlin",
+    "title": "Merlin",
+    "tags": ["merlin","falcon","wildlife","birds","hyperrealistic","portrait","raptor","speed","colorado"],
+    "story": "Small, fast, and not interested in your opinion of it. The merlin is a compact falcon — maybe the size of a blue jay — with the attitude of something twice its size. I have seen maybe two in my life. This painting is my attempt to hold onto what those moments felt like: the electric surprise of an apex predator small enough to fit in your hand."
+  },
+  {
+    "slug": "northern-goshawk",
+    "title": "Northern Goshawk",
+    "tags": ["goshawk","hawk","raptor","wildlife","birds","hyperrealistic","portrait","orange","eye","forest"],
+    "story": "The northern goshawk belongs to the deep forest, moving through trees at a speed that doesn't seem possible. That orange eye does not flinch. When you're lucky enough to cross paths with one, you understand immediately why it has been a symbol of precision and power across dozens of cultures. I've only seen one in the wild. It was enough to paint from for months."
+  },
+  {
+    "slug": "unbothered",
+    "title": "Unbothered",
+    "tags": ["woman","calm","red dress","sun","native","medicine","peace","strength","stillness","ceremony"],
+    "story": "She has found her still point. Red dress, warm sun, the world going on somewhere behind her — none of it reaching her. There is a particular kind of strength in not engaging, in choosing your own calm over someone else's chaos. This is that strength. It looks effortless because she has practiced it."
+  },
+  {
     "slug": "abstract-1",
     "title": "Abstract 1",
     "tags": ["abstract", "tomahawk", "buffalo", "sun", "geometric", "ancestral", "composition"],
