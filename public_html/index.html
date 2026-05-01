@@ -93,9 +93,9 @@
           { slug: "buffalo-dream",  title: "Buffalo Dream",   w: 1200, h: 1200 },
           { slug: "abstract-7",     title: "Abstract 7",      w: 1200, h: 1200 },
           { slug: "abstract-8",     title: "Abstract 8",      w: 1200, h: 1200 },
-          { slug: 'grudge-crow',       img: '/prints/grudge-crow/grudge-crow-hero.jpg',       title: 'Grudge Crow' },
-          { slug: 'merlin',            img: '/prints/merlin/merlin-hero.jpg',                  title: 'Merlin' },
-          { slug: 'northern-goshawk',  img: '/prints/northern-goshawk/northern-goshawk-hero.jpg', title: 'Northern Goshawk' },
+          { slug: 'grudge-crow',      title: 'Grudge Crow',      w: 1200, h: 1200 },
+          { slug: 'merlin',           title: 'Merlin',           w: 1200, h: 1200 },
+          { slug: 'northern-goshawk', title: 'Northern Goshawk', w: 1200, h: 1200 },
         ];
         var COOLDOWN = 60 * 1000;
         var now = Date.now();
@@ -124,7 +124,7 @@
 
     <section class="section" aria-labelledby="featured-heading">
       <div class="container">
-        <h2 id="featured-heading" class="section-heading">From the shop</h2>
+        <h2 id="featured-heading" class="section-heading">New Work</h2>
         <div class="works-grid" id="featured-grid"></div>
         <div style="margin-top: 2.5rem; text-align: center;">
           <a href="/prints/" class="btn btn-ghost">View all prints</a>
@@ -134,131 +134,17 @@
 
     <script>
       (function () {
-        var all = [
-          { slug: "blood-crow",                            title: "Blood Crow" },
-          { slug: "coyote-and-raven",                      title: "Coyote and Raven" },
-          { slug: "determined",                            title: "Determined" },
-          { slug: "flatirons-and-buffalo-road",            title: "Flatirons and Buffalo Road" },
-          { slug: "flowing-water-soaring-birds",           title: "Flowing Water Soaring Birds" },
-          { slug: "grief",                                 title: "Grief" },
-          { slug: "guardian-eagle",                        title: "Guardian Eagle" },
-          { slug: "haudenosaunee-turtle-with-wampum-belt", title: "Haudenosaunee Turtle with Wampum Belt" },
-          { slug: "night-hawk",                            title: "Night Hawk" },
-          { slug: "petroglyph-raven",                      title: "Petroglyph Raven" },
-          { slug: "ride-hard",                             title: "Ride Hard" },
-          { slug: "superb-owl",                            title: "Superb Owl" },
-          { slug: "thunderbird",                           title: "Thunderbird" },
-          { slug: "tomahawk-crow",                         title: "Tomahawk Crow" },
-          { slug: "we-gonna-tread",                        title: "We Gonna Tread" },
-          { slug: "wise-old-owl",                          title: "Wise Old Owl" },
-          { slug: "friends",                               title: "Friends" },
-          { slug: "palomino",                              title: "Palomino" },
-          { slug: "sunrise",                               title: "Sunrise" },
-          { slug: "abstract-1", title: "Abstract 1" },
-          { slug: "abstract-2", title: "Abstract 2" },
-          { slug: "abstract-3", title: "Abstract 3" },
-          { slug: "ancestral-woman", title: "Ancestral Woman" },
-          { slug: "beauty", title: "Beauty" },
-          { slug: "bride", title: "Bride" },
-          { slug: "dawn-river-valley", title: "Dawn River Valley" },
-          { slug: "deer-woman", title: "Deer Woman" },
-          { slug: "defender", title: "Defender" },
-          { slug: "embera-woman", title: "Embera Woman" },
-          { slug: "fuck-ice", title: "Fuck ICE" },
-          { slug: "fury", title: "Fury" },
-          { slug: "futurism-always-carry-a-tomahawk", title: "Futurism: Always Carry a Tomahawk" },
-          { slug: "futurism-future-so-bright", title: "Futurism: Future So Bright" },
-          { slug: "futurism-in-command", title: "Futurism: In Command" },
-          { slug: "futurism-join-the-fleet", title: "Futurism: Join the Fleet" },
-          { slug: "futurism-mesoamerican", title: "Futurism: Mesoamerican" },
-          { slug: "glorious-morning", title: "Glorious Morning" },
-          { slug: "march-of-the-buffalo", title: "March of the Buffalo" },
-          { slug: "mmiw", title: "MMIW" },
-          { slug: "moonlight-fishing", title: "Moonlight Fishing" },
-          { slug: "morning-prayers", title: "Morning Prayers" },
-          { slug: "mother-and-child", title: "Mother and Child" },
-          { slug: "native-festival", title: "Native Festival" },
-          { slug: "raven-with-petroglyphs-and-weapons", title: "Raven with Petroglyphs and Weapons" },
-          { slug: "sun-kissed-warrior", title: "Sun-Kissed Warrior" },
-          { slug: "sun-over-tipis", title: "Sun Over Tipis" },
-          { slug: "there-are-two-wolves-inside-you", title: "There Are Two Wolves Inside You" },
-          { slug: "three-buffalo", title: "Three Buffalo" },
-          { slug: "we-are-all-connected", title: "We Are All Connected" },
-          { slug: "white-buffalo", title: "White Buffalo" },
-          { slug: "wolf-singing", title: "Wolf Singing" },
-          { slug: "abstract-4", title: "Abstract 4" },
-          { slug: "abstract-5", title: "Abstract 5" },
-          { slug: "defending-a-way-of-life", title: "Defending a Way of Life" },
-          { slug: "futurism-day-of-reckoning", title: "Futurism: Day of Reckoning" },
-          { slug: "futurism-crash-landing", title: "Futurism: Crash Landing" },
-          { slug: "futurism-defiant", title: "Futurism: Defiant" },
-          { slug: "futurism-defiant-forever", title: "Futurism: Defiant Forever" },
-          { slug: "futurism-flyby", title: "Futurism: Flyby" },
-          { slug: "futurism-indiginaut", title: "Futurism: Indiginaut" },
-          { slug: "futurism-insight", title: "Futurism: Insight" },
-          { slug: "futurism-keep-them-flying", title: "Futurism: Keep Them Flying" },
-          { slug: "futurism-liftoff", title: "Futurism: Liftoff" },
-          { slug: "futurism-our-land", title: "Futurism: Our Land" },
-          { slug: "futurism-sentinel", title: "Futurism: Sentinel" },
-          { slug: "futurism-silicon-tattoos", title: "Futurism: Silicon Tattoos" },
-          { slug: "futurism-spacewalk", title: "Futurism: Spacewalk" },
-          { slug: "futurism-the-negotiator", title: "Futurism: The Negotiator" },
-          { slug: "futurism-warrior-society", title: "Futurism: Warrior Society" },
-          { slug: "brother-bear-fights-too-much", title: "Brother Bear Fights Too Much" },
-          { slug: "thirteen-moon-turtle", title: "Thirteen Moon Turtle" },
-          { slug: "hunter", title: "Hunter" },
-          { slug: "sacred-lodge", title: "Sacred Lodge" },
-          { slug: "sun-lodge", title: "Sun Lodge" },
-          { slug: "thunderbird-lodge", title: "Thunderbird Lodge" },
-          { slug: "thunderbird-petroglyph", title: "Thunderbird Petroglyph" },
-          { slug: "destroy-ice", title: "Destroy ICE" },
-          { slug: "fight-back", title: "Fight Back" },
-          { slug: "fractured-native", title: "Fractured Native" },
-          { slug: "peaceful-not-harmless", title: "Peaceful, Not Harmless" },
-          { slug: "resist", title: "Resist" },
-          { slug: "warclub-tomahawk", title: "War Club and Tomahawk" },
-          { slug: "bullseye", title: "Bullseye" },
-          { slug: "undefeated", title: "Undefeated" },
-          { slug: "three-crows-in-winter", title: "Three Crows in Winter" },
-          { slug: "afternoon-stroll", title: "Afternoon Stroll" },
-          { slug: "bless-this-lodge", title: "Bless This Lodge" },
-          { slug: "walk-in-the-woods", title: "Walk in the Woods" },
-          { slug: "ancestral-faces", title: "Ancestral Faces" },
-          { slug: "three-sachems", title: "Three Sachems" },
-          { slug: "uncle", title: "Uncle" },
-          { slug: "abstract-6", title: "Abstract 6" },
-          { slug: "ancestors-point-the-way", title: "Ancestors Point the Way" },
-          { slug: "buffalo-dream", title: "Buffalo Dream" },
-          { slug: "canyon-sunrise", title: "Canyon Sunrise" },
-          { slug: "curious-cubs", title: "Curious Cubs" },
-          { slug: "floating", title: "Floating" },
-          { slug: "futurism-on-patrol", title: "Futurism: On Patrol" },
-          { slug: "futurism-ready-to-go", title: "Futurism: Ready to Go" },
-          { slug: "futurism-trigger-discipline", title: "Futurism: Trigger Discipline" },
-          { slug: "futurism-we-are-star-stuff", title: "Futurism: We Are Star Stuff" },
-          { slug: "gathering-of-clans", title: "Gathering of Clans" },
-          { slug: "joy", title: "Joy" },
-          { slug: "medicine-wheel-crow", title: "Medicine Wheel Crow" },
-          { slug: "petroglyph-hunter", title: "Petroglyph Hunter" },
-          { slug: "stand-your-ground", title: "Stand Your Ground" },
-          { slug: "the-nesting-place", title: "The Nesting Place" },
-          { slug: "three-sister-wolves", title: "Three Sister Wolves" },
-          { slug: "timeless-vigil", title: "Timeless Vigil" },
-          { slug: "resist-yesterday-today-tomorrow", title: "Resist: Yesterday, Today, Tomorrow" },
+        // Most recently added prints — update this list when new work is added
+        var newest = [
+          { slug: "grudge-crow",               title: "Grudge Crow" },
+          { slug: "merlin",                     title: "Merlin" },
+          { slug: "northern-goshawk",           title: "Northern Goshawk" },
+          { slug: "unbothered",                 title: "Unbothered" },
+          { slug: "flowing-water-soaring-birds", title: "Flowing Water Soaring Birds" },
         ];
 
-        // Shuffle and pick 4
-        for (var i = all.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var tmp = all[i]; all[i] = all[j]; all[j] = tmp;
-        }
-        var picks = all.slice(0, 4);
-
-        var sold = { "ancestral-faces": true, "three-sachems": true, "uncle": true };
-
         var grid = document.getElementById("featured-grid");
-        picks.forEach(function (p) {
-          var label = sold[p.slug] ? 'Sold' : 'Buy print &#8594;';
+        newest.forEach(function (p) {
           grid.innerHTML +=
             '<a href="/prints/' + p.slug + '/" class="work-card">' +
               '<div class="work-card-image">' +
@@ -268,11 +154,10 @@
               '</div>' +
               '<div class="work-card-body">' +
                 '<h3 class="work-card-title">' + p.title + '</h3>' +
-                '<span class="work-card-link">' + label + '</span>' +
+                '<span class="work-card-link">Buy print &#8594;</span>' +
               '</div>' +
             '</a>';
         });
-
       })();
     </script>
 
