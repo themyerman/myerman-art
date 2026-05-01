@@ -133,32 +133,27 @@
     </section>
 
     <script>
-      (function () {
-        // Most recently added prints — update this list when new work is added
-        var newest = [
-          { slug: "grudge-crow",               title: "Grudge Crow" },
-          { slug: "merlin",                     title: "Merlin" },
-          { slug: "northern-goshawk",           title: "Northern Goshawk" },
-          { slug: "unbothered",                 title: "Unbothered" },
-          { slug: "flowing-water-soaring-birds", title: "Flowing Water Soaring Birds" },
-        ];
-
-        var grid = document.getElementById("featured-grid");
-        newest.forEach(function (p) {
-          grid.innerHTML +=
-            '<a href="/prints/' + p.slug + '/" class="work-card">' +
-              '<div class="work-card-image">' +
-                '<img src="/prints/' + p.slug + '/' + p.slug + '-thumb.jpg"' +
-                ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
-                ' width="480" height="480" loading="lazy">' +
-              '</div>' +
-              '<div class="work-card-body">' +
-                '<h3 class="work-card-title">' + p.title + '</h3>' +
-                '<span class="work-card-link">Buy print &#8594;</span>' +
-              '</div>' +
-            '</a>';
+      fetch('/search.json')
+        .then(function (r) { return r.json(); })
+        .then(function (all) {
+          all.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+          var newest = all.slice(0, 5);
+          var grid = document.getElementById('featured-grid');
+          newest.forEach(function (p) {
+            grid.innerHTML +=
+              '<a href="/prints/' + p.slug + '/" class="work-card">' +
+                '<div class="work-card-image">' +
+                  '<img src="/prints/' + p.slug + '/' + p.slug + '-thumb.jpg"' +
+                  ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
+                  ' width="480" height="480" loading="lazy">' +
+                '</div>' +
+                '<div class="work-card-body">' +
+                  '<h3 class="work-card-title">' + p.title + '</h3>' +
+                  '<span class="work-card-link">Buy print &#8594;</span>' +
+                '</div>' +
+              '</a>';
+          });
         });
-      })();
     </script>
 
 

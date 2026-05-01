@@ -2,739 +2,1808 @@
   {
     "slug": "grudge-crow",
     "title": "Grudge Crow",
-    "tags": ["crow","wildlife","eye","portrait","hyperrealistic","colorado","birds","grudge","feathers"],
-    "story": "Close. That is the word for this painting. You can see every feather, every glint in that eye. Crows show up everywhere along Colorado's Front Range — in parking lots, on fences, watching you from telephone wires. This one is watching. Crows remember faces. They hold grudges, pass them to their young, and use tools. Whatever you think a bird knows, a crow knows more."
+    "tags": [
+      "crow",
+      "wildlife",
+      "eye",
+      "portrait",
+      "hyperrealistic",
+      "colorado",
+      "birds",
+      "grudge",
+      "feathers"
+    ],
+    "story": "Close. That is the word for this painting. You can see every feather, every glint in that eye. Crows show up everywhere along Colorado's Front Range — in parking lots, on fences, watching you from telephone wires. This one is watching. Crows remember faces. They hold grudges, pass them to their young, and use tools. Whatever you think a bird knows, a crow knows more.",
+    "date": "2026-05-01"
   },
   {
     "slug": "merlin",
     "title": "Merlin",
-    "tags": ["merlin","falcon","wildlife","birds","hyperrealistic","portrait","raptor","speed","colorado"],
-    "story": "Small, fast, and not interested in your opinion of it. The merlin is a compact falcon — maybe the size of a blue jay — with the attitude of something twice its size. I have seen maybe two in my life. This painting is my attempt to hold onto what those moments felt like: the electric surprise of an apex predator small enough to fit in your hand."
+    "tags": [
+      "merlin",
+      "falcon",
+      "wildlife",
+      "birds",
+      "hyperrealistic",
+      "portrait",
+      "raptor",
+      "speed",
+      "colorado"
+    ],
+    "story": "Small, fast, and not interested in your opinion of it. The merlin is a compact falcon — maybe the size of a blue jay — with the attitude of something twice its size. I have seen maybe two in my life. This painting is my attempt to hold onto what those moments felt like: the electric surprise of an apex predator small enough to fit in your hand.",
+    "date": "2026-05-01"
   },
   {
     "slug": "northern-goshawk",
     "title": "Northern Goshawk",
-    "tags": ["goshawk","hawk","raptor","wildlife","birds","hyperrealistic","portrait","orange","eye","forest"],
-    "story": "The northern goshawk belongs to the deep forest, moving through trees at a speed that doesn't seem possible. That orange eye does not flinch. When you're lucky enough to cross paths with one, you understand immediately why it has been a symbol of precision and power across dozens of cultures. I've only seen one in the wild. It was enough to paint from for months."
+    "tags": [
+      "goshawk",
+      "hawk",
+      "raptor",
+      "wildlife",
+      "birds",
+      "hyperrealistic",
+      "portrait",
+      "orange",
+      "eye",
+      "forest"
+    ],
+    "story": "The northern goshawk belongs to the deep forest, moving through trees at a speed that doesn't seem possible. That orange eye does not flinch. When you're lucky enough to cross paths with one, you understand immediately why it has been a symbol of precision and power across dozens of cultures. I've only seen one in the wild. It was enough to paint from for months.",
+    "date": "2026-05-01"
   },
   {
     "slug": "unbothered",
     "title": "Unbothered",
-    "tags": ["woman","calm","red dress","sun","native","medicine","peace","strength","stillness","ceremony"],
-    "story": "She has found her still point. Red dress, warm sun, the world going on somewhere behind her — none of it reaching her. There is a particular kind of strength in not engaging, in choosing your own calm over someone else's chaos. This is that strength. It looks effortless because she has practiced it."
+    "tags": [
+      "woman",
+      "calm",
+      "red dress",
+      "sun",
+      "native",
+      "medicine",
+      "peace",
+      "strength",
+      "stillness",
+      "ceremony"
+    ],
+    "story": "She has found her still point. Red dress, warm sun, the world going on somewhere behind her — none of it reaching her. There is a particular kind of strength in not engaging, in choosing your own calm over someone else's chaos. This is that strength. It looks effortless because she has practiced it.",
+    "date": "2026-05-01"
   },
   {
     "slug": "abstract-1",
     "title": "Abstract 1",
-    "tags": ["abstract", "tomahawk", "buffalo", "sun", "geometric", "ancestral", "composition"],
-    "story": "I make a lot of figurative work — but I started with abstracts, fascinated with composition and the power of suggestion."
+    "tags": [
+      "abstract",
+      "tomahawk",
+      "buffalo",
+      "sun",
+      "geometric",
+      "ancestral",
+      "composition"
+    ],
+    "story": "I make a lot of figurative work — but I started with abstracts, fascinated with composition and the power of suggestion.",
+    "date": "2026-04-16"
   },
   {
     "slug": "abstract-2",
     "title": "Abstract 2",
-    "tags": ["abstract", "sun", "buffalo", "tipi", "tomahawk", "face", "geometric"],
-    "story": "Stripped back until there was nothing left but the sun, the buffalo, the tipis. And then the face and the tomahawk emerged."
+    "tags": [
+      "abstract",
+      "sun",
+      "buffalo",
+      "tipi",
+      "tomahawk",
+      "face",
+      "geometric"
+    ],
+    "story": "Stripped back until there was nothing left but the sun, the buffalo, the tipis. And then the face and the tomahawk emerged.",
+    "date": "2026-04-16"
   },
   {
     "slug": "abstract-3",
     "title": "Abstract 3",
-    "tags": ["abstract", "mesoamerican", "vertical", "ancient", "characters", "geometric"],
-    "story": "Vertical this time. Like a mesoamerican plinth filled with characters that tell stories older than time."
+    "tags": [
+      "abstract",
+      "mesoamerican",
+      "vertical",
+      "ancient",
+      "characters",
+      "geometric"
+    ],
+    "story": "Vertical this time. Like a mesoamerican plinth filled with characters that tell stories older than time.",
+    "date": "2026-04-16"
   },
   {
     "slug": "abstract-4",
     "title": "Abstract 4",
-    "tags": ["abstract", "face", "hunter", "heritage", "geometric", "stillness"],
-    "story": "It began as a series of shapes, and suddenly the face appeared. I thought about the patience of the hunter."
+    "tags": [
+      "abstract",
+      "face",
+      "hunter",
+      "heritage",
+      "geometric",
+      "stillness"
+    ],
+    "story": "It began as a series of shapes, and suddenly the face appeared. I thought about the patience of the hunter.",
+    "date": "2026-04-16"
   },
   {
     "slug": "abstract-5",
     "title": "Abstract 5",
-    "tags": ["abstract", "feather", "ceremony", "identity", "color", "geometric"],
-    "story": "Abstract feathers. Across the Americas, featherwork runs deep — ceremony, identity, status, prayer."
+    "tags": [
+      "abstract",
+      "feather",
+      "ceremony",
+      "identity",
+      "color",
+      "geometric"
+    ],
+    "story": "Abstract feathers. Across the Americas, featherwork runs deep — ceremony, identity, status, prayer.",
+    "date": "2026-04-16"
   },
   {
     "slug": "afternoon-stroll",
     "title": "Afternoon Stroll",
-    "tags": ["landscape", "nature", "walking", "peaceful", "land", "unhurried"],
-    "story": "Not every piece is urgent. Sometimes it's just a walk in the afternoon light, moving through the land at a pace that lets you see it."
+    "tags": [
+      "landscape",
+      "nature",
+      "walking",
+      "peaceful",
+      "land",
+      "unhurried"
+    ],
+    "story": "Not every piece is urgent. Sometimes it's just a walk in the afternoon light, moving through the land at a pace that lets you see it.",
+    "date": "2026-04-18"
   },
   {
     "slug": "ancestral-faces",
     "title": "Ancestral Faces",
-    "tags": ["portrait", "faces", "ancestry", "Indigenous", "Americas", "inheritance", "sold", "private collection"],
-    "story": "For all the Indigenous faces that have ever existed in the Americas — and for the fact that their blood still runs in all of us."
+    "tags": [
+      "portrait",
+      "faces",
+      "ancestry",
+      "Indigenous",
+      "Americas",
+      "inheritance",
+      "sold",
+      "private collection"
+    ],
+    "story": "For all the Indigenous faces that have ever existed in the Americas — and for the fact that their blood still runs in all of us.",
+    "date": "2026-04-18"
   },
   {
     "slug": "ancestral-woman",
     "title": "Ancestral Woman",
-    "tags": ["portrait", "woman", "female", "mother", "grandmother", "healer", "warrior", "Indigenous"],
-    "story": "Mother, Grandmother, Healer, Warrior. She keeps coming back. I don't think she'll stop."
+    "tags": [
+      "portrait",
+      "woman",
+      "female",
+      "mother",
+      "grandmother",
+      "healer",
+      "warrior",
+      "Indigenous"
+    ],
+    "story": "Mother, Grandmother, Healer, Warrior. She keeps coming back. I don't think she'll stop.",
+    "date": "2026-04-16"
   },
   {
     "slug": "beauty",
     "title": "Beauty",
-    "tags": ["portrait", "woman", "female", "Indigenous", "Apache", "Lakota", "Ojibwe", "beauty"],
-    "story": "I wanted to capture the beauty of the indigenous women in my life — Apache, Lakota, Ojibwe — around me now."
+    "tags": [
+      "portrait",
+      "woman",
+      "female",
+      "Indigenous",
+      "Apache",
+      "Lakota",
+      "Ojibwe",
+      "beauty"
+    ],
+    "story": "I wanted to capture the beauty of the indigenous women in my life — Apache, Lakota, Ojibwe — around me now.",
+    "date": "2026-04-16"
   },
   {
     "slug": "bless-this-lodge",
     "title": "Bless This Lodge",
-    "tags": ["lodge", "tipi", "prayer", "home", "family", "ceremony", "sacred", "blessing"],
-    "story": "A prayer for the home. For the structure that holds the family, that keeps the cold out, that becomes sacred just by being lived in."
+    "tags": [
+      "lodge",
+      "tipi",
+      "prayer",
+      "home",
+      "family",
+      "ceremony",
+      "sacred",
+      "blessing"
+    ],
+    "story": "A prayer for the home. For the structure that holds the family, that keeps the cold out, that becomes sacred just by being lived in.",
+    "date": "2026-04-18"
   },
   {
     "slug": "blood-crow",
     "title": "Blood Crow",
-    "tags": ["crow", "bird", "wildlife", "dark", "raven"],
-    "story": ""
+    "tags": [
+      "crow",
+      "bird",
+      "wildlife",
+      "dark",
+      "raven"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "bride",
     "title": "Bride",
-    "tags": ["portrait", "woman", "female", "ceremony", "wedding", "tradition", "Indigenous"],
-    "story": "About ceremony, and the things we do to mark the moments that matter — what we carry into the next part of life."
+    "tags": [
+      "portrait",
+      "woman",
+      "female",
+      "ceremony",
+      "wedding",
+      "tradition",
+      "Indigenous"
+    ],
+    "story": "About ceremony, and the things we do to mark the moments that matter — what we carry into the next part of life.",
+    "date": "2026-04-16"
   },
   {
     "slug": "brother-bear-fights-too-much",
     "title": "Brother Bear Fights Too Much",
-    "tags": ["bear", "animal", "wildlife", "humor", "funny", "portrait"],
-    "story": "Bears fight. But Brother Bear has made it a lifestyle. Battered, still standing, still showing up. I know people like this."
+    "tags": [
+      "bear",
+      "animal",
+      "wildlife",
+      "humor",
+      "funny",
+      "portrait"
+    ],
+    "story": "Bears fight. But Brother Bear has made it a lifestyle. Battered, still standing, still showing up. I know people like this.",
+    "date": "2026-04-18"
   },
   {
     "slug": "bullseye",
     "title": "Bullseye",
-    "tags": ["warrior", "bow", "arrow", "archery", "portrait", "male", "Indigenous"],
-    "story": "Why not paint an indian with bow and arrow? We should celebrate the imagery, own it, take it back."
+    "tags": [
+      "warrior",
+      "bow",
+      "arrow",
+      "archery",
+      "portrait",
+      "male",
+      "Indigenous"
+    ],
+    "story": "Why not paint an indian with bow and arrow? We should celebrate the imagery, own it, take it back.",
+    "date": "2026-04-18"
   },
   {
     "slug": "coyote-and-raven",
     "title": "Coyote and Raven",
-    "tags": ["coyote", "raven", "trickster", "animal", "wildlife", "story"],
-    "story": ""
+    "tags": [
+      "coyote",
+      "raven",
+      "trickster",
+      "animal",
+      "wildlife",
+      "story"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "dawn-eagle",
     "title": "Dawn Eagle",
-    "tags": ["eagle", "bird", "dawn", "morning", "wildlife", "soaring"],
-    "story": ""
+    "tags": [
+      "eagle",
+      "bird",
+      "dawn",
+      "morning",
+      "wildlife",
+      "soaring"
+    ],
+    "story": "",
+    "date": "2026-04-03"
   },
   {
     "slug": "dawn-river-valley",
     "title": "Dawn River Valley",
-    "tags": ["landscape", "river", "valley", "dawn", "mountains", "nature", "morning", "light"],
-    "story": "Every river valley I've ever stood in at first light — that specific quiet, that specific colour, the feeling the world is about to start again."
+    "tags": [
+      "landscape",
+      "river",
+      "valley",
+      "dawn",
+      "mountains",
+      "nature",
+      "morning",
+      "light"
+    ],
+    "story": "Every river valley I've ever stood in at first light — that specific quiet, that specific colour, the feeling the world is about to start again.",
+    "date": "2026-04-16"
   },
   {
     "slug": "deer-woman",
     "title": "Deer Woman",
-    "tags": ["deer", "woman", "female", "shapeshifter", "spirit", "supernatural", "warning", "Plains", "Woodland"],
-    "story": "Deer Woman shows up across many Indigenous traditions. She's a shapeshifter. A warning. A destroyer of lecherous men."
+    "tags": [
+      "deer",
+      "woman",
+      "female",
+      "shapeshifter",
+      "spirit",
+      "supernatural",
+      "warning",
+      "Plains",
+      "Woodland"
+    ],
+    "story": "Deer Woman shows up across many Indigenous traditions. She's a shapeshifter. A warning. A destroyer of lecherous men.",
+    "date": "2026-04-16"
   },
   {
     "slug": "defender",
     "title": "Defender",
-    "tags": ["warrior", "woman", "female", "grandmother", "defender", "family", "land", "iron", "portrait"],
-    "story": "For my grandmother — kind and happy, but made of iron. She would stop at nothing to defend her family and land."
+    "tags": [
+      "warrior",
+      "woman",
+      "female",
+      "grandmother",
+      "defender",
+      "family",
+      "land",
+      "iron",
+      "portrait"
+    ],
+    "story": "For my grandmother — kind and happy, but made of iron. She would stop at nothing to defend her family and land.",
+    "date": "2026-04-16"
   },
   {
     "slug": "defending-a-way-of-life",
     "title": "Defending a Way of Life",
-    "tags": ["warrior", "mesoamerican", "war club", "sacred", "defender", "male", "portrait", "aztec"],
-    "story": "A Mesoamerican warrior, war club raised. His face is grim — this is not a man who takes what he's doing lightly."
+    "tags": [
+      "warrior",
+      "mesoamerican",
+      "war club",
+      "sacred",
+      "defender",
+      "male",
+      "portrait",
+      "aztec"
+    ],
+    "story": "A Mesoamerican warrior, war club raised. His face is grim — this is not a man who takes what he's doing lightly.",
+    "date": "2026-04-17"
   },
   {
     "slug": "destroy-ice",
     "title": "Destroy ICE",
-    "tags": ["political", "resistance", "ICE", "immigration", "protest", "activist"],
-    "story": "This is not subtle and it's not meant to be. ICE is a weapon used against Indigenous and brown people."
+    "tags": [
+      "political",
+      "resistance",
+      "ICE",
+      "immigration",
+      "protest",
+      "activist"
+    ],
+    "story": "This is not subtle and it's not meant to be. ICE is a weapon used against Indigenous and brown people.",
+    "date": "2026-04-18"
   },
   {
     "slug": "determined",
     "title": "Determined",
-    "tags": ["portrait", "determination", "warrior", "male"],
-    "story": ""
+    "tags": [
+      "portrait",
+      "determination",
+      "warrior",
+      "male"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "embera-woman",
     "title": "Embera Woman",
-    "tags": ["portrait", "woman", "female", "Panama", "Emberá", "Ngäbe-Buglé", "river", "Central America"],
-    "story": "My mother's people are Ngäbe-Buglé from Panama. The Emberá are their neighbors. A portrait of a woman bathing at the river."
+    "tags": [
+      "portrait",
+      "woman",
+      "female",
+      "Panama",
+      "Emberá",
+      "Ngäbe-Buglé",
+      "river",
+      "Central America"
+    ],
+    "story": "My mother's people are Ngäbe-Buglé from Panama. The Emberá are their neighbors. A portrait of a woman bathing at the river.",
+    "date": "2026-04-16"
   },
   {
     "slug": "encroachment",
     "title": "Encroachment",
-    "tags": ["political", "resistance", "land", "colonialism"],
-    "story": ""
+    "tags": [
+      "political",
+      "resistance",
+      "land",
+      "colonialism"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "fight-back",
     "title": "Fight Back",
-    "tags": ["resistance", "residential schools", "children", "hatchet", "warrior", "history", "political"],
-    "story": "What if the native kids swept into residential schools could fight back? What if the hatchet could be turned against oppressors?"
+    "tags": [
+      "resistance",
+      "residential schools",
+      "children",
+      "hatchet",
+      "warrior",
+      "history",
+      "political"
+    ],
+    "story": "What if the native kids swept into residential schools could fight back? What if the hatchet could be turned against oppressors?",
+    "date": "2026-04-18"
   },
   {
     "slug": "flatirons-and-buffalo-road",
     "title": "Flatirons and Buffalo Road",
-    "tags": ["landscape", "Boulder", "Colorado", "flatirons", "buffalo", "nature"],
-    "story": ""
+    "tags": [
+      "landscape",
+      "Boulder",
+      "Colorado",
+      "flatirons",
+      "buffalo",
+      "nature"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "flowing-water-soaring-birds",
     "title": "Flowing Water Soaring Birds",
-    "tags": ["bird", "water", "landscape", "nature", "river", "soaring"],
-    "story": ""
+    "tags": [
+      "bird",
+      "water",
+      "landscape",
+      "nature",
+      "river",
+      "soaring"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "fractured-native",
     "title": "Fractured Native",
-    "tags": ["identity", "colonial", "blood quantum", "resistance", "portrait", "fragmented"],
-    "story": "Identity fragmented by colonial pressure, by blood quantum laws, by the constant demand to prove you're Native enough."
+    "tags": [
+      "identity",
+      "colonial",
+      "blood quantum",
+      "resistance",
+      "portrait",
+      "fragmented"
+    ],
+    "story": "Identity fragmented by colonial pressure, by blood quantum laws, by the constant demand to prove you're Native enough.",
+    "date": "2026-04-18"
   },
   {
     "slug": "friends",
     "title": "Friends",
-    "tags": ["portrait", "community", "friendship"],
-    "story": ""
+    "tags": [
+      "portrait",
+      "community",
+      "friendship"
+    ],
+    "story": "",
+    "date": "2026-04-03"
   },
   {
     "slug": "fuck-ice",
     "title": "Fuck ICE",
-    "tags": ["political", "resistance", "ICE", "immigration", "protest", "activist"],
-    "story": "ICE terrorizes Indigenous and immigrant communities. It separates families. It operates with near-total impunity."
+    "tags": [
+      "political",
+      "resistance",
+      "ICE",
+      "immigration",
+      "protest",
+      "activist"
+    ],
+    "story": "ICE terrorizes Indigenous and immigrant communities. It separates families. It operates with near-total impunity.",
+    "date": "2026-04-16"
   },
   {
     "slug": "fury",
     "title": "Fury",
-    "tags": ["warrior", "rage", "resistance", "male", "portrait", "conquistador", "history"],
-    "story": "A rage that doesn't explode — it concentrates. The fierceness it took to not back down against the Spanish conquerors."
+    "tags": [
+      "warrior",
+      "rage",
+      "resistance",
+      "male",
+      "portrait",
+      "conquistador",
+      "history"
+    ],
+    "story": "A rage that doesn't explode — it concentrates. The fierceness it took to not back down against the Spanish conquerors.",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-always-carry-a-tomahawk",
     "title": "Futurism: Always Carry a Tomahawk",
-    "tags": ["futurism", "tomahawk", "technology", "tradition", "space", "Mona Lisa", "Da Vinci"],
-    "story": "Tradition and technology were never opposites. Also a wink at Da Vinci — this is my Mona Lisa."
+    "tags": [
+      "futurism",
+      "tomahawk",
+      "technology",
+      "tradition",
+      "space",
+      "Mona Lisa",
+      "Da Vinci"
+    ],
+    "story": "Tradition and technology were never opposites. Also a wink at Da Vinci — this is my Mona Lisa.",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-crash-landing",
     "title": "Futurism: Crash Landing",
-    "tags": ["futurism", "space", "resilience", "spacecraft", "mission"],
-    "story": "Not every mission goes clean. Indigenous resilience isn't about perfect landings — it's about getting back up."
+    "tags": [
+      "futurism",
+      "space",
+      "resilience",
+      "spacecraft",
+      "mission"
+    ],
+    "story": "Not every mission goes clean. Indigenous resilience isn't about perfect landings — it's about getting back up.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-day-of-reckoning",
     "title": "Futurism: Day of Reckoning",
-    "tags": ["futurism", "reckoning", "justice", "Indigenous futures", "inevitable"],
-    "story": "The sense that something long overdue is finally arriving. Indigenous futures aren't just possible, they're inevitable."
+    "tags": [
+      "futurism",
+      "reckoning",
+      "justice",
+      "Indigenous futures",
+      "inevitable"
+    ],
+    "story": "The sense that something long overdue is finally arriving. Indigenous futures aren't just possible, they're inevitable.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-defiant",
     "title": "Futurism: Defiant",
-    "tags": ["futurism", "defiant", "resistance", "female", "drone", "government", "warrior"],
-    "story": "Out of options, cornered by the guns and drones of a futuristic government, this indigenous woman takes a defiant stance."
+    "tags": [
+      "futurism",
+      "defiant",
+      "resistance",
+      "female",
+      "drone",
+      "government",
+      "warrior"
+    ],
+    "story": "Out of options, cornered by the guns and drones of a futuristic government, this indigenous woman takes a defiant stance.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-defiant-forever",
     "title": "Futurism: Defiant Forever",
-    "tags": ["futurism", "defiant", "resistance", "generations", "forever", "warrior"],
-    "story": "Not defiant for a moment or a movement — forever. Generations of resistance, encoded in the stance, in the refusal to disappear."
+    "tags": [
+      "futurism",
+      "defiant",
+      "resistance",
+      "generations",
+      "forever",
+      "warrior"
+    ],
+    "story": "Not defiant for a moment or a movement — forever. Generations of resistance, encoded in the stance, in the refusal to disappear.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-flyby",
     "title": "Futurism: Flyby",
-    "tags": ["futurism", "space", "spacecraft", "speed", "precision"],
-    "story": "Speed, precision, purpose. All happening at speeds you can barely measure."
+    "tags": [
+      "futurism",
+      "space",
+      "spacecraft",
+      "speed",
+      "precision"
+    ],
+    "story": "Speed, precision, purpose. All happening at speeds you can barely measure.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-future-so-bright",
     "title": "Futurism: Future So Bright",
-    "tags": ["futurism", "space", "sunglasses", "optimism", "Indigenous futures", "hopeful"],
-    "story": "Refusing the narrative that Indigenous people are a past-tense people. We are flying spaceships and wearing excellent sunglasses."
+    "tags": [
+      "futurism",
+      "space",
+      "sunglasses",
+      "optimism",
+      "Indigenous futures",
+      "hopeful"
+    ],
+    "story": "Refusing the narrative that Indigenous people are a past-tense people. We are flying spaceships and wearing excellent sunglasses.",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-in-command",
     "title": "Futurism: In Command",
-    "tags": ["futurism", "spacecraft", "captain", "leadership", "Indigenous futures", "bestseller"],
-    "story": "Indigenous people in charge of things — not as fantasy, but as a correction of a historical wrong. The first in the Futurism series."
+    "tags": [
+      "futurism",
+      "spacecraft",
+      "captain",
+      "leadership",
+      "Indigenous futures",
+      "bestseller"
+    ],
+    "story": "Indigenous people in charge of things — not as fantasy, but as a correction of a historical wrong. The first in the Futurism series.",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-indiginaut",
     "title": "Futurism: Indiginaut",
-    "tags": ["futurism", "space", "astronaut", "Indigenous", "cosmos", "stars"],
-    "story": "Indigenous in space — not as metaphor, but as fact. The Indiginaut carries the land with them into the cosmos."
+    "tags": [
+      "futurism",
+      "space",
+      "astronaut",
+      "Indigenous",
+      "cosmos",
+      "stars"
+    ],
+    "story": "Indigenous in space — not as metaphor, but as fact. The Indiginaut carries the land with them into the cosmos.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-insight",
     "title": "Futurism: Insight",
-    "tags": ["futurism", "watching", "knowledge", "Indigenous", "vision", "future"],
-    "story": "The insight is that we were always here, always watching, always knowing. The future doesn't surprise us."
+    "tags": [
+      "futurism",
+      "watching",
+      "knowledge",
+      "Indigenous",
+      "vision",
+      "future"
+    ],
+    "story": "The insight is that we were always here, always watching, always knowing. The future doesn't surprise us.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-join-the-fleet",
     "title": "Futurism: Join the Fleet",
-    "tags": ["futurism", "fleet", "navy", "space", "recruitment", "sovereignty", "galaxy"],
-    "story": "Recruitment poster energy, except the fleet is ours. Indigenous sovereignty in the future looks like a navy."
+    "tags": [
+      "futurism",
+      "fleet",
+      "navy",
+      "space",
+      "recruitment",
+      "sovereignty",
+      "galaxy"
+    ],
+    "story": "Recruitment poster energy, except the fleet is ours. Indigenous sovereignty in the future looks like a navy.",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-keep-them-flying",
     "title": "Futurism: Keep Them Flying",
-    "tags": ["futurism", "aircraft", "ceremony", "language", "memory", "continuity"],
-    "story": "A tribute to the ones who keep going and keep everything else going — machines, yes, but also ceremony, language, memory."
+    "tags": [
+      "futurism",
+      "aircraft",
+      "ceremony",
+      "language",
+      "memory",
+      "continuity"
+    ],
+    "story": "A tribute to the ones who keep going and keep everything else going — machines, yes, but also ceremony, language, memory.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-liftoff",
     "title": "Futurism: Liftoff",
-    "tags": ["futurism", "space", "liftoff", "spacecraft", "launch", "Indigenous futures"],
-    "story": "Liftoff isn't just mechanical — it's the decision to go, to reach, to claim something that was always yours."
+    "tags": [
+      "futurism",
+      "space",
+      "liftoff",
+      "spacecraft",
+      "launch",
+      "Indigenous futures"
+    ],
+    "story": "Liftoff isn't just mechanical — it's the decision to go, to reach, to claim something that was always yours.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-mesoamerican",
     "title": "Futurism: Mesoamerican",
-    "tags": ["futurism", "mesoamerican", "civilization", "aztec", "maya", "technology", "astronomy"],
-    "story": "Mesoamerican civilizations built cities that rivalled anything in Europe. What does that sophistication look like projected forward?"
+    "tags": [
+      "futurism",
+      "mesoamerican",
+      "civilization",
+      "aztec",
+      "maya",
+      "technology",
+      "astronomy"
+    ],
+    "story": "Mesoamerican civilizations built cities that rivalled anything in Europe. What does that sophistication look like projected forward?",
+    "date": "2026-04-16"
   },
   {
     "slug": "futurism-our-land",
     "title": "Futurism: Our Land",
-    "tags": ["futurism", "land", "sovereignty", "political", "Indigenous", "territory"],
-    "story": "Not a request. Not a protest sign. A statement of fact that predates every map ever drawn by a government that didn't ask."
+    "tags": [
+      "futurism",
+      "land",
+      "sovereignty",
+      "political",
+      "Indigenous",
+      "territory"
+    ],
+    "story": "Not a request. Not a protest sign. A statement of fact that predates every map ever drawn by a government that didn't ask.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-sentinel",
     "title": "Futurism: Sentinel",
-    "tags": ["futurism", "guardian", "watching", "space", "patience", "generations"],
-    "story": "The sentinel watches. Has always watched. There's a patience in guardianship that spans generations."
+    "tags": [
+      "futurism",
+      "guardian",
+      "watching",
+      "space",
+      "patience",
+      "generations"
+    ],
+    "story": "The sentinel watches. Has always watched. There's a patience in guardianship that spans generations.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-silicon-tattoos",
     "title": "Futurism: Silicon Tattoos",
-    "tags": ["futurism", "tattoo", "technology", "tradition", "body", "identity", "digital"],
-    "story": "Technology and tradition aren't opposites. Silicon tattoos are just another form of adornment, another way of declaring who you are."
+    "tags": [
+      "futurism",
+      "tattoo",
+      "technology",
+      "tradition",
+      "body",
+      "identity",
+      "digital"
+    ],
+    "story": "Technology and tradition aren't opposites. Silicon tattoos are just another form of adornment, another way of declaring who you are.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-spacewalk",
     "title": "Futurism: Spacewalk",
-    "tags": ["futurism", "space", "spacewalk", "freedom", "treaty", "sovereignty"],
-    "story": "Out here, there's no treaty line, no reservation border, no jurisdiction. The spacewalk is freedom."
+    "tags": [
+      "futurism",
+      "space",
+      "spacewalk",
+      "freedom",
+      "treaty",
+      "sovereignty"
+    ],
+    "story": "Out here, there's no treaty line, no reservation border, no jurisdiction. The spacewalk is freedom.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-the-negotiator",
     "title": "Futurism: The Negotiator",
-    "tags": ["futurism", "negotiator", "tomahawk", "diplomacy", "strategy", "negotiation"],
-    "story": "The best negotiations are won by someone who knows the terrain better than anyone across the table. That's this figure."
+    "tags": [
+      "futurism",
+      "negotiator",
+      "tomahawk",
+      "diplomacy",
+      "strategy",
+      "negotiation"
+    ],
+    "story": "The best negotiations are won by someone who knows the terrain better than anyone across the table. That's this figure.",
+    "date": "2026-04-18"
   },
   {
     "slug": "futurism-warrior-society",
     "title": "Futurism: Warrior Society",
-    "tags": ["futurism", "warrior", "society", "protection", "tradition", "evolved"],
-    "story": "The warrior societies didn't dissolve. They evolved. Tradition of protection and purpose, updated for any century."
+    "tags": [
+      "futurism",
+      "warrior",
+      "society",
+      "protection",
+      "tradition",
+      "evolved"
+    ],
+    "story": "The warrior societies didn't dissolve. They evolved. Tradition of protection and purpose, updated for any century.",
+    "date": "2026-04-18"
   },
   {
     "slug": "glorious-morning",
     "title": "Glorious Morning",
-    "tags": ["landscape", "tipi", "sunrise", "morning", "pastel", "nature", "peaceful"],
-    "story": "Some mornings are just objectively glorious. The sun rising over a group of tipis, everything bathed in glorious pastels."
+    "tags": [
+      "landscape",
+      "tipi",
+      "sunrise",
+      "morning",
+      "pastel",
+      "nature",
+      "peaceful"
+    ],
+    "story": "Some mornings are just objectively glorious. The sun rising over a group of tipis, everything bathed in glorious pastels.",
+    "date": "2026-04-16"
   },
   {
     "slug": "grief",
     "title": "Grief",
-    "tags": ["portrait", "emotion", "grief", "loss", "feeling"],
-    "story": ""
+    "tags": [
+      "portrait",
+      "emotion",
+      "grief",
+      "loss",
+      "feeling"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "guardian-eagle",
     "title": "Guardian Eagle",
-    "tags": ["eagle", "guardian", "bird", "wildlife", "protection", "soaring"],
-    "story": ""
+    "tags": [
+      "eagle",
+      "guardian",
+      "bird",
+      "wildlife",
+      "protection",
+      "soaring"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "haudenosaunee-turtle-with-wampum-belt",
     "title": "Haudenosaunee Turtle with Wampum Belt",
-    "tags": ["haudenosaunee", "turtle", "wampum belt", "Iroquois", "Onkwehonwe", "tradition", "symbol"],
-    "story": ""
+    "tags": [
+      "haudenosaunee",
+      "turtle",
+      "wampum belt",
+      "Iroquois",
+      "Onkwehonwe",
+      "tradition",
+      "symbol"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "hunter",
     "title": "Hunter",
-    "tags": ["hunting", "stillness", "portrait", "land", "male", "focus", "nature"],
-    "story": "Stillness before the shot. The hunter isn't moving — everything inside is absolutely focused, and the land holds its breath."
+    "tags": [
+      "hunting",
+      "stillness",
+      "portrait",
+      "land",
+      "male",
+      "focus",
+      "nature"
+    ],
+    "story": "Stillness before the shot. The hunter isn't moving — everything inside is absolutely focused, and the land holds its breath.",
+    "date": "2026-04-18"
   },
   {
     "slug": "make-america-native-again",
     "title": "Make America Native Again",
-    "tags": ["political", "resistance", "MANA", "sovereignty", "land", "activist"],
-    "story": ""
+    "tags": [
+      "political",
+      "resistance",
+      "MANA",
+      "sovereignty",
+      "land",
+      "activist"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "march-of-the-buffalo",
     "title": "March of the Buffalo",
-    "tags": ["buffalo", "bison", "history", "genocide", "Plains nations", "recovery", "land"],
-    "story": "There were 30–60 million bison. Then fewer than a thousand. The slaughter was deliberate. The herds are coming back."
+    "tags": [
+      "buffalo",
+      "bison",
+      "history",
+      "genocide",
+      "Plains nations",
+      "recovery",
+      "land"
+    ],
+    "story": "There were 30–60 million bison. Then fewer than a thousand. The slaughter was deliberate. The herds are coming back.",
+    "date": "2026-04-16"
   },
   {
     "slug": "mmiw",
     "title": "MMIW",
-    "tags": ["MMIW", "missing", "murdered", "women", "Indigenous women", "political", "justice", "memorial"],
-    "story": "Missing and Murdered Indigenous Women — not a statistic. It is a mother, a sister, a daughter, a friend."
+    "tags": [
+      "MMIW",
+      "missing",
+      "murdered",
+      "women",
+      "Indigenous women",
+      "political",
+      "justice",
+      "memorial"
+    ],
+    "story": "Missing and Murdered Indigenous Women — not a statistic. It is a mother, a sister, a daughter, a friend.",
+    "date": "2026-04-16"
   },
   {
     "slug": "moonlight-fishing",
     "title": "Moonlight Fishing",
-    "tags": ["fishing", "canoe", "moonlight", "night", "woodland", "ancestor", "birchbark", "quiet"],
-    "story": "Thinking about woodland ancestors in birchbark canoes. Not the heroic war party — the quieter moment. Fishing at night."
+    "tags": [
+      "fishing",
+      "canoe",
+      "moonlight",
+      "night",
+      "woodland",
+      "ancestor",
+      "birchbark",
+      "quiet"
+    ],
+    "story": "Thinking about woodland ancestors in birchbark canoes. Not the heroic war party — the quieter moment. Fishing at night.",
+    "date": "2026-04-16"
   },
   {
     "slug": "morning-prayers",
     "title": "Morning Prayers",
-    "tags": ["prayer", "ceremony", "morning", "spiritual", "intention", "threshold"],
-    "story": "Starting the day with intention changes the day. The moment before you've been anywhere or done anything."
+    "tags": [
+      "prayer",
+      "ceremony",
+      "morning",
+      "spiritual",
+      "intention",
+      "threshold"
+    ],
+    "story": "Starting the day with intention changes the day. The moment before you've been anywhere or done anything.",
+    "date": "2026-04-16"
   },
   {
     "slug": "mother-and-child",
     "title": "Mother and Child",
-    "tags": ["mother", "child", "family", "culture", "transmission", "female", "resistance", "language"],
-    "story": "About transmission — the way culture, language, knowledge, and survival instinct get passed from body to body."
+    "tags": [
+      "mother",
+      "child",
+      "family",
+      "culture",
+      "transmission",
+      "female",
+      "resistance",
+      "language"
+    ],
+    "story": "About transmission — the way culture, language, knowledge, and survival instinct get passed from body to body.",
+    "date": "2026-04-16"
   },
   {
     "slug": "native-festival",
     "title": "Native Festival",
-    "tags": ["festival", "dance", "drum", "feather", "Central America", "ceremony", "culture", "celebration"],
-    "story": "Growing up in Central America there were lots of festivals. In almost all of them were super bright spots of indigeneity."
+    "tags": [
+      "festival",
+      "dance",
+      "drum",
+      "feather",
+      "Central America",
+      "ceremony",
+      "culture",
+      "celebration"
+    ],
+    "story": "Growing up in Central America there were lots of festivals. In almost all of them were super bright spots of indigeneity.",
+    "date": "2026-04-16"
   },
   {
     "slug": "night-hawk",
     "title": "Night Hawk",
-    "tags": ["hawk", "bird", "night", "wildlife", "dark"],
-    "story": ""
+    "tags": [
+      "hawk",
+      "bird",
+      "night",
+      "wildlife",
+      "dark"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "palomino",
     "title": "Palomino",
-    "tags": ["horse", "animal", "wildlife", "palomino", "equestrian"],
-    "story": ""
+    "tags": [
+      "horse",
+      "animal",
+      "wildlife",
+      "palomino",
+      "equestrian"
+    ],
+    "story": "",
+    "date": "2026-04-03"
   },
   {
     "slug": "peaceful-not-harmless",
     "title": "Peaceful, Not Harmless",
-    "tags": ["resistance", "peaceful", "warrior", "political", "warning", "patience"],
-    "story": "We will not escalate. But peaceful is not the same as harmless, and patience is not the same as passivity."
+    "tags": [
+      "resistance",
+      "peaceful",
+      "warrior",
+      "political",
+      "warning",
+      "patience"
+    ],
+    "story": "We will not escalate. But peaceful is not the same as harmless, and patience is not the same as passivity.",
+    "date": "2026-04-18"
   },
   {
     "slug": "petroglyph-raven",
     "title": "Petroglyph Raven",
-    "tags": ["raven", "petroglyph", "ancient", "stone", "marks", "bird", "symbol"],
-    "story": ""
+    "tags": [
+      "raven",
+      "petroglyph",
+      "ancient",
+      "stone",
+      "marks",
+      "bird",
+      "symbol"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "raven-with-petroglyphs-and-weapons",
     "title": "Raven with Petroglyphs and Weapons",
-    "tags": ["raven", "petroglyph", "tomahawk", "war club", "memory", "bird", "ascend", "ancient"],
-    "story": "Ravens remember everything. Petroglyphs are memory made permanent. The raven ascends, but never forgets his roots."
+    "tags": [
+      "raven",
+      "petroglyph",
+      "tomahawk",
+      "war club",
+      "memory",
+      "bird",
+      "ascend",
+      "ancient"
+    ],
+    "story": "Ravens remember everything. Petroglyphs are memory made permanent. The raven ascends, but never forgets his roots.",
+    "date": "2026-04-16"
   },
   {
     "slug": "red-hand",
     "title": "Red Hand",
-    "tags": ["political", "red hand", "MMIW", "missing", "murdered", "women", "protest"],
-    "story": ""
+    "tags": [
+      "political",
+      "red hand",
+      "MMIW",
+      "missing",
+      "murdered",
+      "women",
+      "protest"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "resist",
     "title": "Resist",
-    "tags": ["resistance", "political", "protest", "activist", "sovereignty", "Indigenous"],
-    "story": "One word. The history of Indigenous people is a history of resistance — the word has lived in our bones longer than the movement borrowed it."
+    "tags": [
+      "resistance",
+      "political",
+      "protest",
+      "activist",
+      "sovereignty",
+      "Indigenous"
+    ],
+    "story": "One word. The history of Indigenous people is a history of resistance — the word has lived in our bones longer than the movement borrowed it.",
+    "date": "2026-04-18"
   },
   {
     "slug": "ride-hard",
     "title": "Ride Hard",
-    "tags": ["horse", "rider", "equestrian", "warrior", "Plains", "speed"],
-    "story": ""
+    "tags": [
+      "horse",
+      "rider",
+      "equestrian",
+      "warrior",
+      "Plains",
+      "speed"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "sacred-lodge",
     "title": "Sacred Lodge",
-    "tags": ["lodge", "ceremony", "prayer", "sacred", "community", "tipi", "gathering"],
-    "story": "The lodge is not just a structure. It's a container for ceremony, for prayer, for the kind of conversation you don't have anywhere else."
+    "tags": [
+      "lodge",
+      "ceremony",
+      "prayer",
+      "sacred",
+      "community",
+      "tipi",
+      "gathering"
+    ],
+    "story": "The lodge is not just a structure. It's a container for ceremony, for prayer, for the kind of conversation you don't have anywhere else.",
+    "date": "2026-04-18"
   },
   {
     "slug": "soaring-thunderbird",
     "title": "Soaring Thunderbird",
-    "tags": ["thunderbird", "bird", "soaring", "wildlife", "mythic", "spirit"],
-    "story": ""
+    "tags": [
+      "thunderbird",
+      "bird",
+      "soaring",
+      "wildlife",
+      "mythic",
+      "spirit"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "sun-kissed-warrior",
     "title": "Sun-Kissed Warrior",
-    "tags": ["warrior", "sun", "protection", "male", "portrait", "light", "ready"],
-    "story": "The warrior tradition is not primarily about war. It's about protection. This figure is standing in the sun, unbothered. Ready."
+    "tags": [
+      "warrior",
+      "sun",
+      "protection",
+      "male",
+      "portrait",
+      "light",
+      "ready"
+    ],
+    "story": "The warrior tradition is not primarily about war. It's about protection. This figure is standing in the sun, unbothered. Ready.",
+    "date": "2026-04-16"
   },
   {
     "slug": "sun-lodge",
     "title": "Sun Lodge",
-    "tags": ["lodge", "sun", "ceremony", "prayer", "light", "sacred", "smoke hole"],
-    "story": "The sun comes in through the smoke hole and hits the floor of the lodge and everything stops. Light as ceremony."
+    "tags": [
+      "lodge",
+      "sun",
+      "ceremony",
+      "prayer",
+      "light",
+      "sacred",
+      "smoke hole"
+    ],
+    "story": "The sun comes in through the smoke hole and hits the floor of the lodge and everything stops. Light as ceremony.",
+    "date": "2026-04-18"
   },
   {
     "slug": "sun-over-tipis",
     "title": "Sun Over Tipis",
-    "tags": ["tipi", "sun", "landscape", "shelter", "engineering", "nature"],
-    "story": "The tipi is engineered to perfection. This piece is about having a relationship with your shelter rather than just occupying it."
+    "tags": [
+      "tipi",
+      "sun",
+      "landscape",
+      "shelter",
+      "engineering",
+      "nature"
+    ],
+    "story": "The tipi is engineered to perfection. This piece is about having a relationship with your shelter rather than just occupying it.",
+    "date": "2026-04-16"
   },
   {
     "slug": "sunrise",
     "title": "Sunrise",
-    "tags": ["sunrise", "landscape", "morning", "nature", "light", "dawn"],
-    "story": ""
+    "tags": [
+      "sunrise",
+      "landscape",
+      "morning",
+      "nature",
+      "light",
+      "dawn"
+    ],
+    "story": "",
+    "date": "2026-04-03"
   },
   {
     "slug": "superb-owl",
     "title": "Superb Owl",
-    "tags": ["owl", "bird", "humor", "wildlife", "superb", "funny"],
-    "story": ""
+    "tags": [
+      "owl",
+      "bird",
+      "humor",
+      "wildlife",
+      "superb",
+      "funny"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "there-are-two-wolves-inside-you",
     "title": "There Are Two Wolves Inside You",
-    "tags": ["wolves", "story", "philosophy", "duality", "teaching", "ancestral"],
-    "story": "The idea that we are in constant negotiation with our worst and best selves. The story is true even if the attribution is messy."
+    "tags": [
+      "wolves",
+      "story",
+      "philosophy",
+      "duality",
+      "teaching",
+      "ancestral"
+    ],
+    "story": "The idea that we are in constant negotiation with our worst and best selves. The story is true even if the attribution is messy.",
+    "date": "2026-04-16"
   },
   {
     "slug": "thirteen-moon-turtle",
     "title": "Thirteen Moon Turtle",
-    "tags": ["turtle", "moon", "lunar calendar", "time", "ceremony", "thirteen", "haudenosaunee", "symbol"],
-    "story": "Thirteen moons, thirteen plates on the turtle's back. The lunar calendar lives in the animal. The turtle carries time and memory."
+    "tags": [
+      "turtle",
+      "moon",
+      "lunar calendar",
+      "time",
+      "ceremony",
+      "thirteen",
+      "haudenosaunee",
+      "symbol"
+    ],
+    "story": "Thirteen moons, thirteen plates on the turtle's back. The lunar calendar lives in the animal. The turtle carries time and memory.",
+    "date": "2026-04-18"
   },
   {
     "slug": "three-buffalo",
     "title": "Three Buffalo",
-    "tags": ["buffalo", "bison", "flatirons", "Boulder", "Colorado", "milky way", "night sky", "cosmos", "stars", "landscape"],
-    "story": "The Flatirons at night with the Milky Way overhead and three buffalo. The animal, the mountain, the cosmos — all at once."
+    "tags": [
+      "buffalo",
+      "bison",
+      "flatirons",
+      "Boulder",
+      "Colorado",
+      "milky way",
+      "night sky",
+      "cosmos",
+      "stars",
+      "landscape"
+    ],
+    "story": "The Flatirons at night with the Milky Way overhead and three buffalo. The animal, the mountain, the cosmos — all at once.",
+    "date": "2026-04-16"
   },
   {
     "slug": "three-crows-in-winter",
     "title": "Three Crows in Winter",
-    "tags": ["crow", "bird", "winter", "snow", "wildlife", "cold"],
-    "story": "Winter doesn't silence crows. They're louder in the cold, more visible against the snow. Can you imagine the stories they're telling?"
+    "tags": [
+      "crow",
+      "bird",
+      "winter",
+      "snow",
+      "wildlife",
+      "cold"
+    ],
+    "story": "Winter doesn't silence crows. They're louder in the cold, more visible against the snow. Can you imagine the stories they're telling?",
+    "date": "2026-04-18"
   },
   {
     "slug": "three-sachems",
     "title": "Three Sachems",
-    "tags": ["chiefs", "sachems", "leadership", "Americas", "elders", "humor", "sold", "private collection"],
-    "story": "For the chiefs I've known throughout the Americas — wise and funny and full of stories. Leaders by trust, not title."
+    "tags": [
+      "chiefs",
+      "sachems",
+      "leadership",
+      "Americas",
+      "elders",
+      "humor",
+      "sold",
+      "private collection"
+    ],
+    "story": "For the chiefs I've known throughout the Americas — wise and funny and full of stories. Leaders by trust, not title.",
+    "date": "2026-04-18"
   },
   {
     "slug": "thunderbird",
     "title": "Thunderbird",
-    "tags": ["thunderbird", "bird", "mythic", "spirit", "power", "soaring"],
-    "story": ""
+    "tags": [
+      "thunderbird",
+      "bird",
+      "mythic",
+      "spirit",
+      "power",
+      "soaring"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "thunderbird-lodge",
     "title": "Thunderbird Lodge",
-    "tags": ["thunderbird", "lodge", "rain", "lightning", "protection", "ceremony", "sacred"],
-    "story": "The Thunderbird presides — a lodge held under its protection, who brings rain and lightning and the kind of power that clears the air."
+    "tags": [
+      "thunderbird",
+      "lodge",
+      "rain",
+      "lightning",
+      "protection",
+      "ceremony",
+      "sacred"
+    ],
+    "story": "The Thunderbird presides — a lodge held under its protection, who brings rain and lightning and the kind of power that clears the air.",
+    "date": "2026-04-18"
   },
   {
     "slug": "thunderbird-petroglyph",
     "title": "Thunderbird Petroglyph",
-    "tags": ["thunderbird", "petroglyph", "ancient", "stone", "marks", "carving", "symbol"],
-    "story": "The Thunderbird has been carved into rock faces across the continent for thousands of years. I'm the latest in that long chain."
+    "tags": [
+      "thunderbird",
+      "petroglyph",
+      "ancient",
+      "stone",
+      "marks",
+      "carving",
+      "symbol"
+    ],
+    "story": "The Thunderbird has been carved into rock faces across the continent for thousands of years. I'm the latest in that long chain.",
+    "date": "2026-04-18"
   },
   {
     "slug": "tomahawk-crow",
     "title": "Tomahawk Crow",
-    "tags": ["tomahawk", "crow", "bird", "weapon", "dark", "wildlife"],
-    "story": ""
+    "tags": [
+      "tomahawk",
+      "crow",
+      "bird",
+      "weapon",
+      "dark",
+      "wildlife"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "uncle",
     "title": "Uncle",
-    "tags": ["uncle", "powwow", "elder", "tradition", "male", "portrait", "community", "sold", "private collection"],
-    "story": "Made in honor of all the uncles I've seen at powwow — keeping up the traditions, carrying the knowledge forward."
+    "tags": [
+      "uncle",
+      "powwow",
+      "elder",
+      "tradition",
+      "male",
+      "portrait",
+      "community",
+      "sold",
+      "private collection"
+    ],
+    "story": "Made in honor of all the uncles I've seen at powwow — keeping up the traditions, carrying the knowledge forward.",
+    "date": "2026-04-18"
   },
   {
     "slug": "undefeated",
     "title": "Undefeated",
-    "tags": ["warrior", "resistance", "portrait", "strength", "survival", "resilience"],
-    "story": "Not unscathed. Undefeated. One is about being untouched, the other is about what you do with the damage."
+    "tags": [
+      "warrior",
+      "resistance",
+      "portrait",
+      "strength",
+      "survival",
+      "resilience"
+    ],
+    "story": "Not unscathed. Undefeated. One is about being untouched, the other is about what you do with the damage.",
+    "date": "2026-04-18"
   },
   {
     "slug": "walk-in-the-woods",
     "title": "Walk in the Woods",
-    "tags": ["woods", "forest", "nature", "walking", "memory", "path", "trees", "ancestors"],
-    "story": "The woods are not quiet for those who know how to listen. Every step has been walked by someone before you."
+    "tags": [
+      "woods",
+      "forest",
+      "nature",
+      "walking",
+      "memory",
+      "path",
+      "trees",
+      "ancestors"
+    ],
+    "story": "The woods are not quiet for those who know how to listen. Every step has been walked by someone before you.",
+    "date": "2026-04-18"
   },
   {
     "slug": "warclub-tomahawk",
     "title": "War Club and Tomahawk",
-    "tags": ["war club", "tomahawk", "weapon", "ceremony", "tradition", "protection", "continuity"],
-    "story": "Two weapons, two traditions, one purpose: protection. A statement of continuity across centuries."
+    "tags": [
+      "war club",
+      "tomahawk",
+      "weapon",
+      "ceremony",
+      "tradition",
+      "protection",
+      "continuity"
+    ],
+    "story": "Two weapons, two traditions, one purpose: protection. A statement of continuity across centuries.",
+    "date": "2026-04-18"
   },
   {
     "slug": "we-are-all-connected",
     "title": "We Are All Connected",
-    "tags": ["ecology", "nature", "connection", "mycelium", "mycorrhizal", "forest", "Indigenous knowledge", "watershed"],
-    "story": "The ecological reality is that everything is connected. Indigenous peoples have been saying this for as long as there have been Indigenous peoples."
+    "tags": [
+      "ecology",
+      "nature",
+      "connection",
+      "mycelium",
+      "mycorrhizal",
+      "forest",
+      "Indigenous knowledge",
+      "watershed"
+    ],
+    "story": "The ecological reality is that everything is connected. Indigenous peoples have been saying this for as long as there have been Indigenous peoples.",
+    "date": "2026-04-16"
   },
   {
     "slug": "we-gonna-tread",
     "title": "We Gonna Tread",
-    "tags": ["resistance", "political", "warrior", "land", "sovereignty"],
-    "story": ""
+    "tags": [
+      "resistance",
+      "political",
+      "warrior",
+      "land",
+      "sovereignty"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "white-buffalo",
     "title": "White Buffalo",
-    "tags": ["white buffalo", "sacred", "Lakota", "Plains", "prophecy", "healing", "rare", "hope"],
-    "story": "The birth of a white buffalo calf is a sacred sign in Lakota tradition — a prophecy being fulfilled, a call to unity and healing."
+    "tags": [
+      "white buffalo",
+      "sacred",
+      "Lakota",
+      "Plains",
+      "prophecy",
+      "healing",
+      "rare",
+      "hope"
+    ],
+    "story": "The birth of a white buffalo calf is a sacred sign in Lakota tradition — a prophecy being fulfilled, a call to unity and healing.",
+    "date": "2026-04-16"
   },
   {
     "slug": "wise-old-owl",
     "title": "Wise Old Owl",
-    "tags": ["owl", "bird", "wisdom", "wildlife", "elder", "portrait"],
-    "story": ""
+    "tags": [
+      "owl",
+      "bird",
+      "wisdom",
+      "wildlife",
+      "elder",
+      "portrait"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "wolf-singing",
     "title": "Wolf Singing",
-    "tags": ["wolf", "singing", "community", "social", "howl", "wildlife", "voice"],
-    "story": "Not howling — singing. Singing implies intention. Community. A voice raised toward something. This wolf is mid-song."
+    "tags": [
+      "wolf",
+      "singing",
+      "community",
+      "social",
+      "howl",
+      "wildlife",
+      "voice"
+    ],
+    "story": "Not howling — singing. Singing implies intention. Community. A voice raised toward something. This wolf is mid-song.",
+    "date": "2026-04-16"
   },
   {
     "slug": "year-of-the-horse",
     "title": "Year of the Horse",
-    "tags": ["horse", "year", "animal", "wildlife", "equestrian", "Plains"],
-    "story": ""
+    "tags": [
+      "horse",
+      "year",
+      "animal",
+      "wildlife",
+      "equestrian",
+      "Plains"
+    ],
+    "story": "",
+    "date": "2026-04-02"
   },
   {
     "slug": "abstract-6",
     "title": "Abstract 6",
-    "tags": ["abstract","geometric","glyph","dream","series"],
-    "story": "The sixth in the series. The shapes keep evolving — this time pulling from memory, not intention. Something between a glyph and a dream."
+    "tags": [
+      "abstract",
+      "geometric",
+      "glyph",
+      "dream",
+      "series"
+    ],
+    "story": "The sixth in the series. The shapes keep evolving — this time pulling from memory, not intention. Something between a glyph and a dream.",
+    "date": "2026-04-22"
   },
   {
     "slug": "abstract-7",
     "title": "Abstract 7",
-    "tags": ["abstract","fall","seasons","cycle","leaf","sun","earth","sleep","boulder"],
-    "story": "Painted during Boulder's fall — the season when everything prepares to sleep. The leaf form at the center holds the sun like a seed holds warmth through winter. The earth doesn't die; it rests."
+    "tags": [
+      "abstract",
+      "fall",
+      "seasons",
+      "cycle",
+      "leaf",
+      "sun",
+      "earth",
+      "sleep",
+      "boulder"
+    ],
+    "story": "Painted during Boulder's fall — the season when everything prepares to sleep. The leaf form at the center holds the sun like a seed holds warmth through winter. The earth doesn't die; it rests.",
+    "date": "2026-04-25"
   },
   {
     "slug": "abstract-8",
     "title": "Abstract 8",
-    "tags": ["abstract","ceremony","prayer","sun","tipi","petroglyph","figure","ritual"],
-    "story": "Ceremony and prayer. A figure stands with arms raised toward a sun that fills the sky — the old gesture, unchanged across thousands of years."
+    "tags": [
+      "abstract",
+      "ceremony",
+      "prayer",
+      "sun",
+      "tipi",
+      "petroglyph",
+      "figure",
+      "ritual"
+    ],
+    "story": "Ceremony and prayer. A figure stands with arms raised toward a sun that fills the sky — the old gesture, unchanged across thousands of years.",
+    "date": "2026-04-25"
   },
   {
     "slug": "ancestors",
     "title": "Ancestors",
-    "tags": ["ancestors","memory","loss","lake","reflection","mountains","native","boy","regalia","heritage"],
-    "story": "A modern Native boy stands at the edge of a lake, looking down. In the water, looking back up at him: many ancestors. Loss and memory are not separate things; they are the same water."
+    "tags": [
+      "ancestors",
+      "memory",
+      "loss",
+      "lake",
+      "reflection",
+      "mountains",
+      "native",
+      "boy",
+      "regalia",
+      "heritage"
+    ],
+    "story": "A modern Native boy stands at the edge of a lake, looking down. In the water, looking back up at him: many ancestors. Loss and memory are not separate things; they are the same water.",
+    "date": "2026-04-25"
   },
   {
     "slug": "ancestors-point-the-way",
     "title": "Ancestors Point the Way",
-    "tags": ["ancestors","spiritual","direction","heritage","ceremony","wisdom"],
-    "story": "They came before us and they're still here — in the land, in the blood, in the way we move through the world. This is that sense of direction that comes from deep time."
+    "tags": [
+      "ancestors",
+      "spiritual",
+      "direction",
+      "heritage",
+      "ceremony",
+      "wisdom"
+    ],
+    "story": "They came before us and they're still here — in the land, in the blood, in the way we move through the world. This is that sense of direction that comes from deep time.",
+    "date": "2026-04-22"
   },
   {
     "slug": "buffalo-dream",
     "title": "Buffalo Dream",
-    "tags": ["buffalo","dream","vision","ceremony","landscape","spiritual"],
-    "story": "A vision. The buffalo that ran across this continent in their millions are not entirely gone — they persist in dreams and ceremony and art and the slow memory of the land."
+    "tags": [
+      "buffalo",
+      "dream",
+      "vision",
+      "ceremony",
+      "landscape",
+      "spiritual"
+    ],
+    "story": "A vision. The buffalo that ran across this continent in their millions are not entirely gone — they persist in dreams and ceremony and art and the slow memory of the land.",
+    "date": "2026-04-22"
   },
   {
     "slug": "canyon-sunrise",
     "title": "Canyon Sunrise",
-    "tags": ["canyon","sunrise","landscape","southwest","red rock","dawn","land"],
-    "story": "First light hitting red rock. Canyon country has been home to people for thousands of years. This is dawn from the rim — that moment when the world remembers it's alive."
+    "tags": [
+      "canyon",
+      "sunrise",
+      "landscape",
+      "southwest",
+      "red rock",
+      "dawn",
+      "land"
+    ],
+    "story": "First light hitting red rock. Canyon country has been home to people for thousands of years. This is dawn from the rim — that moment when the world remembers it's alive.",
+    "date": "2026-04-22"
   },
   {
     "slug": "curious-cubs",
     "title": "Curious Cubs",
-    "tags": ["bear","cubs","wildlife","wonder","nature","animals"],
-    "story": "Two young bears discovering the world. Everything is still new to them. I wanted to catch that moment of pure curiosity — no fear yet, just wonder."
+    "tags": [
+      "bear",
+      "cubs",
+      "wildlife",
+      "wonder",
+      "nature",
+      "animals"
+    ],
+    "story": "Two young bears discovering the world. Everything is still new to them. I wanted to catch that moment of pure curiosity — no fear yet, just wonder.",
+    "date": "2026-04-22"
   },
   {
     "slug": "floating",
     "title": "Floating",
-    "tags": ["floating","spiritual","sky","ceremony","landscape","freedom"],
-    "story": "Between earth and sky. The feeling when you're up high enough that the weight of everything releases. Inspired by ceremony — the way the right moment can make you feel untethered from gravity."
+    "tags": [
+      "floating",
+      "spiritual",
+      "sky",
+      "ceremony",
+      "landscape",
+      "freedom"
+    ],
+    "story": "Between earth and sky. The feeling when you're up high enough that the weight of everything releases. Inspired by ceremony — the way the right moment can make you feel untethered from gravity.",
+    "date": "2026-04-22"
   },
   {
     "slug": "futurism-on-patrol",
     "title": "Futurism: On Patrol",
-    "tags": ["futurism","patrol","guardian","warrior","indigenous futurism","protection"],
-    "story": "Indigenous futurism means we're not just survivors — we're guardians. On patrol is about vigilance, about the knowledge that protection of land and people is sacred work that never ends."
+    "tags": [
+      "futurism",
+      "patrol",
+      "guardian",
+      "warrior",
+      "indigenous futurism",
+      "protection"
+    ],
+    "story": "Indigenous futurism means we're not just survivors — we're guardians. On patrol is about vigilance, about the knowledge that protection of land and people is sacred work that never ends.",
+    "date": "2026-04-22"
   },
   {
     "slug": "futurism-ready-to-go",
     "title": "Futurism: Ready to Go",
-    "tags": ["futurism","warrior","ready","indigenous futurism","tradition","tomorrow"],
-    "story": "The moment before departure. In the future I imagine, readiness looks like this — equipped with tradition, carrying the old knowledge, aimed at tomorrow."
+    "tags": [
+      "futurism",
+      "warrior",
+      "ready",
+      "indigenous futurism",
+      "tradition",
+      "tomorrow"
+    ],
+    "story": "The moment before departure. In the future I imagine, readiness looks like this — equipped with tradition, carrying the old knowledge, aimed at tomorrow.",
+    "date": "2026-04-22"
   },
   {
     "slug": "futurism-trigger-discipline",
     "title": "Futurism: Trigger Discipline",
-    "tags": ["futurism","warrior","discipline","restraint","indigenous futurism","strength"],
-    "story": "Power without recklessness. In my futurism, the warriors have discipline — they know the difference between strength and cruelty. Trigger discipline is more than technique; it's a philosophy of restraint."
+    "tags": [
+      "futurism",
+      "warrior",
+      "discipline",
+      "restraint",
+      "indigenous futurism",
+      "strength"
+    ],
+    "story": "Power without recklessness. In my futurism, the warriors have discipline — they know the difference between strength and cruelty. Trigger discipline is more than technique; it's a philosophy of restraint.",
+    "date": "2026-04-22"
   },
   {
     "slug": "futurism-we-are-star-stuff",
     "title": "Futurism: We Are Star Stuff",
-    "tags": ["futurism","stars","cosmos","identity","indigenous futurism","universe"],
-    "story": "Indigenous peoples have always known what Carl Sagan later named — we come from the stars and we will return to them. This is the cosmic dimension of native identity, rendered in light."
+    "tags": [
+      "futurism",
+      "stars",
+      "cosmos",
+      "identity",
+      "indigenous futurism",
+      "universe"
+    ],
+    "story": "Indigenous peoples have always known what Carl Sagan later named — we come from the stars and we will return to them. This is the cosmic dimension of native identity, rendered in light.",
+    "date": "2026-04-22"
   },
   {
     "slug": "gathering-of-clans",
     "title": "Gathering of Clans",
-    "tags": ["gathering","ceremony","nations","sovereignty","clan","community"],
-    "story": "Nations coming together. This is what sovereignty looks like from the inside — not isolation but connection, ceremony, the deliberate act of gathering to remember who we are and what we carry."
+    "tags": [
+      "gathering",
+      "ceremony",
+      "nations",
+      "sovereignty",
+      "clan",
+      "community"
+    ],
+    "story": "Nations coming together. This is what sovereignty looks like from the inside — not isolation but connection, ceremony, the deliberate act of gathering to remember who we are and what we carry.",
+    "date": "2026-04-22"
   },
   {
     "slug": "joy",
     "title": "Joy",
-    "tags": ["joy","face","emotion","resistance","survival","portrait"],
-    "story": "We are still here. And sometimes, we are joyful. This is not about forgetting — it's about refusing to let grief be the whole story. Joy is resistance. Joy is survival made visible."
+    "tags": [
+      "joy",
+      "face",
+      "emotion",
+      "resistance",
+      "survival",
+      "portrait"
+    ],
+    "story": "We are still here. And sometimes, we are joyful. This is not about forgetting — it's about refusing to let grief be the whole story. Joy is resistance. Joy is survival made visible.",
+    "date": "2026-04-22"
   },
   {
     "slug": "medicine-wheel-crow",
     "title": "Medicine Wheel Crow",
-    "tags": ["medicine wheel","crow","ceremony","four directions","sacred","spiritual","raven"],
-    "story": "The medicine wheel maps the cosmos — four directions, four seasons, four stages of life. The crow carries that knowledge, watches the wheel turn, knows exactly what it means."
+    "tags": [
+      "medicine wheel",
+      "crow",
+      "ceremony",
+      "four directions",
+      "sacred",
+      "spiritual",
+      "raven"
+    ],
+    "story": "The medicine wheel maps the cosmos — four directions, four seasons, four stages of life. The crow carries that knowledge, watches the wheel turn, knows exactly what it means.",
+    "date": "2026-04-22"
   },
   {
     "slug": "petroglyph-hunter",
     "title": "Petroglyph Hunter",
-    "tags": ["petroglyph","hunter","ancient","rock art","communication","ancestors"],
-    "story": "Cut into rock thousands of years ago, the hunter persists. These figures are not primitive — they are precise communications across deep time. Every stroke was intentional. Every mark is still speaking."
+    "tags": [
+      "petroglyph",
+      "hunter",
+      "ancient",
+      "rock art",
+      "communication",
+      "ancestors"
+    ],
+    "story": "Cut into rock thousands of years ago, the hunter persists. These figures are not primitive — they are precise communications across deep time. Every stroke was intentional. Every mark is still speaking.",
+    "date": "2026-04-22"
   },
   {
     "slug": "stand-your-ground",
     "title": "Stand Your Ground",
-    "tags": ["resistance","reckoning","warrior","protection","land","sovereignty","political"],
-    "story": "The phrase gets weaponized by the wrong people. This is what it looks like when it means something true — when standing your ground means protecting your people, your land, your way of life."
+    "tags": [
+      "resistance",
+      "reckoning",
+      "warrior",
+      "protection",
+      "land",
+      "sovereignty",
+      "political"
+    ],
+    "story": "The phrase gets weaponized by the wrong people. This is what it looks like when it means something true — when standing your ground means protecting your people, your land, your way of life.",
+    "date": "2026-04-22"
   },
   {
     "slug": "the-nesting-place",
     "title": "The Nesting Place",
-    "tags": ["birds","nest","wildlife","nature","home","protection","animals"],
-    "story": "Home is wherever the young are kept safe. This is a study in nesting — the precision and care that animals bring to making a place where new life can begin and be protected."
+    "tags": [
+      "birds",
+      "nest",
+      "wildlife",
+      "nature",
+      "home",
+      "protection",
+      "animals"
+    ],
+    "story": "Home is wherever the young are kept safe. This is a study in nesting — the precision and care that animals bring to making a place where new life can begin and be protected.",
+    "date": "2026-04-22"
   },
   {
     "slug": "three-sister-wolves",
     "title": "Three Sister Wolves",
-    "tags": ["wolf","wolves","sisters","pack","family","wildlife","animals"],
-    "story": "Three wolves, three sisters. The wolf pack is organized around relationship — the particular intimacy of sisters, which in wolf society is the foundation of everything. Pack is family. Family is survival."
+    "tags": [
+      "wolf",
+      "wolves",
+      "sisters",
+      "pack",
+      "family",
+      "wildlife",
+      "animals"
+    ],
+    "story": "Three wolves, three sisters. The wolf pack is organized around relationship — the particular intimacy of sisters, which in wolf society is the foundation of everything. Pack is family. Family is survival.",
+    "date": "2026-04-22"
   },
   {
     "slug": "timeless-vigil",
     "title": "Timeless Vigil",
-    "tags": ["vigil","spiritual","ancestors","ceremony","time","watching","wisdom"],
-    "story": "Watching without end. The old ones kept vigil — over the young, over the sacred places, over the knowledge that keeps us whole. This is that practice, rendered in light and color across time."
+    "tags": [
+      "vigil",
+      "spiritual",
+      "ancestors",
+      "ceremony",
+      "time",
+      "watching",
+      "wisdom"
+    ],
+    "story": "Watching without end. The old ones kept vigil — over the young, over the sacred places, over the knowledge that keeps us whole. This is that practice, rendered in light and color across time.",
+    "date": "2026-04-22"
   },
   {
     "slug": "resist-yesterday-today-tomorrow",
     "title": "Resist: Yesterday, Today, Tomorrow",
-    "tags": ["resistance","reckoning","political","ancestors","continuity","sovereignty","warrior"],
-    "story": "Resistance isn't a moment — it's a continuum. Our ancestors resisted. We resist now. Those who come after us will resist too. This is what that looks like when you collapse the timeline: the same fire, carried forward through every generation."
+    "tags": [
+      "resistance",
+      "reckoning",
+      "political",
+      "ancestors",
+      "continuity",
+      "sovereignty",
+      "warrior"
+    ],
+    "story": "Resistance isn't a moment — it's a continuum. Our ancestors resisted. We resist now. Those who come after us will resist too. This is what that looks like when you collapse the timeline: the same fire, carried forward through every generation.",
+    "date": "2026-04-22"
   }
 ]
