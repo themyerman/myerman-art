@@ -118,6 +118,10 @@
     '3-SIS-WOLVES':  '12×12',
     'TIMLS-VIGIL':   '12×12',
     'RESIST-YTT':    '9×12',
+    'GRUDGE-CROW':   '9×12',
+    'MERLIN':        '9×12',
+    'N-GOSHAWK':     '9×12',
+    'UNBOTHERED':    '9×12',
     'CARD-BEST-SELLERS': '4×6 postcard pack',
     'CARD-FUTURISM':     '4×4 postcard pack',
     'CARD-WILDLIFE':     '4×6 postcard pack',
@@ -243,6 +247,10 @@
     '3-SIS-WOLVES':  'three-sister-wolves',
     'TIMLS-VIGIL':   'timeless-vigil',
     'RESIST-YTT':    'resist-yesterday-today-tomorrow',
+    'GRUDGE-CROW':   'grudge-crow',
+    'MERLIN':        'merlin',
+    'N-GOSHAWK':     'northern-goshawk',
+    'UNBOTHERED':    'unbothered',
   };
 
   function getCart() {
