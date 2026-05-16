@@ -49,6 +49,7 @@
       <header class="page-header">
         <h1>Prints</h1>
         <p>Over a hundred pieces across every corner of the work: futurism and petroglyphs, resistance and ceremony, birds and buffalo and faces. Browse by collection or let chance decide.</p>
+        <p>New: <a href="/prints/cayuga-language/">Cayuga Language Series</a> — eight works bringing the Gayogohó:nǫ' language into conversation. Not for sale. Offered freely.</p>
       </header>
     </div>
 
@@ -78,7 +79,7 @@
         <h2 class="prints-section-heading" id="section-wildlife">Wildlife</h2>
         <p class="prints-section-desc">Birds, buffalo, bears, wolves — the animals that have always shared this land.</p>
         <div class="prints-grid" id="grid-wildlife"></div>
-        <p class="section-see-all"><a href="/prints/wildlife/">See all 18 prints &rarr;</a></p>
+        <p class="section-see-all"><a href="/prints/wildlife/">See all 19 prints &rarr;</a></p>
       </section>
     </div>
 
@@ -88,7 +89,7 @@
         <h2 class="prints-section-heading" id="section-medicine">Medicine &amp; Story</h2>
         <p class="prints-section-desc">Ceremony, ancestors, petroglyphs, and the deep knowledge that keeps us whole.</p>
         <div class="prints-grid" id="grid-medicine"></div>
-        <p class="section-see-all"><a href="/prints/medicine-story/">See all 30 prints &rarr;</a></p>
+        <p class="section-see-all"><a href="/prints/medicine-story/">See all 31 prints &rarr;</a></p>
       </section>
     </div>
 
@@ -118,7 +119,17 @@
         <h2 class="prints-section-heading" id="section-landscape">Land &amp; Sky</h2>
         <p class="prints-section-desc">The territories, horizons, and sacred geographies that define who we are.</p>
         <div class="prints-grid" id="grid-land-sky"></div>
-        <p class="section-see-all"><a href="/prints/land-sky/">See all 16 prints &rarr;</a></p>
+        <p class="section-see-all"><a href="/prints/land-sky/">See all 20 prints &rarr;</a></p>
+      </section>
+    </div>
+
+    <!-- ── Cayuga Language Series ───────────────────────────── -->
+    <div class="container">
+      <section class="prints-section" aria-labelledby="section-cayuga">
+        <h2 class="prints-section-heading" id="section-cayuga">Cayuga Language Series</h2>
+        <p class="prints-section-desc">Eight works bringing the Gayogohó:nǫ' language into living conversation. Figures speaking directly — not archived, not exhibited. Offered freely, not for sale.</p>
+        <div class="prints-grid" id="grid-cayuga-language"></div>
+        <p class="section-see-all"><a href="/prints/cayuga-language/">See all 8 works &rarr;</a></p>
       </section>
     </div>
 
@@ -223,7 +234,8 @@
           {s:'year-of-the-horse',t:'Year of the Horse'},
           {s:'grudge-crow',t:'Grudge Crow'},
           {s:'merlin',t:'Merlin'},
-          {s:'northern-goshawk',t:'Northern Goshawk'}
+          {s:'northern-goshawk',t:'Northern Goshawk'},
+          {s:'petroglyph-turtle',t:'Petroglyph Turtle'}
         ]
       },
       {
@@ -258,7 +270,8 @@
           {s:'tomahawk-crow',t:'Tomahawk Crow'},
           {s:'unbothered',t:'Unbothered'},
           {s:'we-are-all-connected',t:'We Are All Connected'},
-          {s:'wolf-singing',t:'Wolf Singing'}
+          {s:'wolf-singing',t:'Wolf Singing'},
+          {s:'free-to-roam',t:'Free to Roam'}
         ]
       },
       {
@@ -316,7 +329,24 @@
           {s:'three-buffalo',t:'Three Buffalo'},
           {s:'three-crows-in-winter',t:'Three Crows in Winter'},
           {s:'walk-in-the-woods',t:'Walk in the Woods'},
-          {s:'white-buffalo',t:'White Buffalo'}
+          {s:'white-buffalo',t:'White Buffalo'},
+          {s:'american-horse',t:'American Horse'},
+          {s:'homeland',t:'Homeland'},
+          {s:'on-the-move',t:'On the Move'},
+          {s:'to-the-river',t:'To the River'}
+        ]
+      },
+      {
+        id: 'cayuga-language',
+        prints: [
+          {s:'cayuga-i-am-six-nations',t:'I Am Six Nations',gift:true},
+          {s:'cayuga-hello-how-are-you',t:'Hello, How Are You?',gift:true},
+          {s:'cayuga-i-love-you',t:'I Love You',gift:true},
+          {s:'cayuga-i-understand',t:'I Understand',gift:true},
+          {s:'cayuga-lets-eat',t:"Let's Eat",gift:true},
+          {s:'cayuga-we-are-all-warriors',t:'We Are All Warriors',gift:true},
+          {s:'cayuga-what-a-beautiful-day',t:'What a Beautiful Day',gift:true},
+          {s:'cayuga-what-is-your-name',t:'What Is Your Name?',gift:true}
         ]
       },
       {
@@ -352,7 +382,7 @@
         + '</div>'
         + '<div class="work-card-body">'
         + '<h3 class="work-card-title">' + p.t + '</h3>'
-        + '<span class="work-card-link">' + (p.sold ? 'Sold' : 'Buy print &#8594;') + '</span>'
+        + '<span class="work-card-link">' + (p.sold ? 'Sold' : p.gift ? 'View &#8594;' : 'Buy print &#8594;') + '</span>'
         + '</div>'
         + '</a>';
     }
