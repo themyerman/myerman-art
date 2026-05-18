@@ -121,6 +121,7 @@
     'GRUDGE-CROW':   '9×12',
     'MERLIN':        '9×12',
     'N-GOSHAWK':     '9×12',
+    'TATANKA':       '12×12',
     'UNBOTHERED':    '9×12',
     'AMER-HORSE':   '12×12',
     'FREE-ROAM':    '12×12',
@@ -256,6 +257,7 @@
     'GRUDGE-CROW':   'grudge-crow',
     'MERLIN':        'merlin',
     'N-GOSHAWK':     'northern-goshawk',
+    'TATANKA':       'tatanka',
     'UNBOTHERED':    'unbothered',
   };
 
