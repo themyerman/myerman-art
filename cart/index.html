@@ -135,6 +135,9 @@
     </div>
   </footer>
 
+  <!-- EmailJS: public key is intentionally client-side (EmailJS is browser-first).
+       Security control: set Allowed Origins to https://myerman.art in the
+       EmailJS dashboard so only this domain can submit orders. -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init('j3n5FGxg7ee6PsMeE');</script>
   <script src="/js/cart.js"></script>

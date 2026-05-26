@@ -261,6 +261,16 @@
     'UNBOTHERED':    'unbothered',
   };
 
+  // Escape user-supplied strings before inserting into innerHTML.
+  function esc(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   function getCart() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
     catch (e) { return []; }
@@ -379,12 +389,12 @@
       var qty   = item.qty || 1;
       var sizeRaw = SKU_TO_SIZE[item.sku] || item.size || '—';
       var sizeHtml = sizeRaw === '—' ? '—' : (sizeRaw.indexOf('postcard') !== -1 ? sizeRaw : sizeRaw + '&Prime;');
-      return '<div class="cart-item" data-sku="' + item.sku + '">'
-        + '<a href="' + href + '" class="cart-item-thumb">'
-        + '<img src="' + thumb + '" alt="' + item.title + '" width="80" height="80" loading="lazy">'
+      return '<div class="cart-item" data-sku="' + esc(item.sku) + '">'
+        + '<a href="' + esc(href) + '" class="cart-item-thumb">'
+        + '<img src="' + esc(thumb) + '" alt="' + esc(item.title) + '" width="80" height="80" loading="lazy">'
         + '</a>'
         + '<div class="cart-item-info">'
-        + '<span class="cart-item-title">' + item.title + '</span>'
+        + '<span class="cart-item-title">' + esc(item.title) + '</span>'
         + '<span class="cart-item-price">$' + price + ' each</span>'
         + '</div>'
         + '<div class="cart-item-size">'
@@ -393,9 +403,9 @@
         + '</div>'
         + '<div class="cart-item-qty">'
         + '<label>Qty</label>'
-        + '<input type="number" class="qty-input" data-sku="' + item.sku + '" value="' + qty + '" min="1" max="99">'
+        + '<input type="number" class="qty-input" data-sku="' + esc(item.sku) + '" value="' + qty + '" min="1" max="99">'
         + '</div>'
-        + '<button class="cart-remove-btn" data-sku="' + item.sku + '">Remove</button>'
+        + '<button class="cart-remove-btn" data-sku="' + esc(item.sku) + '">Remove</button>'
         + '</div>';
     }).join('');
 
@@ -496,7 +506,7 @@
         var confirm = document.createElement('div');
         confirm.className = 'order-confirm';
         confirm.innerHTML = '<h2>Order received!</h2>'
-          + '<p>Thanks, ' + orderData.firstName + '. We\'ll email you at <strong>' + orderData.email + '</strong> within 24 hours to confirm and arrange payment.</p>'
+          + '<p>Thanks, ' + esc(orderData.firstName) + '. We\'ll email you at <strong>' + esc(orderData.email) + '</strong> within 24 hours to confirm and arrange payment.</p>'
           + '<p style="margin-top:1rem;"><a href="/prints/" class="btn btn-ghost">Keep browsing &rarr;</a></p>';
         form.parentNode.insertBefore(confirm, form);
       }, function (err) {
