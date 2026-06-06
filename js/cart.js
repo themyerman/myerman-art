@@ -137,6 +137,9 @@
     'CARD-PEOPLE':       '4×6 postcard pack',
     'CARD-LAND-SKY':     '4×6 postcard pack',
     'CARD-ABSTRACTS':    '4×4 postcard pack',
+    'RESILIENCE': '9×12',
+    'SOAR-HEAT': '12×9',
+    'TBIRD-MOON': '12×9',
   };
 
   // Fallback map for cart items saved before slug was stored

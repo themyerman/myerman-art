@@ -1,5 +1,59 @@
 [
   {
+    "slug": "thunderbird-moon",
+    "title": "Thunderbird Moon",
+    "tags": [
+      "thunderbird",
+      "moon",
+      "landscape",
+      "mountains",
+      "water",
+      "purple",
+      "orange",
+      "impressionistic",
+      "sky",
+      "nature"
+    ],
+    "story": "I painted this to feel the way a thunderstorm feels—that moment right before everything breaks open, when the light gets strange and the air goes electric. The landscape is just an anchor for that sky, those colors, that sense of power moving through the world. I work loose because that's how nature actually moves, in brushstrokes and chaos, not clean lines.",
+    "date": "2026-06-05"
+  },
+  {
+    "slug": "soaring-heat",
+    "title": "Soaring Heat",
+    "tags": [
+      "sunset",
+      "mountains",
+      "bird",
+      "silhouette",
+      "orange",
+      "soaring",
+      "wildlife",
+      "landscape",
+      "nature",
+      "heat"
+    ],
+    "story": "I wanted to capture that moment when the day's heat rises up and everything goes still, watching a bird move through all that fire without burning. There's something about a silhouette that strips away the details and just leaves you with the pure shape of freedom. This is what I see when I'm sitting outside at dusk, wondering what it feels like to move through the world that way.",
+    "date": "2026-06-05"
+  },
+  {
+    "slug": "resilience",
+    "title": "Resilience",
+    "tags": [
+      "resilience",
+      "portrait",
+      "figure",
+      "face-paint",
+      "headdress",
+      "purple-sky",
+      "sunset",
+      "strength",
+      "digital-art",
+      "serious"
+    ],
+    "story": "I painted this figure standing against a sky that's burning out, their red face paint and headdress steady and unflinching. There's something in that serious gaze that says we've been through worse and we're still here—that's what resilience actually looks like to me, not some motivational poster but a person who knows what they're carrying. The purple and yellow aren't pretty for pretty's sake; they're the colors of endings that somehow become beginnings.",
+    "date": "2026-06-05"
+  },
+  {
     "slug": "tatanka",
     "title": "Tatanka",
     "tags": [
@@ -1826,98 +1880,219 @@
   {
     "slug": "american-horse",
     "title": "American Horse",
-    "tags": ["horse", "land-sky", "plains", "Lakota", "landscape", "homeland", "sovereignty"],
+    "tags": [
+      "horse",
+      "land-sky",
+      "plains",
+      "Lakota",
+      "landscape",
+      "homeland",
+      "sovereignty"
+    ],
     "story": "American Horse was a chief of the Oglala Lakota — a leader who held his people together through the Indian Wars, negotiated under impossible pressure, and never stopped fighting for what his nation needed. This horse carries that name and that weight. Alone against the open land, still standing, the sky behind it unchanged.",
     "date": "2026-05-15"
   },
   {
     "slug": "free-to-roam",
     "title": "Free to Roam",
-    "tags": ["wolf", "wolves", "forest", "medicine", "story", "Wolf Clan", "sun", "freedom", "pre-contact"],
+    "tags": [
+      "wolf",
+      "wolves",
+      "forest",
+      "medicine",
+      "story",
+      "Wolf Clan",
+      "sun",
+      "freedom",
+      "pre-contact"
+    ],
     "story": "Three wolves move through old-growth forest under a sun so close it feels ceremonial. This is the world as it was — when the wolves ranged freely across every mountain and valley on the continent. The sun sees them. The trees hold them. Nothing in this painting has been fenced, managed, or removed.",
     "date": "2026-05-15"
   },
   {
     "slug": "homeland",
     "title": "Homeland",
-    "tags": ["landscape", "land-sky", "homeland", "Homeland series", "territory", "sky", "hills", "relational"],
+    "tags": [
+      "landscape",
+      "land-sky",
+      "homeland",
+      "Homeland series",
+      "territory",
+      "sky",
+      "hills",
+      "relational"
+    ],
     "story": "Before the word wilderness existed, this land was home. The hills, the sky, the water — specific, known, lived in. This piece is the beginning of the Homeland series: land as inhabited, relational, and alive. Not scenery. Not backdrop. A place where people have always been.",
     "date": "2026-05-15"
   },
   {
     "slug": "on-the-move",
     "title": "On the Move",
-    "tags": ["horse", "riders", "plains", "migration", "land-sky", "landscape", "movement", "buffalo"],
+    "tags": [
+      "horse",
+      "riders",
+      "plains",
+      "migration",
+      "land-sky",
+      "landscape",
+      "movement",
+      "buffalo"
+    ],
     "story": "Horses and riders crossing open country — the rhythm of migration that Plains nations kept for thousands of years. Not displacement. Not flight. Movement as a way of life, the seasons calling them, the land itself familiar in every direction.",
     "date": "2026-05-15"
   },
   {
     "slug": "petroglyph-turtle",
     "title": "Petroglyph Turtle",
-    "tags": ["turtle", "petroglyph", "Haudenosaunee", "Turtle Island", "creation story", "wildlife", "symbol", "Cayuga"],
+    "tags": [
+      "turtle",
+      "petroglyph",
+      "Haudenosaunee",
+      "Turtle Island",
+      "creation story",
+      "wildlife",
+      "symbol",
+      "Cayuga"
+    ],
     "story": "The turtle holds the world on its back. In Haudenosaunee creation story, Turtle Island is where Sky Woman landed, where she spread the earth, where everything began. This turtle is drawn in the language of the ancient marks — form reduced to its essential geometry. A living thing and a map of the cosmos at the same time.",
     "date": "2026-05-15"
   },
   {
     "slug": "to-the-river",
     "title": "To the River",
-    "tags": ["river", "landscape", "land-sky", "water", "ceremony", "homeland", "pre-contact", "community"],
+    "tags": [
+      "river",
+      "landscape",
+      "land-sky",
+      "water",
+      "ceremony",
+      "homeland",
+      "pre-contact",
+      "community"
+    ],
     "story": "Everything comes to the river eventually. Water, fish, travelers, ceremonies, stories. The river is where nations met, where people washed and prayed. Land with a river in it is land with a relationship in it — the water connects everything along its banks into a single community.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-i-am-six-nations",
     "title": "I Am Six Nations",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "Hodinohsoni", "language", "Six Nations", "identity", "Confederacy"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "Hodinohsoni",
+      "language",
+      "Six Nations",
+      "identity",
+      "Confederacy"
+    ],
     "story": "Six nations, one confederacy, one fire. This piece opens the Cayuga Language Series with a declaration of identity — not a label, not a category, but a statement of belonging to one of the oldest democratic confederacies on earth.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-hello-how-are-you",
     "title": "Hello, How Are You?",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "greeting", "community"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "greeting",
+      "community"
+    ],
     "story": "The first words you learn in any language are the ones you use to meet someone. In Gayogohó:nǫ', those words carry the whole philosophy of the greeting — to acknowledge presence, to open a door. This is where language begins: in the space between two people.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-i-love-you",
     "title": "I Love You",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "love", "family", "community"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "love",
+      "family",
+      "community"
+    ],
     "story": "In Haudenosaunee tradition, love is a community practice — expressed toward family, toward the land, toward the generations who came before and those who will come after. When you say this in Cayuga, you are speaking a language that has carried this feeling across thousands of years.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-i-understand",
     "title": "I Understand",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "listening", "presence"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "listening",
+      "presence"
+    ],
     "story": "To understand is to listen well enough to receive what someone is giving you. In a language that was suppressed, punished, and nearly erased from living memory, to say 'I understand' is also to say: I am still here. I am still listening.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-lets-eat",
     "title": "Let's Eat",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "food", "Three Sisters", "ceremony", "community"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "food",
+      "Three Sisters",
+      "ceremony",
+      "community"
+    ],
     "story": "Food is ceremony. In Haudenosaunee tradition, the Three Sisters — corn, beans, and squash — are not just crops; they are relatives who feed the people. To gather and eat together is to maintain the relationships that hold a community together.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-we-are-all-warriors",
     "title": "We Are All Warriors",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "warrior", "protection", "community", "resistance"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "warrior",
+      "protection",
+      "community",
+      "resistance"
+    ],
     "story": "A warrior is not only a fighter. In Haudenosaunee understanding, the warrior protects — the community, the land, the language, the children, the future. You do not need a weapon to be a warrior. You need to show up.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-what-a-beautiful-day",
     "title": "What a Beautiful Day",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "gratitude", "Thanksgiving Address", "sky", "land"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "gratitude",
+      "Thanksgiving Address",
+      "sky",
+      "land"
+    ],
     "story": "In Cayuga, gratitude for a beautiful day carries the weight of the Thanksgiving Address — the Haudenosaunee practice of giving thanks to the earth, the water, the plants, the animals, the winds, the sun, the moon, the stars. A beautiful day is a recognition of gifts.",
     "date": "2026-05-15"
   },
   {
     "slug": "cayuga-what-is-your-name",
     "title": "What Is Your Name?",
-    "tags": ["Cayuga", "Gayogohono", "Haudenosaunee", "language", "identity", "clan", "nation", "name"],
+    "tags": [
+      "Cayuga",
+      "Gayogohono",
+      "Haudenosaunee",
+      "language",
+      "identity",
+      "clan",
+      "nation",
+      "name"
+    ],
     "story": "To ask someone's name is to ask who they are — their clan, their nation, their people. In Haudenosaunee tradition, names carry meaning and are given with care. This question is an offer: tell me who you are, so I can know you properly.",
     "date": "2026-05-15"
   }
