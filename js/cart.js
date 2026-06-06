@@ -104,7 +104,7 @@
     'BUFF-DREAM':    '12×12',
     'CYN-SUNRISE':   '12×9',
     'CURIOUS-CUBS':  '12×12',
-    'FLOATING':      '18×12',
+    'FLOATING':      '12×9',
     'FUT-PATROL':    '12×12',
     'FUT-READY-GO':  '12×12',
     'FUT-TRIGGER':   '12×12',
@@ -140,6 +140,7 @@
     'RESILIENCE': '9×12',
     'SOAR-HEAT': '12×9',
     'TBIRD-MOON': '12×9',
+    'BLOOM-DESERT': '12×9',
   };
 
   // Fallback map for cart items saved before slug was stored
