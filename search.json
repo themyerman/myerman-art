@@ -1,5 +1,26 @@
 [
   {
+    "slug": "summer-meetup",
+    "title": "Summer Meetup",
+    "tags": ["tipi", "mountain", "wildflowers", "gathering", "summer", "landscape", "sunset", "Indigenous", "land-sky"],
+    "story": "The gathering season — when families traveled to the high country because that's what you did when the wildflowers came in. You packed up, you made the journey, you found your people. The mountain holds everything in place. The stream finds its way through. The tipis are pitched, the sun is setting behind the peak, and everyone is exactly where they're supposed to be. This is memory and ceremony happening at the same time.",
+    "date": "2026-06-22"
+  },
+  {
+    "slug": "sun-worship",
+    "title": "Sun Worship",
+    "tags": ["figure", "woman", "sun", "geometric", "pattern", "skirt", "Indigenous", "people", "bold", "color"],
+    "story": "She's not performing for you. The sun is for her — that small circle in the corner, watching. Her arm carries geometric patterns that belong to her. Her skirt is full of color that belongs to her. She's facing away because this moment is hers, not yours. That's what worship looks like: private, deliberate, completely her own.",
+    "date": "2026-06-22"
+  },
+  {
+    "slug": "turtles-dream",
+    "title": "Turtle's Dream",
+    "tags": ["turtle", "abstract", "medicine wheel", "four directions", "Turtle Island", "Indigenous", "dreamscape", "arrows", "color"],
+    "story": "Turtle Island — that's what many First Nations call this place. The turtle carries the world on its back: patient, ancient, still here. Here the turtle floats in a field of color and signal, the four directions marked on its shell, arrows pointing everywhere at once. It's not a map you can follow. It's a map the turtle already knows.",
+    "date": "2026-06-22"
+  },
+  {
     "slug": "blooming-desert",
     "title": "Blooming Desert",
     "tags": [
