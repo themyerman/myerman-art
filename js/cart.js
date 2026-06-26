@@ -141,6 +141,7 @@
     'SOAR-HEAT': '12×9',
     'TBIRD-MOON': '12×9',
     'BLOOM-DESERT': '12×9',
+    'BUFF-CALF-ROAD': '12×9',
     'SUMMER-MEETUP': '9×12',
     'SUN-WORSHIP':   '9×12',
     'TURTLES-DREAM': '12×12',
