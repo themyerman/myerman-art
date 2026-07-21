@@ -1,5 +1,26 @@
 [
   {
+    "slug": "she-carries-it",
+    "title": "She Carries It",
+    "tags": ["portrait", "woman", "Indigenous", "braids", "beadwork", "people", "bold", "color"],
+    "story": "The weight of it is in her face — not burden, not defeat, but something quieter and more durable. She carries the memory of who she is, the knowledge of where she comes from, the names of people who came before. You don't see that on a face. You see what it makes of a face.",
+    "date": "2026-07-20"
+  },
+  {
+    "slug": "space-eagle",
+    "title": "Space Eagle",
+    "tags": ["eagle", "cosmic", "stars", "night", "mesa", "landscape", "spirit", "nebula", "land-sky"],
+    "story": "Before the eagle was a symbol, it was a being. This one is made of stars and fire and the dark between galaxies — older than the flags that borrowed it, older than the nations that claimed it. It rises over the mesa the way it always has. The mesa doesn't move either.",
+    "date": "2026-07-20"
+  },
+  {
+    "slug": "turtle-lodge",
+    "title": "Turtle Lodge",
+    "tags": ["tipi", "turtle", "lodge", "abstract", "red", "yellow", "sun", "Indigenous", "home"],
+    "story": "The lodge is home and the turtle is home and they are the same thing — shelter carried with you, wherever you go, however far from the land you were born on. The turtles painted on the canvas are not decoration. They are a statement of presence. The sun has seen it all before.",
+    "date": "2026-07-20"
+  },
+  {
     "slug": "buffalo-calf-road-woman",
     "title": "Buffalo Calf Road Woman",
     "tags": ["Cheyenne", "warrior", "woman", "horse", "history", "battle", "people", "Indigenous", "hero"],
