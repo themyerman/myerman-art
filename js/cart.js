@@ -148,6 +148,7 @@
     'SUMMER-MEETUP': '9×12',
     'SUN-WORSHIP':   '9×12',
     'TURTLES-DREAM': '12×12',
+    'BOREALIS':      '12×9',
   };
 
   // Fallback map for cart items saved before slug was stored
