@@ -135,39 +135,6 @@
     </script>
 
 
-    <section class="section" aria-labelledby="featured-heading">
-      <div class="container">
-        <h2 id="featured-heading" class="section-heading">New Work</h2>
-        <div class="works-grid" id="featured-grid"></div>
-        <div style="margin-top: 2.5rem; text-align: center;">
-          <a href="/prints/" class="btn btn-ghost">View all prints</a>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      fetch('/search.json')
-        .then(function (r) { return r.json(); })
-        .then(function (all) {
-          all.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
-          var newest = all.slice(0, 4);
-          var grid = document.getElementById('featured-grid');
-          newest.forEach(function (p) {
-            grid.innerHTML +=
-              '<a href="/prints/' + p.slug + '/" class="work-card">' +
-                '<div class="work-card-image">' +
-                  '<img src="/prints/' + p.slug + '/' + p.slug + '-thumb.jpg"' +
-                  ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
-                  ' width="480" height="480" loading="lazy">' +
-                '</div>' +
-                '<div class="work-card-body">' +
-                  '<h3 class="work-card-title">' + p.title + '</h3>' +
-                  '<span class="work-card-link">Buy print &#8594;</span>' +
-                '</div>' +
-              '</a>';
-          });
-        });
-    </script>
 
 
     <!-- ══════════════════════════
