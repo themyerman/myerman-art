@@ -148,7 +148,12 @@
     'SUMMER-MEETUP': '9×12',
     'SUN-WORSHIP':   '9×12',
     'TURTLES-DREAM': '12×12',
-    'BOREALIS':      '12×9',
+    'BOREALIS':           '12×9',
+  'ENERGETIC-CROW':     '9×12',
+  'GOD-GAVE-US-THIS-LAND': '9×12',
+  'WAMPUM-BRACELET':    '9×12',
+  'WAR-CAPTAIN':        '9×12',
+  'WAMPUM-WARRIOR':     '9×12',
   };
 
   // Fallback map for cart items saved before slug was stored

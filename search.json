@@ -1,5 +1,40 @@
 [
   {
+    "slug": "wampum-warrior",
+    "title": "Wampum Warrior",
+    "tags": ["wampum", "warrior", "portrait", "beadwork", "forest", "figure", "Indigenous", "Haudenosaunee", "belt", "ceremony"],
+    "story": "Part of a series born out of my own wampum beading practice — sitting with the shells, learning what the work asks of you, letting that carry into the painting. The wampum belt he holds isn't decoration. It's record, it's treaty, it's identity. It's the thing that outlasted everything they tried to take. He stands in the trees carrying something older than the country that tried to erase it.",
+    "date": "2026-09-15"
+  },
+  {
+    "slug": "war-captain",
+    "title": "War Captain",
+    "tags": ["portrait", "warrior", "face", "burden", "community", "close-up", "figure", "red", "Indigenous", "sacrifice"],
+    "story": "This is not a celebration of violence. It's a meditation on what it costs. Someone has to be chosen — by the community, by necessity, by circumstance — to go and do what no one wants to do. I thought about what that face must look like. Not glory, not bloodlust. Something heavier than both: the full knowledge of what is being carried, and the decision to carry it anyway. For the people.",
+    "date": "2026-09-15"
+  },
+  {
+    "slug": "wampum-bracelet",
+    "title": "Wampum Bracelet",
+    "tags": ["wampum", "beadwork", "abstract", "bracelet", "pink", "blue", "red", "Haudenosaunee", "ceremony", "identity"],
+    "story": "I've been beading my own wampum — sitting with the shells, learning the patience the work demands, feeling what it means to make something bead by bead that carries that much history and meaning. I wanted to bring that energy into a painting. This one is semi-abstract, less about depicting wampum than about the color and power of it — the blue and red and white that carry so much more than decoration. The bracelet as artifact, as identity, as something alive.",
+    "date": "2026-09-15"
+  },
+  {
+    "slug": "god-gave-us-this-land",
+    "title": "God Gave Us This Land",
+    "tags": ["church", "colonialism", "skulls", "cross", "mission", "resistance", "history", "teal", "orange", "political"],
+    "story": "They brought the cross and called it salvation. They brought the mission and called it civilization. Underneath it all — underneath the church, underneath the doctrine, underneath the claim that God ordained what was done — are the bones of millions. The church was not separate from colonization. It was the engine of it. This piece doesn't look away from that.",
+    "date": "2026-09-15"
+  },
+  {
+    "slug": "energetic-crow",
+    "title": "Energetic Crow",
+    "tags": ["crow", "bird", "morning", "sun", "symbols", "ancient", "geometric", "teal", "red", "yellow", "wires", "energy"],
+    "story": "The crow doesn't explain itself. It arrives with the morning sun, cuts through the noise of the wires and the ancient geometry of the world, and moves on. I was thinking about that energy — the crow as messenger, the sun as source, the symbols we've carried for thousands of years still humming with the same frequency they always had. All of it connected. All of it alive.",
+    "date": "2026-09-15"
+  },
+  {
     "slug": "borealis",
     "title": "Borealis",
     "tags": ["aurora", "borealis", "northern lights", "waterfall", "figure", "night", "green", "violet", "landscape", "land-sky"],
