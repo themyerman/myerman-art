@@ -156,6 +156,7 @@
   'WAMPUM-WARRIOR':     '9×12',
   'BRAIDED-UP':         '9×12',
   'TIPI-RAISING':       '9×12',
+  'TOUCANS-COUNSEL':    '9×12',
   };
 
   // Fallback map for cart items saved before slug was stored
