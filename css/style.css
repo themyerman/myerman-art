@@ -228,7 +228,185 @@ p { max-width: 68ch; }
 }
 
 
-/* ── Hero ──────────────────────────────────────────────────── */
+/* ── Intro ─────────────────────────────────────────────────── */
+.intro {
+  padding-block: clamp(3.5rem, 9vw, 6rem);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.intro h1 {
+  margin-bottom: 1.25rem;
+  max-width: 16ch;
+}
+
+.intro p {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  max-width: 52ch;
+  line-height: 1.75;
+}
+
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+/* ── Gallery Carousel ──────────────────────────────────────── */
+.gallery-carousel {
+  position: relative;
+  height: min(88vh, 860px);
+  background: #000;
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.65s ease;
+  pointer-events: none;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-slide > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 2rem 1.75rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.carousel-caption-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.carousel-caption-link {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.carousel-caption-link:hover {
+  color: var(--text);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.82);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.carousel-prev { left: 1.25rem; }
+.carousel-next { right: 1.25rem; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.carousel-dot.active {
+  background: var(--gold);
+  transform: scale(1.4);
+}
+
+@media (max-width: 600px) {
+  .gallery-carousel {
+    height: 75vh;
+  }
+  .carousel-caption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 2rem 1.25rem 1.25rem;
+  }
+  .carousel-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ── Hero (legacy — kept for reference) ───────────────────── */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;

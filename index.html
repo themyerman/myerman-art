@@ -47,93 +47,121 @@
 
   <main>
 
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-content">
+    <!-- ══════════════════════════
+         INTRO
+    ══════════════════════════════ -->
+    <section class="intro" aria-label="Introduction">
+      <div class="container">
         <span class="label">Hodinǫ̱hsǫ́:nih &amp; Ngäbe-Buglé artist</span>
         <h1>Nerd + Native<br>Digital Art</h1>
         <p>I&#8217;m Tom Myer &#8212; a Hodinǫ̱hsǫ́:nih (Iroquois) and Ngäbe-Buglé (Guaymi) artist making digital work rooted in Indigenous identity, political resistance, and a childhood spent watching Star Wars and rolling dice. Raised on hair metal and Dungeons &amp; Dragons. A bit of a renegade.</p>
-        <p class="hero-featuring" id="hero-featuring" aria-live="polite"><a href="#" id="hero-buy-btn" style="color:inherit;">&#8594; Buy a print</a></p>
-        <div class="hero-buttons">
+        <div class="intro-buttons">
           <a href="/prints/" class="btn btn-primary">Browse prints</a>
           <a href="https://patreon.com/myerman" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Join Patreon</a>
         </div>
       </div>
-      <div class="hero-image">
-        <a href="#" id="hero-img-link" aria-label="">
-          <img src="" alt="" id="hero-img" width="1600" height="1600" loading="eager">
-        </a>
-      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         GALLERY CAROUSEL
+    ══════════════════════════════ -->
+    <section class="gallery-carousel" aria-label="Featured prints">
+      <div class="carousel-track" id="carousel-track"></div>
+      <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous print">&#8592;</button>
+      <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next print">&#8594;</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
     </section>
 
     <script>
       (function () {
         var pieces = [
-          // ── Best Sellers (19) ──
-          { slug: 'blood-crow',                        title: 'Blood Crow',                        w: 1600, h: 900 },
-          { slug: 'dawn-eagle',                        title: 'Dawn Eagle',                        w: 1200, h: 1200 },
-          { slug: 'determined',                        title: 'Determined',                        w: 1600, h: 900 },
-          { slug: 'encroachment',                      title: 'Encroachment',                      w: 1200, h: 1200 },
-          { slug: 'flatirons-and-buffalo-road',        title: 'Flatirons and Buffalo Road',        w: 1600, h: 900 },
-          { slug: 'grief',                             title: 'Grief',                             w: 1600, h: 900 },
-          { slug: 'haudenosaunee-turtle-with-wampum-belt', title: 'Haudenosaunee Turtle with Wampum Belt', w: 1200, h: 1200 },
-          { slug: 'make-america-native-again',         title: 'Make America Native Again',         w: 1200, h: 1200 },
-          { slug: 'moonlight-fishing',                 title: 'Moonlight Fishing',                 w: 1200, h: 1200 },
-          { slug: 'night-hawk',                        title: 'Night Hawk',                        w: 1600, h: 900 },
-          { slug: 'petroglyph-raven',                  title: 'Petroglyph Raven',                  w: 1600, h: 900 },
-          { slug: 'ride-hard',                         title: 'Ride Hard',                         w: 1600, h: 900 },
-          { slug: 'soaring-thunderbird',               title: 'Soaring Thunderbird',               w: 1200, h: 1200 },
-          { slug: 'superb-owl',                        title: 'Superb Owl',                        w: 1600, h: 900 },
-          { slug: 'we-gonna-tread',                    title: 'We Gonna Tread',                    w: 1600, h: 900 },
-          { slug: 'year-of-the-horse',                 title: 'Year of the Horse',                 w: 1200, h: 1200 },
-          { slug: 'flowing-water-soaring-birds',       title: 'Flowing Water Soaring Birds',       w: 1600, h: 900 },
-          { slug: 'american-horse',                    title: 'American Horse',                    w: 1600, h: 900 },
-          { slug: 'on-the-move',                       title: 'On the Move',                       w: 1600, h: 900 },
-          // ── Selected (11) ──
-          { slug: 'toucans-counsel',           title: 'The Toucan\'s Counsel',     w: 1600, h: 900 },
-          { slug: 'braided-up',                title: 'Braided Up',                w: 1600, h: 900 },
-          { slug: 'tipi-raising',              title: 'Tipi Raising',              w: 1600, h: 900 },
-          { slug: 'energetic-crow',            title: 'Energetic Crow',            w: 1600, h: 900 },
-          { slug: 'god-gave-us-this-land',     title: 'God Gave Us This Land',     w: 1600, h: 900 },
-          { slug: 'wampum-bracelet',           title: 'Wampum Bracelet',           w: 1600, h: 900 },
-          { slug: 'war-captain',               title: 'War Captain',               w: 1600, h: 900 },
-          { slug: 'wampum-warrior',            title: 'Wampum Warrior',            w: 1600, h: 900 },
-          { slug: 'borealis',                          title: 'Borealis',                          w: 1600, h: 900 },
-          { slug: 'buffalo-calf-road-woman',           title: 'Buffalo Calf Road Woman',           w: 1600, h: 900 },
-          { slug: 'futurism-indiginaut',               title: 'Futurism: Indiginaut',              w: 1200, h: 1200 },
-          { slug: 'futurism-warrior-society',          title: 'Futurism: Warrior Society',         w: 1200, h: 1200 },
-          { slug: 'march-of-the-buffalo',              title: 'March of the Buffalo',              w: 1200, h: 1200 },
-          { slug: 'three-buffalo',                     title: 'Three Buffalo',                     w: 1200, h: 1200 },
-          { slug: 'fractured-native',                  title: 'Fractured Native',                  w: 1200, h: 1200 },
-          { slug: 'red-hand',                          title: 'Red Hand',                          w: 1200, h: 1200 },
-          { slug: 'white-buffalo',                     title: 'White Buffalo',                     w: 1200, h: 1200 },
-          { slug: 'raven-with-petroglyphs-and-weapons',title: 'Raven with Petroglyphs and Weapons',w: 1200, h: 1200 },
-          { slug: 'grudge-crow',                       title: 'Grudge Crow',                       w: 1200, h: 1200 },
+          { slug: 'toucans-counsel',           title: "The Toucan’s Counsel" },
+          { slug: 'war-captain',               title: 'War Captain' },
+          { slug: 'braided-up',                title: 'Braided Up' },
+          { slug: 'tipi-raising',              title: 'Tipi Raising' },
+          { slug: 'god-gave-us-this-land',     title: 'God Gave Us This Land' },
+          { slug: 'wampum-warrior',            title: 'Wampum Warrior' },
+          { slug: 'wampum-bracelet',           title: 'Wampum Bracelet' },
+          { slug: 'borealis',                  title: 'Borealis' },
+          { slug: 'blood-crow',                title: 'Blood Crow' },
+          { slug: 'american-horse',            title: 'American Horse' },
+          { slug: 'petroglyph-raven',          title: 'Petroglyph Raven' },
+          { slug: 'energetic-crow',            title: 'Energetic Crow' },
+          { slug: 'grief',                     title: 'Grief' },
+          { slug: 'determined',                title: 'Determined' },
+          { slug: 'we-gonna-tread',            title: 'We Gonna Tread' },
+          { slug: 'make-america-native-again', title: 'Make America Native Again' },
+          { slug: 'encroachment',              title: 'Encroachment' },
+          { slug: 'superb-owl',                title: 'Superb Owl' },
+          { slug: 'night-hawk',                title: 'Night Hawk' },
+          { slug: 'ride-hard',                 title: 'Ride Hard' },
         ];
-        var COOLDOWN = 60 * 1000;
-        var now = Date.now();
-        var seen = JSON.parse(localStorage.getItem('hero-seen') || '{}');
-        var pool = pieces.filter(function(x) { return !seen[x.slug] || (now - seen[x.slug]) > COOLDOWN; });
-        if (!pool.length) pool = pieces;
-        var p = pool[Math.floor(Math.random() * pool.length)];
-        seen[p.slug] = now;
-        localStorage.setItem('hero-seen', JSON.stringify(seen));
-        var img = document.getElementById("hero-img");
-        img.src    = "/prints/" + p.slug + "/" + p.slug + "-hero.jpg";
-        img.alt    = p.title + " — digital artwork by Tom Myer";
-        img.width  = p.w;
-        img.height = p.h;
-        var heroLink = document.getElementById("hero-img-link");
-        heroLink.href = "/prints/" + p.slug + "/";
-        heroLink.setAttribute("aria-label", p.title + " — view this print");
 
-        var buyBtn = document.getElementById("hero-buy-btn");
-        buyBtn.href = "/prints/" + p.slug + "/";
-        buyBtn.setAttribute("aria-label", "Buy a print of " + p.title);
-        buyBtn.innerHTML = p.title + " &#8594; Buy a print";
+        // Shuffle
+        for (var i = pieces.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = pieces[i]; pieces[i] = pieces[j]; pieces[j] = tmp;
+        }
+
+        var track   = document.getElementById('carousel-track');
+        var dotsEl  = document.getElementById('carousel-dots');
+        var current = 0;
+        var timer;
+        var slides  = [];
+        var dots    = [];
+
+        pieces.forEach(function (p, i) {
+          var slide = document.createElement('div');
+          slide.className = 'carousel-slide' + (i === 0 ? ' active' : '');
+          slide.innerHTML =
+            '<a href="/prints/' + p.slug + '/" aria-label="' + p.title + ' — view this print">' +
+              '<img src="/prints/' + p.slug + '/' + p.slug + '-display.jpg"' +
+                   ' alt="' + p.title + ' — digital artwork by Tom Myer"' +
+                   ' loading="' + (i === 0 ? 'eager' : 'lazy') + '">' +
+              '<div class="carousel-caption">' +
+                '<span class="carousel-caption-title">' + p.title + '</span>' +
+                '<span class="carousel-caption-link">Buy this print →</span>' +
+              '</div>' +
+            '</a>';
+          track.appendChild(slide);
+          slides.push(slide);
+
+          var dot = document.createElement('button');
+          dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+          (function (idx) {
+            dot.addEventListener('click', function () { go(idx); restart(); });
+          })(i);
+          dotsEl.appendChild(dot);
+          dots.push(dot);
+        });
+
+        function go(n) {
+          slides[current].classList.remove('active');
+          dots[current].classList.remove('active');
+          current = (n + pieces.length) % pieces.length;
+          slides[current].classList.add('active');
+          dots[current].classList.add('active');
+        }
+
+        function next() { go(current + 1); }
+        function prev() { go(current - 1); }
+
+        function restart() {
+          clearInterval(timer);
+          timer = setInterval(next, 5000);
+        }
+
+        document.getElementById('carousel-next').addEventListener('click', function () { next(); restart(); });
+        document.getElementById('carousel-prev').addEventListener('click', function () { prev(); restart(); });
+
+        var section = document.querySelector('.gallery-carousel');
+        section.addEventListener('mouseenter', function () { clearInterval(timer); });
+        section.addEventListener('mouseleave', restart);
+
+        restart();
       })();
     </script>
-
-
 
 
     <!-- ══════════════════════════
@@ -167,7 +195,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/prints/">Prints</a></li>
           <li><a href="/cards/">Postcards</a></li>
-        <li><a href="/about/">About</a></li>
+          <li><a href="/about/">About</a></li>
           <li><a href="/patreon/">Patreon</a></li>
           <li><a href="https://linktr.ee/myerman" target="_blank" rel="noopener noreferrer">Contact</a></li>
         </ul>
