@@ -243,7 +243,7 @@ p { max-width: 68ch; }
   font-size: clamp(1rem, 1.5vw, 1.1rem);
   color: var(--text-muted);
   margin-bottom: 1.5rem;
-  max-width: 100%;
+  max-width: 80ch;
   line-height: 1.75;
 }
 
